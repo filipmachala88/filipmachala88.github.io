@@ -40,4 +40,4 @@ Page negatives:
 - Page is created only for presentation purpose not for marketing purpose
 - Page does not have database so text is hardly possible to change
 
-> If you have problems with showing properly some fonts or images, try to turn off or pause 3rd party programs like e.g. [AdBlock](https://getadblock.com/en/)
+> If you have problems with showing properly some fonts or images, try to turn off or pause 3rd party programs like [AdBlock](https://getadblock.com/en/) etc.
