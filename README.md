@@ -2,7 +2,7 @@
 
 <!-- Document created using [Markdown](https://www.markdownguide.org/getting-started/) -->
 
-
+Used for [Vanilla](https://stackoverflow.com/questions/20836115/what-does-vanilla-mean) websites
 
 ## How to use
 
@@ -19,6 +19,6 @@ This [Repository](https://docs.github.com/en/get-started/quickstart/create-a-rep
 ## Purpose
 
 In this case used for:
-- Final product website prepared to use
-- Websites offering database or purchase stuff functions
+- webpage pre-view
+- testing of responsivity
 
