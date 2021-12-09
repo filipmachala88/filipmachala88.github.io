@@ -1,6 +1,6 @@
 # filipmachala88.github.io
 
-```.MD document created in [Markdown](https://www.markdownguide.org/getting-started/)```
+[comment] #.MD document created in [Markdown](https://www.markdownguide.org/getting-started/)```
 
 ## How to use
 
@@ -12,11 +12,11 @@
 
 ## License
 
-This repository is copyright protected by [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+Repository is copyright protected by [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
 
 ## Purpose
 
-This repository is used for [Full-Stack](https://www.w3schools.com/whatis/whatis_fullstack.asp) websites
+Repository is used for [Full-Stack](https://www.w3schools.com/whatis/whatis_fullstack.asp) websites
 
 In this case this repository is used for:
 - Final product website prepared to use
