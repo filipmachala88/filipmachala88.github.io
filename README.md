@@ -2,7 +2,7 @@
 
 <!-- Document created using [Markdown](https://www.markdownguide.org/getting-started/) -->
 
-Repository is used for [Full-Stack](https://www.w3schools.com/whatis/whatis_fullstack.asp) websites
+Used for [Full-Stack](https://www.w3schools.com/whatis/whatis_fullstack.asp) websites
 
 ## How to use
 
@@ -14,11 +14,11 @@ Repository is used for [Full-Stack](https://www.w3schools.com/whatis/whatis_full
 
 ## License
 
-Repository is copyright protected by [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+Copyright protected by [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
 
 ## Purpose
 
-In this case this repository is used for:
+In this case used for:
 - Final product website prepared to use
 - Websites offering database or purchase stuff functions
 
