@@ -12,7 +12,7 @@ Document .MD created in [Markdown](https://www.markdownguide.org/getting-started
 
 ## License
 
-This repository is copyrigh protected by [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+This repository is copyright protected by [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
 
 ## Purpose
 
