@@ -1,8 +1,8 @@
-# Full-Stack Repository
+# Vanilla Repository
 
 <!-- Document created using [Markdown](https://www.markdownguide.org/getting-started/) -->
 
-Used for [Full-Stack](https://www.w3schools.com/whatis/whatis_fullstack.asp) websites
+
 
 ## How to use
 
