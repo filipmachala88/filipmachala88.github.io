@@ -1,8 +1,8 @@
 # Šnyt website
 
-> This `README.md` file is used for project describtion
-
 Website for local Restaurant called [Šnyt](https://www.facebook.com/snytbrno/)
+
+> This `README.md` file is used for project describtion
 
 ## Introduction
 
