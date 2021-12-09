@@ -1,6 +1,6 @@
 # filipmachala88.github.io
 
-Document .MD created in [Markdown](https://www.markdownguide.org/getting-started/)
+```.MD document created in [Markdown](https://www.markdownguide.org/getting-started/)```
 
 ## How to use
 
