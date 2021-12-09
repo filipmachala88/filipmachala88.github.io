@@ -14,7 +14,7 @@ Used for [Vanilla](https://stackoverflow.com/questions/20836115/what-does-vanill
 [Github](https://github.com/) can offer [Github Pages](https://pages.github.com/)
 
 - replace URL with name of this repository
-- add to URL " / exact folder name you want to see / `index.html` "
+- add to URL after repo name slash "/" and exact folder name you want to see
 - press Enter and it should display you current website
 
 ## License
