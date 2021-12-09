@@ -19,7 +19,7 @@ Used for [Vanilla](https://stackoverflow.com/questions/20836115/what-does-vanill
 
 ## License
 
-This [Repository](https://docs.github.com/en/get-started/quickstart/create-a-repo) is Copyright protected by [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+This [Repository](https://docs.github.com/en/get-started/quickstart/create-a-repo) is Copyright protected by [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0) and it applies on every file in this repository
 
 ## Purpose
 
