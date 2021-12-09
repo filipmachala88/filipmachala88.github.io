@@ -1,4 +1,4 @@
-# filipmachala88.github.io Repository
+# Full-Stack Repository
 
 <!-- Document created using [Markdown](https://www.markdownguide.org/getting-started/) -->
 
