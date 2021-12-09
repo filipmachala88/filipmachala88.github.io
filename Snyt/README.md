@@ -9,7 +9,7 @@ Website for local Restaurant called [Šnyt](https://www.facebook.com/snytbrno/)
 This project was made 26/4/2021 (EU date) as Graduation Thesis in 4th class of High School but presented 16/6/2021 and it should represent my knowledge of this problematic at this time
 
 I chosed for this project local restaurant as a customer, because they:
-1. didnt have any website
+1. Didnt have any website
 2. I had there my Summer School Practice (helping with social sites) so the problematic was a bit familiar to me which helped me while process
 
 ## Process
@@ -23,21 +23,21 @@ I composed process into a few steps:
 - 5th step: Validation check & Bug fixing - due to webdesign standards
 
 In this case I tried to focus on work with:
-- single file [font-family](https://www.w3schools.com/cssref/pr_font_font-family.asp) which were free to use
-- icons as single `.svg` file (without export)
+- Single file [font-family](https://www.w3schools.com/cssref/pr_font_font-family.asp) which were free to use
+- Icons as single `.svg` file (without export)
 
 ## Result
 
 Full properly working responsive website prepared to place on web server
 
 Page benefits:
-- responsive webpage will be good looking in every device
-- original webpapge shouldnt be endangered by copyright
-- simple light code webpage doesnt slow server
-- good looking code can be easly used or edited by another web developer
+- Responsive webpage will be good looking in every device
+- Original webpapge shouldnt be endangered by copyright
+- Simple light code webpage doesnt slow server
+- Good looking code can be easly used or edited by another web developer
 
 Page negatives:
-- page is created only for presentation purpose not for marketing purpose
-- page does not have database so text is hardly possible to change
+- Page is created only for presentation purpose not for marketing purpose
+- Page does not have database so text is hardly possible to change
 
 > If you have problems with showing some fonts or images properly, try to pause or turn off 3rd programs like [AdBlock](https://getadblock.com/en/)
