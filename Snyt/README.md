@@ -37,3 +37,5 @@ Page benefits:
 Page negatives:
 - page is created only for presentation purpose not for marketing purpose
 - page does not have database so text is hardly possible to change
+
+> If you have problems with showing some fonts or images properly, try to pause or turn off 3rd programs like [AdBlock](https://getadblock.com/en/)
