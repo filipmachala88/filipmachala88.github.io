@@ -16,7 +16,7 @@ This repository is copyright protected by [Apache License 2.0](https://www.apach
 
 ## Purpose
 
-``` This repository is used for [Full-Stack](https://www.w3schools.com/whatis/whatis_fullstack.asp) websites ```
+This repository is used for [Full-Stack](https://www.w3schools.com/whatis/whatis_fullstack.asp) websites
 
 In this case this repository is used for:
 - Final product website prepared to use
