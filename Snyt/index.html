@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+
+	<title>Domů - Šnyt</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="utf-8">
+	<meta name="description" content="Maturitni prace">
+	<meta name="keywords" content="HTML, CSS, JS">
+  	<meta name="author" content="Filip Machala">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+<body>
+	<div id="page-value">index</div>
+	
+	<header class="header">
+		<div class="side-nav">
+			<div class="side-nav-container">
+				<div class="side-nav-container-two">
+
+					<div class="side-nav-left">
+						<p class="switch-1">Sledujte nás</p>
+						<a href="https://www.facebook.com/snytbrno">
+							<img src="img/icons/index/fb-icon_w.svg" class="fb_icon" alt="facebook icon" 
+								onmouseover="this.src='img/icons/index/fb-icon_hover.svg'"
+								onmouseout="this.src='img/icons/index/fb-icon_w.svg'">
+						</a>
+						<a href="https://www.instagram.com/snyt.brno">
+							<img src="img/icons/index/ig-icon_w.svg" class="ig_icon" alt="instagram icon" 
+								onmouseover="this.src='img/icons/index/ig-icon_hover.svg'" 
+								onmouseout="this.src='img/icons/index/ig-icon_w.svg'">
+						</a>
+					</div>		
+				
+						<div class="side-nav-right">
+							<p class="number">725 525 525</p>
+							<img src="img/icons/index/tel_w.svg" class="tel_icon" alt="tel. number">
+						</div>
+	
+				</div>
+			</div>
+		</div>
+		
+		<div class="main-nav-index">
+			<div class="main-nav-container">
+				<div class="main-nav-container-two">
+
+					<nav>
+						<div class="main-nav-logo">
+							<a href="index.html">
+								<img src="img/photos/index/logo-min.png" class="logo-img" alt="snyt logo">
+							</a>
+						</div>
+
+						<div id="main-nav-nav">
+							<ul class="nav-ul">
+								<li class="active"><a href="index.html" class="switch-2">domů</a></li>
+								<li><a href="pages/menu.html" class="switch-3">menu</a></li>
+								<li><a href="pages/events.html" class="switch-4">akce</a></li>
+								<li><a href="pages/galery.html" class="switch-5">galerie</a></li>
+								<li><a href="pages/review.html" class="switch-6">recenze</a></li>
+								<li><a href="pages/contact.html" class="navMenu switch-7">Kontakt</a></li>
+							</ul>
+						</div>
+					
+						<div class="main-nav-lanaguage">
+							<p class="lanaguage-EN" onclick="enLan()">EN</p>
+							<p class="lanaguage-CZ lan-active" onclick="csLan()">CZ</p>
+						</div>
+
+						<div class="window">
+							<div class="float">
+  								<div class="menu-btn">
+    								<div class="menu-btn__burger"></div>
+ 	 							</div>
+ 	 						</div>
+						</div>
+						
+					</nav>
+				
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="slider">
+		<div class="slider-first-slide">
+			<div class="slider-shadow">
+				<div class="slider-container">
+					<div class="slider-container-two">
+
+						<div class="slider-flex">
+							<div class="slider-text-side">
+								<div class="slider-topic">
+									<img src="img/icons/index/FNK_w.svg" class="forkNknife_icon" alt="fork icon">
+									<div class="slider-topic-none">
+										<h1 class="switch-8">Páteční</h1>
+										<h1 class="switch-9">Grilovaná</h1>
+										<h1 class="switch-10">Žebra</h1>
+									</div>
+								</div>
+								<p class="slider-text switch-11">Srdečně Vás zveme na naší páteční akci, která se bude konat 18. 9. 2020 v naší restauraci. Tento den budou podávaná grilovaná...</p>
+							</div>
+							
+							<div class="slider-img-side">
+								<a href="pages/events.html">
+									<img src="img/photos/index/pork_ribs-min.png" class="slider-img1" alt="ribs" 
+										onmouseover="this.src='img/photos/index/pork_ribs_hover-min.png'"
+										onmouseout="this.src='img/photos/index/pork_ribs-min.png'">
+								</a>
+							</div>
+						</div>
+
+						<div class="slider-button-side">
+							<a href="pages/events.html"><div class="slider-button"><p class="switch-13">akce</p></div></a>
+						</div>
+
+					</div> 
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="separator">
+		<div class="separator-container">
+			<div class="separator-line">
+				<div class="separator-line-upper"></div>
+				<div class="separator-line-lower"></div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="index-menu">
+		<div class="menu-container">
+			<img src="img/icons/index/FNK_g.svg" class="FNK_g" alt="fork icon">
+			<div class="menu-container-two">
+
+				<div class="menu-topic">
+					<h1 class="switch-14">Menu</h1>
+					<div class="galery-line"></div>
+				</div>
+					<p id="menu-center" class="switch-15">Vyberte si z našeho menu, které je připravován našimi špičkovými kuchaři</p>
+			
+				<div class="menu-line-line_one"></div>
+
+				<div class="menu-menu">
+						<h2 class="switch-16">Denní menu - 18. ledna 2021</h2>
+							<div class="menu-line"></div>
+						<h3 class="switch-17">Polévka</h3>
+
+					<div class="menu-row-one">
+						<div class="menu-large">
+							<p class="menu-bold">0,25l</p>
+						</div>
+						<div class="menu-content">
+							<p class="menu-bold switch-18">Žampiónová (7)</p>
+							<p class="menu-describe switch-19">Žampióny, brambory, smetana</p>
+						</div>
+						<div class="menu-price">
+							<p class="menu-bold">55 Kč</p>
+						</div>
+					</div>
+
+						<h3 class="switch-20">Hlavní jídlo</h3>
+					<div class="menu-row-two">
+						<div class="menu-large">
+							<p class="menu-bold">400g</p>
+						</div>
+						<div class="menu-content">
+							<p class="menu-bold switch-21">Kuřecí závitek s vařenými brambory (7)</p>
+							<p class="menu-describe switch-22">Kuřecí maso, sušená rajčata, mozzarela</p>
+						</div>
+						<div class="menu-price">
+							<p class="menu-bold menu-bold-spec">119 Kč</p>
+						</div>
+					</div>
+
+					<div class="menu-row-three">
+						<div class="menu-large">
+							<p class="menu-bold">300g</p>
+						</div>
+						<div class="menu-content">
+							<p class="menu-bold switch-23">Smažený květák (3)</p>
+							<p class="menu-describe switch-24">Květák, strouhanka, hranolky, tatarská omáčka</p>
+						</div>
+						<div class="menu-price">
+							<p class="menu-bold">99 Kč</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="menu-line-line_two"></div>
+
+				<p id="menu-center-two" class="switch-25">Seznam alergenů je k nalezení v podstránce Menu</p>
+
+				<div class="menu-button-div">
+					<a href="pages/menu.html"><div class="menu-button"><p class="switch-26">menu</p></div></a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<a href="pages/events.html" class="advert-one">
+		<div class="advert-one-div">
+			<div class="advert-one-shadow">
+				<div class="advert-one-container">
+					<div class="advert-one-container-two">
+
+					<div class="advert-one_block-one">
+						<img src="img/icons/index/tel_w.svg" class="img-tel2" alt="tel icon">
+					</div>
+
+					<div class="advert-one_block-two">
+						<h2 class="switch-27">Akce grilovaná žebra již tento pátek</h2>
+						<p class="switch-28">Rezervujte si své místo, dokud je volné</p>
+					</div>
+					
+					<div class="advert-one_block-three">
+						<div class="advert-one_block-three-number">
+							<p class="advert-one-tel">752 565 987</p>
+						</div>
+						<div>
+							<div class="advert-one-button"><p class="advert-one-button-p switch-29">Akce</p></div>
+						</div>
+					</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</a>
+
+	<div class="galery">
+		<div class="galery-container">
+			<img src="img/icons/index/burger_g.svg" class="burger_g" alt="burger icon">
+				<div class="galery-container-two">
+				
+					<div class="galery-topic">
+						<h1 class="switch-30">Galerie</h1>
+						<div class="galery-line"></div>
+					</div>
+						<p class="switch-31 color-spec">Prohlédněte si námi zachycené okamžiky v naší restauraci</p>
+							<div class="content">
+								<a href="pages/galery.html"><div class="left-picture">
+									<div class="picture-shadow">
+										<div class="topic-shadow-upper">
+											<div class="fix">
+												<h2 class="switch-32">Lahodná</h2>
+												<h3 class="switch-33">jídla</h3>
+											</div>
+										</div>
+										<div class="topic-shadow-lower">
+											<img src="img/icons/index/burger_w.svg" class="galery-icon-burger" alt="burger icon">
+										</div>
+									</div>
+								</div></a>
+
+								<a href="pages/galery.html" class="margin"><div class="mid-picture">
+									<div class="picture-shadow">
+										<div class="topic-shadow-upper">
+											<div class="fix">
+												<h2 class="switch-34">Relaxovací</h2>
+												<h3 class="switch-35">atmosféra</h3>
+											</div>
+										</div>
+										<div class="topic-shadow-lower">
+											<img src="img/icons/index/chair_w.svg" class="galery-icon-chair" alt="chair-icon">
+										</div>
+									</div>
+								</div></a>
+
+								<a href="pages/galery.html" class="margin"><div class="right-picture">
+									<div class="picture-shadow">
+										<div class="topic-shadow-upper">
+											<div class="fix">
+												<h2 class="switch-36">Výborné</h2>
+												<h3 class="switch-37">nápoje</h3>
+											</div>
+										</div>
+										<div class="topic-shadow-lower">
+											<img src="img/icons/index/beer_w.svg" class="galery-icon-beer" alt="beer icon">
+										</div>
+									</div>	
+								</div></a>
+							</div>
+
+					<div class="div-galery-button">
+						<a href="pages/galery.html"><div class="galery-button"><p class="switch-38">galerie</p></div></a>
+					</div>
+
+			</div>
+		</div>
+	</div>
+
+	<a href="pages/menu.html" class="advert-two">
+		<div class="advert-two-div">
+			<div class="advert-two-shadow">
+				<div class="advert-two-container">
+					<div class="advert-two-container-two">
+
+					<div class="block-one">
+						<div class="block-one-one">
+							<div class="two-block-one">
+								<div class="flex_one">
+									<p class="advert-two-bold">10</p>
+									<img src="img/icons/index/FNK_w.svg" class="flex-icon-fork" alt="fork icon">
+								</div>
+								<p class="advert-two-normal switch-39">Hlavních jídel</p>
+							</div>
+						</div>
+						<div class="block-two-one">
+							<div class="two-block-two">
+								<div class="flex_two">
+									<p class="advert-two-bold">6</p>
+									<img src="img/icons/index/burger_w.svg" class="flex-icon-burger" alt="burger icon">
+								</div>
+								<p class="advert-two-normal switch-40">Druhů burgerů</p>
+							</div>
+						</div>
+					</div>
+					<div class="block-two">
+						<div class="block-three-one">
+							<div class="two-block-three">
+								<div class="flex_three">
+									<p class="advert-two-bold">5</p>
+									<img src="img/icons/index/beer_w.svg" class="flex-icon-beer" alt="beer icon">
+								</div>
+								<p class="advert-two-normal switch-41">Druhů piva</p>			
+							</div>
+						</div>
+						<div class="two-block-four">
+							<div class="advert-two-button"><p class="switch-42">Menu</p></div>
+						</div>
+					</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</a>
+	
+		<div class="kontakt">
+			<div class="kontakt-container">
+				<img src="img/icons/index/FNK_g.svg" class="FNK_g_2" alt="fork icon">
+
+
+				<div class="kontakt-container-two">
+
+			<h1 class="switch-43">kontakt</h1>
+			<div class="galery-line"></div>
+			<div class="kontakt-div1">
+				<div class="text-side-one">
+					<h2 class="switch-44">O nás</h2>
+					<p class="dark switch-45">Představte si správně načepované, chutné, řemeslně vyráběné pivo spolu s vynikající domácí kuchyní. Přesně to je restaurace Šnyt</p>
+					<p class="light switch-46">Koncept je založen na spojení moderní gastronomie a pivní kultury. Franšíza představuje vlajkovou loď skupiny Pivovary Lobkowicz, která umožňuje představit různorodost piv vařených v rámci skupiny v kontrolovaném prostředí a tím nejlepším způsobem</p>
+				</div>
+				<div class="img-side-one">
+					<img src="img/photos/index/uvod-min.jpg" class="img-right" alt="snyt pivo">
+					<div class="img-right-border"></div>
+				</div>
+			</div>
+			<div class="kontakt-div2">
+				<div class="img-side-two">
+					<img src="img/photos/index/snytvycep-min.jpg" class="img-left" alt="snyt pivo">
+					<div class="img-left-border"></div>
+				</div>
+				<div class="text-side-two">
+					<p class="light switch-47">Nejvyšší úrovně kvality piva dosahujeme pomocí nejmodernější pivní technologie. Restaurace nabízí široké portfolio řemeslně vařených piv skladovaných v chlazených pivních boxech a čepovaných do předchlazených sklenic</p>
+					<p class="dark switch-48">Jednoduchý design interiéru a výběr z domácích jídel se soustředí na podporu ideálního spojení chuti piva s jídlem</p>
+				</div>
+			</div>
+
+			</div>
+		</div>
+	</div>
+
+		<div id="footer">
+			<div class="footer-shadow">
+				<div class="footer-container">
+					<div class="footer-container-two">
+
+						<div class="left-box">
+							<h2 class="switch-1-1">otevírací doba</h2>
+							<div class="footer-line"></div>
+								<div class="footer-box">
+									<img src="img/icons/index/clock_w.svg" class="footer-icons" alt="hours icon">
+									<div class="footer-days">
+										<p class="footer-bold switch-1-2">Po - Čt</p>
+										<p class="footer-bold switch-1-3">Pá</p>
+										<p class="footer-bold switch-1-4">So</p>
+									</div>
+									<div>
+										<p>14:00 - 21:00</p>
+										<p>14:00 - 23:00</p>
+										<p>16:00 - 23:00</p>
+									</div>
+								</div>
+								<div class="footer-box">
+									<img src="img/icons/index/info_w.svg" class="icon-spec" alt="info icon">
+									<div class="footer-info">
+										<p class="switch-1-5">02.04.2021 - Velký pátek</p>
+										<p class="switch-1-6">14:00 - 20:00 otevřeno</p>
+									</div>
+								</div>
+						</div>
+						<div class="right-box">
+							<h2 class="switch-1-7">kontakt</h2>
+							<div class="footer-line"></div>
+
+							<div class="footer-box">
+								<a href="https://goo.gl/maps/7gSKxhc1kU1d35rv9"><img src="img/icons/index/location_w.svg" class="footer-icons" alt="location icon" onmouseover="this.src='img/icons/index/location_hover.svg'" onmouseout="this.src='img/icons/index/location_w.svg'"></a>
+								<div>
+									<p class="switch-1-8">Restaurace Šnyt Brno</p>
+									<p>Pálavské náměstí 5</p>
+									<p>Brno - Vinohrady</p>
+								</div>
+							</div>
+							<div class="footer-box">
+								<img src="img/icons/index/profile_w.svg" class="footer-icons" alt="profile icon">
+								<div>
+									<p>Michal Nový</p>
+									<p>752 654 985</p>
+									<p>info@snytbrno.cz</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="copy">
+					<div class="copy-text">
+						<a href="https://www.facebook.com/machalababy">
+							<p class="switch-1-9">Vytvořil: Filip Machala, pro: Šnyt Brno - všechna práva vyhrazena</p>
+						</a>
+					</div>
+				</div>
+
+		</div>
+	</div>
+
+	<script src="js/script.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+
+	<title>Recenze - Šnyt</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<meta charset="utf-8">
+	<meta name="description" content="Maturitni prace">
+	<meta name="keywords" content="HTML, CSS, JS">
+  	<meta name="author" content="Filip Machala">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+	<div id="page-value">review</div>
+
+	<header class="header notIndex">
+		<div class="side-nav">
+			<div class="side-nav-container">
+				<div class="side-nav-container-two">
+
+					<div class="side-nav-left">
+						<p class="switch-1">Sledujte nás</p>
+						<a href="https://www.facebook.com/snytbrno">
+							<img src="../img/icons/index/fb-icon_w.svg" class="fb_icon" alt="facebook icon" 
+								onmouseover="this.src='../img/icons/index/fb-icon_hover.svg'"
+								onmouseout="this.src='../img/icons/index/fb-icon_w.svg'">
+						</a>
+						<a href="https://www.instagram.com/snyt.brno">
+							<img src="../img/icons/index/ig-icon_w.svg" class="ig_icon" alt="instagram icon" 
+								onmouseover="this.src='../img/icons/index/ig-icon_hover.svg'" 
+								onmouseout="this.src='../img/icons/index/ig-icon_w.svg'">
+						</a>
+					</div>		
+				
+						<div class="side-nav-right">
+							<p class="number">725 525 525</p>
+							<img src="../img/icons/index/tel_w.svg" class="tel_icon" alt="tel. number">
+						</div>
+			
+				</div>
+			</div>
+		</div>
+		
+		<div class="main-nav-index">
+			<div class="main-nav-container">
+				<div class="main-nav-container-two">
+
+					<nav>
+						<div class="main-nav-logo">
+							<a href="../index.html">
+								<img src="../img/photos/index/logo-min.png" class="logo-img" alt="snyt logo">
+							</a>
+						</div>
+
+						<div id="main-nav-nav">
+							<ul class="nav-ul">
+								<li><a href="../index.html" class="switch-2">domů</a></li>
+								<li><a href="menu.html" class="switch-3">menu</a></li>
+								<li><a href="events.html" class="switch-4">akce</a></li>
+								<li><a href="galery.html" class="switch-5">galerie</a></li>
+								<li class="active"><a href="review.html" class="switch-6">recenze</a></li>
+								<li><a href="contact.html" class="navMenu switch-7">Kontakt</a></li>
+							</ul>
+						</div>
+					
+						<div class="main-nav-lanaguage">
+							<p class="lanaguage-EN" onclick="enLan()">EN</p>
+							<p class="lanaguage-CZ lan-active" onclick="csLan()">CZ</p>
+						</div>
+
+						<div class="window">
+							<div class="float">
+  								<div class="menu-btn">
+    								<div class="menu-btn__burger"></div>
+ 	 							</div>
+ 	 						</div>
+						</div>
+						
+					</nav>
+				
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="review-review">
+		<div class="review-review-container">
+			<img src="../img/icons/review/review-icon-background.svg" class="review-background" alt="review icon">
+			<div class="review-review-container-two">
+
+				<div class="menu-topic">
+					<h1 class="switch-8">Recenze</h1>
+					<div class="galery-line-menu"></div>
+				</div>
+					<p id="menu-center" class="switch-9">Naši pečlivost a skvělou chuť jídel nám zákazníci rádi sdělí a my si toho vážíme</p>
+
+				
+
+				<div class="review-window-row">
+					<a href="https://www.facebook.com/Daniel.Pacek/posts/10217535345277204" class="review-window-left">
+						<div class="review-window">
+							<div class="review-window-shadow">
+								<div class="review-window-container">
+									<div class="review-profile">
+										<div class="review-autor-icon review-autor-icon-three"></div>
+										<div class="review-autor-info">
+											<div class="review-name">
+												<p>Daniel Pacek</p>
+												<img src="../img/icons/review/review-icon.svg" class="review-message-icon" alt="review icon">
+											</div>
+											<div class="review-date">
+												<p class="switch-10">30. června 2020</p>
+											</div>
+										</div>
+									</div>
+									<div class="review-describe">
+										<p class="switch-11">Pivo Démon skvěle chutná a mají dobrou obsluhu</p>
+									</div>
+									<div class="review-icon">
+										<div class="review-stars">
+											<img src="../img/icons/review/stars-icon.svg" class="review-five-stars-icon" alt="five-stars icon">
+										</div>
+										<div class="review-platform-icon">
+											<img src="../img/icons/review/fb-icon.svg" class="review-fb-icon" alt="facebook icon">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</a>
+
+					<a href="https://www.facebook.com/roman.hejl/posts/10218257883505868" class="review-window-right">
+						<div class="review-window">
+							<div class="review-window-shadow">
+								<div class="review-window-container">
+									<div class="review-profile">
+										<div class="review-autor-icon review-autor-icon-two"></div>
+										<div class="review-autor-info">
+											<div class="review-name">
+												<p>Roman Hejl</p>
+												<img src="../img/icons/review/review-icon.svg" class="review-message-icon" alt="review icon">
+											</div>
+											<div class="review-date">
+												<p class="switch-12">8. listopadu 2019</p>
+											</div>
+										</div>
+									</div>
+									<div class="review-describe">
+										<p class="switch-13">Super obsluha, dobré jídlo.</p>
+									</div>
+									<div class="review-icon">
+										<div class="review-stars">
+											<img src="../img/icons/review/stars-icon.svg" class="review-five-stars-icon" alt="five-stars icon">
+										</div>
+										<div class="review-platform-icon">
+											<img src="../img/icons/review/fb-icon.svg" class="review-fb-icon" alt="facebook icon">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="review-window-row">
+					<a href="https://www.facebook.com/AniePospisilova/posts/10212287789308932" class="review-window-left">
+						<div class="review-window">
+							<div class="review-window-shadow">
+								<div class="review-window-container">
+									<div class="review-profile">
+										<div class="review-autor-icon review-autor-icon-one"></div>
+										<div class="review-autor-info">
+											<div class="review-name">
+												<p>Anie Pospíšilová</p>
+												<img src="../img/icons/review/review-icon.svg" class="review-message-icon" alt="review icon">
+											</div>
+											<div class="review-date">
+												<p class="switch-14">4. října 2019</p>
+											</div>
+										</div>
+									</div>
+									<div class="review-describe">
+										<p class="switch-15">Super obsluha, Výborné jídlo a dobré pivečko 🍺</p>
+									</div>
+									<div class="review-icon">
+										<div class="review-stars">
+											<img src="../img/icons/review/stars-icon.svg" class="review-five-stars-icon" alt="five-stars icon">
+										</div>
+										<div class="review-platform-icon">
+											<img src="../img/icons/review/fb-icon.svg" class="review-fb-icon" alt="facebook icon">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</a>
+			
+			</div>
+		</div>
+	</div>
+</div>
+		<div id="footer">
+			<div class="footer-shadow">
+				<div class="footer-container">
+					<div class="footer-container-two">
+
+						<div class="left-box">
+							<h2 class="switch-1-1">otevírací doba</h2>
+							<div class="footer-line"></div>
+								<div class="footer-box">
+									<img src="../img/icons/index/clock_w.svg" class="footer-icons" alt="hours icon">
+									<div class="footer-days">
+										<p class="footer-bold switch-1-2">Po - Čt</p>
+										<p class="footer-bold switch-1-3">Pá</p>
+										<p class="footer-bold switch-1-4">So</p>
+									</div>
+									<div>
+										<p>14:00 - 21:00</p>
+										<p>14:00 - 23:00</p>
+										<p>16:00 - 23:00</p>
+									</div>
+								</div>
+								<div class="footer-box">
+									<img src="../img/icons/index/info_w.svg" class="icon-spec" alt="info icon">
+									<div class="footer-info">
+										<p class="switch-1-5">02.04.2021 - Velký pátek</p>
+										<p class="switch-1-6">14:00 - 20:00 otevřeno</p>
+									</div>
+								</div>
+						</div>
+						<div class="right-box">
+							<h2 class="switch-1-7">kontakt</h2>
+							<div class="footer-line"></div>
+
+							<div class="footer-box">
+								<a href="https://goo.gl/maps/7gSKxhc1kU1d35rv9"><img src="../img/icons/index/location_w.svg" class="footer-icons" alt="location icon" onmouseover="this.src='../img/icons/index/location_hover.svg'" onmouseout="this.src='../img/icons/index/location_w.svg'"></a>
+								<div>
+									<p class="switch-1-8">Restaurace Šnyt Brno</p>
+									<p>Pálavské náměstí 5</p>
+									<p>Brno - Vinohrady</p>
+								</div>
+							</div>
+							<div class="footer-box">
+								<img src="../img/icons/index/profile_w.svg" class="footer-icons" alt="profile icon">
+								<div>
+									<p>Michal Nový</p>
+									<p>752 654 985</p>
+									<p>info@snytbrno.cz</p>
+								</div>
+							</div>
+						</div>
+
+						</div>
+					</div>
+				<div class="copy">
+					<div class="copy-text">
+						<a href="https://www.facebook.com/machalababy">
+							<p class="switch-1-9">Vytvořil: Filip Machala, pro: Šnyt Brno - všechna práva vyhrazena</p>
+						</a>
+					</div>
+				</div>
+
+		</div>
+	</div>
+
+
+
+	<script src="../js/script.js"></script>
+	
+</body>
+</html>

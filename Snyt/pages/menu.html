@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+
+	<title>Menu - Šnyt</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<meta charset="utf-8">
+	<meta name="description" content="Maturitni prace">
+	<meta name="keywords" content="HTML, CSS, JS">
+  	<meta name="author" content="Filip Machala">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+	<div id="page-value">menu</div>
+	
+	<header class="header notIndex">
+		<div class="side-nav">
+			<div class="side-nav-container">
+				<div class="side-nav-container-two">
+
+					<div class="side-nav-left">
+						<p class="switch-1">Sledujte nás</p>
+						<a href="https://www.facebook.com/snytbrno">
+							<img src="../img/icons/index/fb-icon_w.svg" class="fb_icon" alt="facebook icon" 
+								onmouseover="this.src='../img/icons/index/fb-icon_hover.svg'"
+								onmouseout="this.src='../img/icons/index/fb-icon_w.svg'">
+						</a>
+						<a href="https://www.instagram.com/snyt.brno">
+							<img src="../img/icons/index/ig-icon_w.svg" class="ig_icon" alt="instagram icon" 
+								onmouseover="this.src='../img/icons/index/ig-icon_hover.svg'" 
+								onmouseout="this.src='../img/icons/index/ig-icon_w.svg'">
+						</a>
+					</div>		
+				
+						<div class="side-nav-right">
+							<p class="number">725 525 525</p>
+							<img src="../img/icons/index/tel_w.svg" class="tel_icon" alt="tel. number">
+						</div>
+			
+				</div>
+			</div>
+		</div>
+		
+		<div class="main-nav-index">
+			<div class="main-nav-container">
+				<div class="main-nav-container-two">
+
+					<nav>
+						<div class="main-nav-logo">
+							<a href="../index.html">
+								<img src="../img/photos/index/logo-min.png" class="logo-img" alt="snyt logo">
+							</a>
+						</div>
+
+						<div id="main-nav-nav">
+							<ul class="nav-ul">
+								<li><a href="../index.html" class="switch-2">domů</a></li>
+								<li class="active"><a href="menu.html" class="switch-3">menu</a></li>
+								<li><a href="events.html" class="switch-4">akce</a></li>
+								<li><a href="galery.html" class="switch-5">galerie</a></li>
+								<li><a href="review.html" class="switch-6">recenze</a></li>
+								<li><a href="contact.html" class="navMenu switch-7">Kontakt</a></li>
+							</ul>
+						</div>
+					
+						<div class="main-nav-lanaguage">
+							<p class="lanaguage-EN" onclick="enLan()">EN</p>
+							<p class="lanaguage-CZ lan-active" onclick="csLan()">CZ</p>
+						</div>
+
+						<div class="window">
+							<div class="float">
+  								<div class="menu-btn">
+    								<div class="menu-btn__burger"></div>
+ 	 							</div>
+ 	 						</div>
+						</div>
+						
+					</nav>
+				
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="alergens-window alergens-window-hide">
+		<div class="alergens-container">
+			<div class="alergens-cross-div">
+				<div class="cross-div-text">
+					<p class="switch-8">Alergeny</p>
+				</div>
+				<div class="cross-div-icon">
+				<img src="../img/icons/galery/cross-icon_b.svg" class="alergens-cross-icon" alt="cross icon" onclick="hideAlergens()">
+				</div>
+			</div>
+			<div class="alergens-div">
+				<div class="alergens-column-left">
+					<div class="alergens-left left-one">
+						<div class="alergens-icon-div icon-div-one">
+							<p>1</p>
+						</div>
+						<div class="alergens-text-div">
+							<p class="switch-9">Lepek</p>
+						</div>
+					</div>
+					<div class="alergens-left left-two">
+						<div class="alergens-icon-div icon-div-two">
+							<p>2</p>
+						</div>
+						<div class="alergens-text-div">
+							<p class="switch-10">Korýš</p>
+						</div>
+					</div>
+					<div class="alergens-left left-three">
+						<div class="alergens-icon-div icon-div-three">
+							<p>3</p>
+						</div>
+						<div class="alergens-text-div">
+							<p class="switch-11">Vejce</p>
+						</div>
+					</div>
+					<div class="alergens-left left-four">
+						<div class="alergens-icon-div icon-div-four">
+							<p>4</p>
+						</div>
+						<div class="alergens-text-div">
+							<p class="switch-12">Ryba</p>
+						</div>
+					</div>
+					<div class="alergens-left left-five">
+						<div class="alergens-icon-div icon-div-five">
+							<p>5</p>
+						</div>
+						<div class="alergens-text-div">
+							<p class="switch-13">Arašíd</p>
+						</div>
+					</div>
+					<div class="alergens-left left-six">
+						<div class="alergens-icon-div icon-div-six">
+							<p>6</p>
+						</div>
+						<div class="alergens-text-div">
+							<p class="switch-14">Sója</p>
+						</div>
+					</div>
+					<div class="alergens-left left-seven">
+						<div class="alergens-icon-div icon-div-seven">
+							<p>7</p>
+						</div>
+						<div class="alergens-text-div">
+							<p class="switch-15">Mléko</p>
+						</div>
+					</div>
+				</div>
+
+			<div class="alergens-column-right">
+				<div class="alergens-left left-one">
+						<div class="alergens-icon-div icon-div-eight">
+							<p>8</p>
+						</div>
+						<div class="alergens-text-div">
+							<p class="switch-16">Ořechy</p>
+						</div>
+					</div>
+					<div class="alergens-left left-two">
+						<div class="alergens-icon-div icon-div-nine">
+							<p>9</p>
+						</div>
+						<div class="alergens-text-div">
+							<p class="switch-17">Celer</p>
+						</div>
+					</div>
+					<div class="alergens-left left-three">
+						<div class="alergens-icon-div icon-div-ten">
+							<p>10</p>
+						</div>
+						<div class="alergens-text-div">
+							<p class="switch-18">Hořčice</p>
+						</div>
+					</div>
+					<div class="alergens-left left-four">
+						<div class="alergens-icon-div icon-div-eleven">
+							<p>11</p>
+						</div>
+						<div class="alergens-text-div">
+							<p class="switch-19">Sezam</p>
+						</div>
+					</div>
+					<div class="alergens-left left-five">
+						<div class="alergens-icon-div icon-div-twelve">
+							<p>12</p>
+						</div>
+						<div class="alergens-text-div">
+							<p class="switch-20">Oxidy siř.</p>
+						</div>
+					</div>
+					<div class="alergens-left left-six">
+						<div class="alergens-icon-div icon-div-thirteen">
+							<p>13</p>
+						</div>
+						<div class="alergens-text-div">
+							<p class="switch-21">Lupina</p>
+						</div>
+					</div>
+					<div class="alergens-left left-seven">
+						<div class="alergens-icon-div icon-div-fourteen">
+							<p>14</p>
+						</div>
+						<div class="alergens-text-div">
+							<p class="switch-22">Měkkýš</p>
+						</div>
+					</div>
+				</div>						
+			</div>
+			
+			</div>
+		</div>
+
+	<div class="menuHTML-menu">
+		<div class="menu-container">
+			<img src="../img/icons/index/FNK_g.svg" class="FNK_g_4" alt="fork icon">
+			<div class="menu-container-two">
+
+				<div class="menu-topic">
+					<h1 class="switch-23">Menu</h1>
+					<div class="galery-line-menu"></div>
+				</div>
+					<p id="menu-center" class="switch-24">Vyberte si z našeho menu, které je připravován našimi špičkovými kuchaři</p>
+
+			<div class="menu-alergens-button">
+				<div class="alergens-button" onclick="showAlergens()">
+					<p class="switch-25">Alergeny</p>
+				</div>
+			</div>
+
+				<div class="menu-line-line_one"></div>
+			
+				<div class="menu-menu">
+						<h2 class="switch-26">Denní menu - 18. ledna 2021</h2>
+							<div class="menu-line"></div>
+						<h3 class="switch-27">Polévka</h3>
+
+					<div class="menu-row-one">
+						<div class="menu-large">
+							<p class="menu-bold">0,25l</p>
+						</div>
+						<div class="menu-content">
+							<p class="menu-bold switch-28">Žampiónová (7)</p>
+							<p class="menu-describe switch-29">Žampióny, brambory, smetana</p>
+						</div>
+						<div class="menu-price">
+							<p class="menu-bold">55 Kč</p>
+						</div>
+					</div>
+
+						<h3 class="switch-30">Hlavní jídlo</h3>
+					<div class="menu-row-two">
+						<div class="menu-large">
+							<p class="menu-bold">400g</p>
+						</div>
+						<div class="menu-content">
+							<p class="menu-bold switch-31">Kuřecí závitek s vařenými brambory (7)</p>
+							<p class="menu-describe switch-32">Kuřecí závitek plněný sušenými rajčaty mozzarelou</p>
+						</div>
+						<div class="menu-price">
+							<p class="menu-bold menu-bold-spec">119 Kč</p>
+						</div>
+					</div>
+
+					<div class="menu-row-three">
+						<div class="menu-large">
+							<p class="menu-bold">300g</p>
+						</div>
+						<div class="menu-content">
+							<p class="menu-bold switch-33">Smažený květák (3)</p>
+							<p class="menu-describe switch-34">Květák, strouhanka, hranolky, tatarka</p>
+						</div>
+						<div class="menu-price">
+							<p class="menu-bold">99 Kč</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="menu-line-line_two"></div>
+
+				<div class="space"></div>
+
+				<div class="menu-line-line_one"></div>
+			
+				<div class="menu-menu-two">
+						<h2 class="switch-35">Jídelní list</h2>
+							<div class="menu-line"></div>
+						<h3 class="switch-36">Hlavní jídla</h3>
+
+					<div class="menu-row-one spec">
+						<div class="menu-large">
+							<p class="menu-bold">500g</p>
+						</div>
+						<div class="menu-content">
+							<p class="menu-bold switch-37">Masitá pečená žebra (1)</p>
+							<p class="menu-describe switch-38">Vepřová žebra, celozrnný chléb, omáčka</p>
+						</div>
+						<div class="menu-price">
+							<p class="menu-bold menu-bold-spec">249 Kč</p>
+						</div>
+					</div>
+
+						<h3 class="switch-39">Jídla k pivu</h3>
+					<div class="menu-row-two">
+						<div class="menu-large">
+							<p class="menu-bold">200g</p>
+						</div>
+						<div class="menu-content">
+							<p class="menu-bold switch-40">Čerstvé smažené chipsy</p>
+							<p class="menu-describe switch-41">Smažené bramborové chipsy s omáčkou</p>
+						</div>
+						<div class="menu-price">
+							<p class="menu-bold">79 Kč</p>
+						</div>
+					</div>
+
+					<div class="menu-row-three">
+						<div class="menu-large">
+							<p class="menu-bold">200g</p>
+						</div>
+						<div class="menu-content">
+							<p class="menu-bold switch-42">Cibulové kroužky</p>
+							<p class="menu-describe switch-43">Smažené, obalované cibulové kroužky s omáčkou</p>
+						</div>
+						<div class="menu-price">
+							<p class="menu-bold">59 Kč</p>
+						</div>
+					</div>
+
+					<h3 class="switch-44">Přílohy</h3>
+					<div class="menu-row-two">
+						<div class="menu-large">
+							<p class="menu-bold">200g</p>
+						</div>
+						<div class="menu-content">
+							<p class="menu-bold switch-45">Bramborové hranolky</p>
+							<p class="menu-describe switch-46">Smažené bramborové hranolky</p>
+						</div>
+						<div class="menu-price">
+							<p class="menu-bold">40 Kč</p>
+						</div>
+					</div>
+
+					<div class="menu-row-three">
+						<div class="menu-large">
+							<p class="menu-bold">250g</p>
+						</div>
+						<div class="menu-content">
+							<p class="menu-bold switch-47">Fazolové lusky na slanině</p>
+							<p class="menu-describe switch-48">Restované fazolové lusky s kousky slaniny</p>
+						</div>
+						<div class="menu-price">
+							<p class="menu-bold">59 Kč</p>
+						</div>
+					</div>
+
+				<h3 class="switch-49">Nealko</h3>
+					<div class="menu-row-two">
+						<div class="menu-large">
+							<p class="menu-bold">0,2l</p>
+						</div>
+						<div class="menu-content">
+							<p class="menu-bold switch-50">Coca-Cola</p>
+							<p class="menu-describe switch-51">Sladký perlivý nápoj značky Coca-Cola</p>
+						</div>
+						<div class="menu-price">
+							<p class="menu-bold">35 Kč</p>
+						</div>
+					</div>
+
+					<div class="menu-row-three">
+						<div class="menu-large">
+							<p class="menu-bold">0,2l</p>
+						</div>
+						<div class="menu-content">
+							<p class="menu-bold switch-52">Fanta</p>
+							<p class="menu-describe switch-53">Sladký perlivý nápoj značky Fanta s příchutí pomeranče</p>
+						</div>
+						<div class="menu-price">
+							<p class="menu-bold">35 Kč</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="menu-line-line_two"></div>
+
+			</div>
+		</div>
+
+
+	</div>
+
+
+		
+
+		<div id="footer">
+			<div class="footer-shadow">
+				<div class="footer-container">
+					<div class="footer-container-two">
+
+						<div class="left-box">
+							<h2 class="switch-1-1">otevírací doba</h2>
+							<div class="footer-line"></div>
+								<div class="footer-box">
+									<img src="../img/icons/index/clock_w.svg" class="footer-icons" alt="hours icon">
+									<div class="footer-days">
+										<p class="footer-bold switch-1-2">Po - Čt</p>
+										<p class="footer-bold switch-1-3">Pá</p>
+										<p class="footer-bold switch-1-4">So</p>
+									</div>
+									<div>
+										<p>14:00 - 21:00</p>
+										<p>14:00 - 23:00</p>
+										<p>16:00 - 23:00</p>
+									</div>
+								</div>
+								<div class="footer-box">
+									<img src="../img/icons/index/info_w.svg" class="icon-spec" alt="info icon">
+									<div class="footer-info">
+										<p class="switch-1-5">02.04.2021 - Velký pátek</p>
+										<p class="switch-1-6">14:00 - 20:00 otevřeno</p>
+									</div>
+								</div>
+						</div>
+						<div class="right-box">
+							<h2 class="switch-1-7">kontakt</h2>
+							<div class="footer-line"></div>
+
+							<div class="footer-box">
+								<a href="https://goo.gl/maps/7gSKxhc1kU1d35rv9"><img src="../img/icons/index/location_w.svg" class="footer-icons" alt="location icon" onmouseover="this.src='../img/icons/index/location_hover.svg'" onmouseout="this.src='../img/icons/index/location_w.svg'"></a>
+								<div>
+									<p class="switch-1-8">Restaurace Šnyt Brno</p>
+									<p>Pálavské náměstí 5</p>
+									<p>Brno - Vinohrady</p>
+								</div>
+							</div>
+							<div class="footer-box">
+								<img src="../img/icons/index/profile_w.svg" class="footer-icons" alt="profile icon">
+								<div>
+									<p>Michal Nový</p>
+									<p>752 654 985</p>
+									<p>info@snytbrno.cz</p>
+								</div>
+							</div>
+						</div>
+
+						</div>
+					</div>
+					
+					<div class="copy">
+						<div class="copy-text">
+							<a href="https://www.facebook.com/machalababy">
+								<p class="switch-1-9">Vytvořil: Filip Machala, pro: Šnyt Brno - všechna práva vyhrazena</p>
+							</a>
+						</div>
+					</div>
+
+		</div>
+	</div>
+
+	<script src="../js/script.js"></script>
+	
+</body>
+</html>
