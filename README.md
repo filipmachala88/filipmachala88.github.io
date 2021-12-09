@@ -14,7 +14,7 @@ Used for [Full-Stack](https://www.w3schools.com/whatis/whatis_fullstack.asp) web
 
 ## License
 
-Repo is Copyright protected by [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+This [Repository](https://docs.github.com/en/get-started/quickstart/create-a-repo) is Copyright protected by [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
 
 ## Purpose
 
