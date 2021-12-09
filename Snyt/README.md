@@ -8,9 +8,9 @@ Website for local Restaurant called [Šnyt](https://www.facebook.com/snytbrno/)
 
 This project was made 26/4/2021 (EU date) as Graduation Thesis in 4th class of High School but presented 16/6/2021 and it should represent my knowledge of this problematic at this time
 
-- I chosed for this project local restaurant as a customer, because they:
-    1. didnt have any website
-    2. I had there my Summer School Practice (helping with social sites) so the problematic was a bit familiar to me which helped me while process
+I chosed for this project local restaurant as a customer, because they:
+1. didnt have any website
+2. I had there my Summer School Practice (helping with social sites) so the problematic was a bit familiar to me which helped me while process
 
 ## Process
 
