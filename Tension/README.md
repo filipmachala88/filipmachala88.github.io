@@ -9,14 +9,14 @@ Website for local DJ/music group called [Tension](https://www.facebook.com/tensi
 This project was made 3/10/2021 (EU date) as my e-learning project
 
 I chosed for this project local DJ/music group as a customer, because they:
-1. Didnt have any website
+1. Did not have any website
 2. DJ is my friend
 
 ## Process
 
 I composed process into a few steps:
 
-- 1st step: Consultation - I skipped this one because its my private project
+- 1st step: Consultation - I skipped this one because it is my private project
 - 2nd step: Graphic design - made in [Photoshop](https://www.adobe.com/cz/products/photoshop.html)
 - 3th step (in progress): Code creating - Website is made by [Vanilla](https://stackoverflow.com/questions/20836115/what-does-vanilla-mean) website technique
 - 4th step (not done yet): Validation check & Bug fixing - due to webdesign standards
