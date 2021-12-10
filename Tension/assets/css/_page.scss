@@ -1,0 +1,270 @@
+.page-topic{
+    @include sliderBG;
+    & .dark{
+        padding: 100px 0;
+    }
+    a{
+        text-decoration: none;
+        font-size: 70px;
+        margin: 0;
+        padding: 0;
+        @include addLight;
+    }
+    p{
+        font-size: 30px;
+        @include lightLight;
+        margin: 0;
+        padding: 0;
+    }
+    ul{
+        list-style: none;
+        width: 100%;
+    }
+    h2{
+        font-size: 70px;
+        @include addLight;
+        margin-top: 12px;
+    }    
+    .topic-topic{
+        display: flex;
+        .special-tag{
+            @include lightLight;
+            font-size: 40px;
+            margin: 25px 15px 0 15px;
+        }
+    }
+}
+.img-part{
+    margin: 50px 0;    
+    a{
+        text-decoration: none;
+        background: rgba(0,0,0,.6);
+    }
+    p{
+        line-height: 1.5;
+    }
+    .img-row{
+        display: flex;
+        width: 100%;
+    }
+    .img-row:not(:first-child){
+        margin-top: 3.5%;
+    }
+    .img-hover{
+        width: 30%;
+        height: auto;
+        position: relative;
+        display: block;
+        overflow: hidden;
+        margin: 0 1.5%;
+    }
+    .img-hover:hover img{
+        transition: 0.33s;
+        transform: scale(1.2);
+    }
+    img{
+        width: 100%;
+        height: auto;
+        transition: 0.33s;
+        display: block;
+    }
+    h3{
+        font-size: 15px;
+        color: white;
+    }
+    .element-item{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 5%;
+    }
+    .text-side{
+        position: absolute;
+        left: 5%;
+        top: 50%;
+        h2{
+            font-size: 40px;
+            @include addLight;
+        }
+        p{
+            font-size: 20px;
+            @include lightLight;
+        }
+    }
+    .tags-side{
+        display: flex;
+        i{
+            font-size: 15px;
+            color: $tercialyCol;
+            margin: 5px 10px 0 0;
+        }
+        p{
+            font-size: 15px;
+            @include lightLight;
+        }
+    }
+    .post-edit{
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        a{
+            background: none;
+            @include addLight;
+            font-size: 20px;
+        }
+    }
+    .post-info{
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        p{
+            @include lightLight;    
+        }
+        a{
+            @include addLight;
+            margin-left: 5px;
+        }
+    }
+}
+.single-page{
+    margin: 50px 0;
+    width: 100%;
+    display: flex;
+    .single-tags{
+        background: $primaryCol;
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        i{
+            color: $secondaryCol;
+            font-size: 15px;
+            margin: 5px 10px 0 0;
+        }
+        p{
+            @include lightLight;
+            font-size: 15px;
+        }
+    }
+    & .single-column-one{
+        width: 49%;
+        margin-right: 1%;
+
+    }
+    & .single-column-two{
+        width: 49%;
+        margin-left: 1%;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    .single-content{
+        margin-top: 30px;    
+        p{
+            @include darkLight;
+            font-size: 30px;
+        }
+    }
+    .single-map{
+        margin-top: 30px;
+    }
+}
+.contact{
+    width: 100%;
+    display: flex;
+    margin: 50px 0 0 0;
+    h2{
+        font-size: 40px;
+        @include addLight;
+    }
+    p{
+        font-size: 25px;
+        @include darkLight;
+    }
+    & .contact-column-one{
+        width: 50%;
+    }
+    & .contact-column-two{
+        width: 50%;
+    }
+    .contact-form{
+        width: 100%;
+        padding: 50px 30px;
+        margin: 30px 0;
+        border-radius: 30px;
+        box-shadow: 0 25px 40px rgba(0,0,0,.5);
+        p{
+            font-size: 25px;
+        }
+        strong{
+            @include addLight;
+            margin: 0 0 0 3px;
+            font-size: 20px;
+        }
+        input, textarea{
+            padding: 5px 10px;
+            margin: 0 0 10px 0;
+            font-size: 20px;
+            outline: none;
+            border: 1px solid $primaryCol;
+            transition: 0.33s;
+            @include darkRegular;
+            &:focus{
+                border: 1px solid $tercialyCol;
+                transition: 0.33s;
+            }
+        }
+        input[type="name"]{
+            width: 100%;
+        }
+        input[type="email"]{
+            width: 100%;
+        }
+        textarea{
+            width: 100%;
+            height: 150px;
+        }
+        .contact-form-button{
+            margin: 10px auto 0 auto;
+            @include buttonRulesDark;
+
+            input[type="submit"]{
+                background: none;
+                width: 100%;
+                height: 40px;
+                border: none;
+                font-size: 25px;
+                z-index: 6;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}
+.contact-fixed{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.contact-sent{
+    width: 500px;
+    border: 1px solid $tercialyCol;
+    padding: 20px 20px;
+    border-radius: 20px;
+    text-align: center;
+    @include darkRegular;
+    font-size: 30px;
+    position: fixed;
+    background: white;
+    z-index: 3;
+    img{
+        height: 50px;
+        width: auto;
+        margin: 0 auto;
+    }
+    .contact-special{
+        @include addRegular;
+    }
+}

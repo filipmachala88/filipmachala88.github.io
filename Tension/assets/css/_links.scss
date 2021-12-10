@@ -1,0 +1,18 @@
+@mixin logoBG{
+    background: url("../img/logo-trans.png") no-repeat;
+}
+@mixin logoBGhover{
+    background: url("../img/logo-trans-hover.png") no-repeat;
+}
+// === FRONT PAGE ===
+@mixin sliderBG{
+    background: url("../img/slider-bg.jpg");
+}
+@mixin advertBG{
+    background: url("../img/city.jpg") center no-repeat;
+    background-size: cover;
+}
+@mixin footerBG{
+    background: url("../img/footer-img.png") center no-repeat;
+    background-size: cover;
+}

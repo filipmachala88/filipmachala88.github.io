@@ -1,0 +1,396 @@
+// ==== SLIDER ====
+.carousel-div{
+    width: 100%;
+    height: 630px;
+    @include sliderBG;
+}
+.dark{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+}
+.slide{
+    height: 100%;
+}
+.carousel-control-next, .carousel-control-prev {
+    width: auto;
+}
+.carousel-indicators [data-bs-target] {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: none;
+    border: 1px solid $secondaryCol;
+    opacity: 1;
+    margin: 0 5px;
+    box-sizing: inherit;
+}
+.carousel-indicators .active{
+    background: $secondaryCol;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;	
+}
+.slide-content{
+	width: 85%;
+	max-width: 1200px;
+	margin: 0 auto 0 auto;
+    display: flex;
+}
+.carousel-indicators{
+    height: 30px;
+}
+// my own elements
+.slider-column-first{
+    width: 50%;
+    & .event-topic{
+        margin: 130px 0 30px 0;
+        h2{
+            font-size: 50px;
+            text-align: left;
+            @include addLight;
+        }
+        p{
+            font-size: 25px;
+            @include lightLight;
+            width: 80%;
+            padding-left: 40px;
+            border-left: 4px solid $tercialyCol;
+        }
+    }
+    & .event-info{
+        margin-top: 40px;
+        display: flex;
+        & p{
+            font-size: 25px;
+            border: none;
+            @include lightLight;
+        }
+        & i{
+            color: $quinaryCol;
+            font-size: 45px;
+            margin-top: 12px;
+        }
+        & .event-descr{
+            width: 100%;
+            margin-left: 30px;
+        }
+    }
+    & .slider-button{
+        margin-top: 85px;
+        @include buttonRulesLight;
+    }
+    & a{
+        width: 130px;
+        text-decoration: none;
+        display: block;
+    }
+}
+.slider-column-second{
+    width: 50%;
+    & img{
+        margin-top: 130px;
+        height: 500px;
+        width: auto;
+        opacity: 0.75;
+    }
+}
+// ==== index ABOUT ====
+.index-about{
+    padding: 40px 0 0 0;
+    display: flex;
+    & .about-text-side{
+        z-index: 2;
+        width: 50%;
+        & img{
+            height: 100px;
+            width: auto;
+            display: block;
+            margin: 50px auto 0 auto;
+            opacity: 0.8;
+        }
+        & .about-topic{
+            display: flex;
+            & img{
+                margin: -10px 0 0 10px;
+                height: 60px;
+            }
+        }
+        & .about-img{
+            width: 80%;
+            margin-left: 10px;
+        }
+    }
+    & img{
+        height: 481px;
+        width: auto;
+        margin: 0 auto 0 auto;
+    }
+    & h1{
+        font-size: 50px;
+        @include darkRegular;
+    }
+    & .h1-spec{
+        margin-left: 10px;
+    }
+    & i{
+        @include addRegular;
+        font-style: normal;
+    }
+    & .text{
+        width: 80%;
+        margin-top: 30px;
+        padding-left: 40px;
+        border-left: 4px solid $tercialyCol;
+        & p{
+            font-size: 25px;
+            margin-bottom: 20px;
+            @include darkRegular;
+        }
+    }
+    .tension-members{   
+        z-index: 2;
+    }
+    .about-img-side{
+        width: 50%;
+        display: flex;
+    }
+    .about-logo-bg{
+        position: absolute;
+        height: 300px;
+        width: auto;
+        margin: 181px 300px 0 0;
+        z-index: 1;
+        opacity: 0.35;
+    }
+}
+.background-effect-one{
+    position: absolute;
+    width: auto;
+    height: 200px;
+    margin: -140px 0 0 -180px;
+}
+.background-effect-one img{
+    height: 200px;
+    width: auto;
+    transform: rotate(30deg);
+    z-index: 1;
+    opacity: 0.15;
+}
+// ==== index ADVERT ====
+.container-advert{
+    @include advertBG;
+    z-index: 2;
+    & .advert-darken{
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.8);
+    }
+    & .advert{
+        padding: 60px 0 80px 0;
+        display: flex;
+        & img{
+            display: block;
+            height: 30px;
+            width: auto;
+            margin: -5px auto 0 auto;
+            transform: rotate(2deg);
+        }
+        & h1{
+            font-size: 40px;
+            text-align: center;
+            @include addLight;
+        }
+        & i{
+            font-size: 30px;
+            color: $quinaryCol;
+        }
+        & a{
+            text-decoration: none;
+        }
+        & .advert-icon{
+            width: 30px;
+            height: 30px;
+            margin: 30px auto 30px auto;
+        }
+        & .advert-desc{
+            margin: 0 auto;
+            width: 70%;
+            & p{
+                font-size: 25px;
+                text-align: center;
+                margin: 10px 0 60px 0;
+                @include lightLight;
+            }
+            & strong{
+                font-size: 25px;
+                @include addLight;
+            }
+        }
+        & .advert-button{
+            margin: 0 auto 0 auto;
+            @include buttonRulesLight;
+        }
+        & .advert-first-column{
+            width: 50%;
+        }
+        & .advert-second-column{
+            width: 50%;
+        }
+    }
+}
+// ==== index GALERY ====
+.galery{
+    padding: 40px 0 80px 0;
+    & h1{
+        font-size: 50px;
+        margin-bottom: 30px;
+        @include darkRegular;
+    }
+    & strong{
+        @include addRegular;
+    }
+    & .galery-text{
+        display: flex;
+        & p{
+            font-size: 25px;
+            @include darkRegular;
+        }
+        & .text-one{
+            display: flex;
+            border-bottom: 4px solid $tercialyCol;
+            border-left: 4px solid $tercialyCol;
+        }
+        & .text-one, .text-two{
+            width: 50%;
+            padding: 0 0 30px 40px;
+        }
+    }
+    & .galery-images{
+        margin: 40px 0;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        & .galery-images-resp{
+            display: flex;
+            width: 50%;
+        }
+        & .box{
+            position: relative;
+            width: 50%;
+            height: 300px;
+            overflow: hidden;
+            transition: 0.5s;
+            &:hover{
+                z-index: 1;
+                transform: scale(1.1);
+                box-shadow: 0 25px 40px rgba(0,0,0,.5); 
+            }
+            &:hover .imgBx:before{
+                opacity: 1;
+            }
+            & .content{
+                position: absolute;
+                top: 140px;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                & h2{
+                    font-size: 30px;
+                    transition: 0.5s;
+                    margin-bottom: 5px;
+                    padding: 0 20px;
+                    @include lightLight;
+                    transform: translateY(300px);
+                }
+                & p{
+                    font-size: 18px;
+                    transition: 0.5s;
+                    padding: 0 20px;
+                    @include lightLight;
+                    transform: translateY(300px);
+                }
+            }
+            &:hover .content h2{
+                transform: translateY(0);
+                transition-delay: 0.1s;
+            }
+            &:hover .content p{
+                transform: translateY(0);
+                transition-delay: 0.2s;
+            }
+            & .imgBx{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                &:before{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 1;
+                    background: linear-gradient(180deg, $tercialyCol, $primaryCol);
+                    mix-blend-mode: multiply;
+                    transition: 0.5s;
+                    opacity: 0;
+                }
+                & img{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    display: block;
+                }
+            }
+        }
+    }
+    & .galery-button{
+        margin: 0px auto 0 auto;
+        @include buttonRulesDark;
+    }
+    & .button-href{
+        width: 130px;
+        margin: 0 auto;
+    }
+    & a{
+        text-decoration: none;
+        width: 130px;
+    }
+    & i{
+        font-size: 25px;
+        font-style: normal;
+        margin-left: 6px;
+        @include addRegular;
+    }
+}
+.background-effect-two{
+    position: relative;
+    width: auto;
+    height: 200px;
+    margin: -80px 0 -120px 50%;
+}
+.background-effect-two img{
+    height: 200px;
+    width: auto;
+    transform: rotate(30deg);
+    z-index: 1;
+    opacity: 0.15;
+}
+.image-active-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#image-active{
+    height: 50px;
+    width: auto;
+}

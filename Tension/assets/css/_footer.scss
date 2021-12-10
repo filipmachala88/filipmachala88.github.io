@@ -1,0 +1,155 @@
+// ==== FOOTER ====
+.footer-container{
+    @include footerBG;
+}
+.footer-dark{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.85);
+}
+.footer{
+    padding: 40px 0 60px 0;
+    display: flex;
+    & .footer-responsive{
+        width: 50%;
+        display: flex;
+    }
+    & .footer-column{
+        width: 40%;
+    }
+    & .column-one{
+        & .footer-icon{
+            height: 80px;
+            width: 120px;
+            @include logoBG;
+            background-size: 120px 80px;
+            margin: 5px 0 20px 5px;
+            transition: 0.33s;
+            &:hover{
+                @include logoBGhover;
+                background-size: 120px 80px;            
+                transition: 0.33s;
+            }
+        }
+        & .owner-motto{
+            border-top: 1px solid $tercialyCol;
+            padding-top: 20px;
+            & p{
+                font-size: 22px;    
+                @include lightLight;
+            }
+        }
+    }
+    & .column-two{
+        margin-left: 20%;
+        & h2{
+            margin: 0;
+            font-size: 30px;
+            @include addRegular;
+        }
+        & li{
+            list-style: none;
+            margin: 13px 0;
+        }
+        & a{
+            font-size: 22px;
+            @include lightLight;
+            text-decoration: none;
+            transition: 0.33s;
+            &:hover{
+                color: $tercialyCol;
+                transition: 0.33s;
+            }
+        }
+    }
+    & .column-three{
+        margin-right: 20%;
+        & h2{
+            margin: 0;
+            font-size: 30px;
+            padding-bottom: 12px;
+            @include addRegular;
+        }
+    }
+    & .social-sites{
+        border-top: 1px solid $secondaryCol;
+        padding-top: 18px;
+        & a{
+            height: 45px;
+            width: 45px;
+            border-radius: 50%;
+            color: $primaryCol;
+            text-decoration: none;
+        }
+        & .icon-hover{
+            height: 45px;
+            width: 45px;
+            background: $tercialyCol;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            &:before{
+                content: "";
+                width: 120%;
+                height: 100%;
+                background: $secondaryCol;
+                position: absolute;
+                top: 0;
+                left: -130%;
+                transition: 500ms ease;
+                transform: skew(-30deg);
+            }
+            &:hover:before{
+                left: -10%;
+            }
+        }
+        & .div-insta{
+            margin-left: 20px;
+        }
+        & i{
+            font-size: 20px;
+            z-index: 5;
+        }
+        & .social-icon-flex{
+            display: flex;
+        }
+        & p{
+            font-size: 22px;
+            @include lightLight;
+            padding-bottom: 13px;
+        }
+    }
+    & .column-four{
+        & .shot-out{
+            display: flex;
+            padding-bottom: 20px;
+            border-bottom: 1px solid $tercialyCol;
+        }
+        & a{
+            font-size: 22px;
+            margin-left: 5px;
+            text-decoration: none;
+            transition: 0.33s;
+            @include lightLight;
+            &:hover{
+                @include addLight;
+                transition: 0.33s;
+            }
+        }
+        & .shot-out-text{
+            font-size: 22px;
+            padding: 0 !important;
+            @include lightLight;
+        }
+        & .shot-out-special{
+            padding-top: 20px;
+            color: $quinaryCol !important;
+            font-size: 22px;
+            @include lightLight;
+        }
+    }
+
+}
