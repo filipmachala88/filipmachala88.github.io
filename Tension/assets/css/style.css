@@ -7,9 +7,10 @@ html {
 body {
   margin: 0;
   padding: 0;
+  background: #ebebeb;
 }
 
-h1, p, ul, li, a, div, img {
+h1, p, ul, li, a, div, img, h1, h2 {
   margin: 0;
   padding: 0;
   -webkit-margin-before: 0;
@@ -545,17 +546,22 @@ header li a:hover {
 
 .carousel-div {
   width: 100%;
-  height: 630px;
+  height: 100vh;
   background: url("../img/slider-bg.jpg");
+  background-size: cover;
 }
 
 .dark {
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.9);
 }
 
 .slide {
+  height: 100%;
+}
+
+.carousel-inner, .carousel-item {
   height: 100%;
 }
 
@@ -563,20 +569,25 @@ header li a:hover {
   width: auto;
 }
 
+.carousel-indicators {
+  height: 40px !important;
+  margin-bottom: 0;
+}
+
 .carousel-indicators [data-bs-target] {
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background: none;
-  border: 1px solid #ebebeb;
+  border: 1px solid #191919;
   opacity: 1;
-  margin: 0 5px;
+  margin: 18px 5px 0 5px;
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 }
 
 .carousel-indicators .active {
-  background: #ebebeb;
+  background: #191919;
 }
 
 .container {
@@ -586,6 +597,7 @@ header li a:hover {
 
 .slide-content {
   width: 85%;
+  height: 100%;
   max-width: 1200px;
   margin: 0 auto 0 auto;
   display: -webkit-box;
@@ -597,12 +609,26 @@ header li a:hover {
   height: 30px;
 }
 
+.carousel-indicators .background {
+  width: 80px;
+  background: #ebebeb;
+  border-radius: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 60px 60px 0 0;
+}
+
 .slider-column-first {
   width: 50%;
+  padding-top: 18vh;
 }
 
 .slider-column-first .event-topic {
-  margin: 130px 0 30px 0;
+  margin: 0 0 30px 0;
 }
 
 .slider-column-first .event-topic h2 {
@@ -614,6 +640,7 @@ header li a:hover {
 }
 
 .slider-column-first .event-topic p {
+  margin-top: 4vh;
   font-size: 25px;
   color: #ebebeb;
   font-family: 'Alumni Sans', sans-serif;
@@ -624,7 +651,7 @@ header li a:hover {
 }
 
 .slider-column-first .event-info {
-  margin-top: 40px;
+  margin-top: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -650,7 +677,7 @@ header li a:hover {
 }
 
 .slider-column-first .slider-button {
-  margin-top: 85px;
+  margin-top: 15vh;
   width: 150px;
   height: 40px;
   display: -webkit-box !important;
@@ -703,11 +730,16 @@ header li a:hover {
 
 .slider-column-second {
   width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .slider-column-second img {
-  margin-top: 130px;
-  height: 500px;
+  position: absolute;
+  bottom: 0;
+  height: 70vh;
   width: auto;
   opacity: 0.75;
 }
@@ -1214,10 +1246,11 @@ header li a:hover {
 
 .page-topic {
   background: url("../img/slider-bg.jpg");
+  background-size: cover;
 }
 
 .page-topic .dark {
-  padding: 100px 0;
+  padding: 150px 0 60px 0;
 }
 
 .page-topic a {
@@ -1250,6 +1283,7 @@ header li a:hover {
   font-family: 'Alumni Sans', sans-serif;
   font-weight: 300;
   margin-top: 12px;
+  line-height: 1;
 }
 
 .page-topic .topic-topic {
@@ -1272,7 +1306,7 @@ header li a:hover {
 
 .img-part a {
   text-decoration: none;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .img-part p {
@@ -1284,19 +1318,22 @@ header li a:hover {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  padding: 0 1.5%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .img-part .img-row:not(:first-child) {
-  margin-top: 3.5%;
+  margin-top: 3.66%;
 }
 
 .img-part .img-hover {
-  width: 30%;
+  width: 31%;
   height: auto;
   position: relative;
   display: block;
   overflow: hidden;
-  margin: 0 1.5%;
 }
 
 .img-part .img-hover:hover img {
@@ -1336,6 +1373,7 @@ header li a:hover {
 
 .img-part .text-side h2 {
   font-size: 40px;
+  margin: 0;
   color: #ff88af;
   font-family: 'Alumni Sans', sans-serif;
   font-weight: 300;
@@ -1355,16 +1393,17 @@ header li a:hover {
 }
 
 .img-part .tags-side i {
-  font-size: 15px;
+  font-size: 18px;
   color: #ff88af;
-  margin: 5px 10px 0 0;
+  margin: 6px 2px 0 0;
 }
 
 .img-part .tags-side p {
-  font-size: 15px;
+  font-size: 20px;
   color: #ebebeb;
   font-family: 'Alumni Sans', sans-serif;
   font-weight: 300;
+  margin-left: 10px;
 }
 
 .img-part .post-edit {
@@ -1493,6 +1532,7 @@ header li a:hover {
 }
 
 .contact .contact-form {
+  background: white;
   width: 100%;
   padding: 50px 30px;
   margin: 30px 0;
@@ -1840,17 +1880,7 @@ header li a:hover {
     display: none;
   }
   .slider-column-second {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .slider-column-second img {
-    margin: 5vh auto;
-    height: 450px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    display: none;
   }
   .index-about {
     display: block;
@@ -1936,7 +1966,7 @@ header li a:hover {
     display: none;
   }
   .logo-contain {
-    margin-top: 15px;
+    margin: 15px 0 0 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,7 @@
+// === GLOBAL IMPORTS ===
+@import "variables";
+@import "mixins";
+@import "links";
 // === GLOBAL RULES ===
 html{
     margin: 0;
@@ -7,8 +11,9 @@ html{
 body{
     margin: 0;
     padding: 0;
+    background: $secondaryCol;
 }
-h1, p, ul, li, a, div, img{
+h1, p, ul, li, a, div, img, h1, h2{
     margin: 0;
     padding: 0;
     margin-block-start: 0;
@@ -23,11 +28,6 @@ h1, p, ul, li, a, div, img{
     max-width: 1200px;
     margin: 0 auto 0 auto;
 }
-
-// === GLOBAL IMPORTS ===
-@import "variables";
-@import "mixins";
-@import "links";
 // === GENERIC IMPORTS ===
 @import "header";
 @import "footer";

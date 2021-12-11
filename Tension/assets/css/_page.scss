@@ -1,7 +1,7 @@
 .page-topic{
     @include sliderBG;
     & .dark{
-        padding: 100px 0;
+        padding: 150px 0 60px 0;
     }
     a{
         text-decoration: none;
@@ -24,6 +24,7 @@
         font-size: 70px;
         @include addLight;
         margin-top: 12px;
+        line-height: 1;
     }    
     .topic-topic{
         display: flex;
@@ -38,7 +39,7 @@
     margin: 50px 0;    
     a{
         text-decoration: none;
-        background: rgba(0,0,0,.6);
+        background: rgba(0,0,0,.7);
     }
     p{
         line-height: 1.5;
@@ -46,17 +47,18 @@
     .img-row{
         display: flex;
         width: 100%;
+        padding: 0 1.5%;
+        justify-content: space-between;
     }
     .img-row:not(:first-child){
-        margin-top: 3.5%;
+        margin-top: 3.66%;
     }
     .img-hover{
-        width: 30%;
+        width: 31%;
         height: auto;
         position: relative;
         display: block;
         overflow: hidden;
-        margin: 0 1.5%;
     }
     .img-hover:hover img{
         transition: 0.33s;
@@ -86,6 +88,7 @@
         top: 50%;
         h2{
             font-size: 40px;
+            margin: 0;
             @include addLight;
         }
         p{
@@ -96,13 +99,14 @@
     .tags-side{
         display: flex;
         i{
-            font-size: 15px;
+            font-size: 18px;
             color: $tercialyCol;
-            margin: 5px 10px 0 0;
+            margin: 6px 2px 0 0;
         }
         p{
-            font-size: 15px;
+            font-size: 20px;
             @include lightLight;
+            margin-left: 10px;
         }
     }
     .post-edit{
@@ -190,6 +194,7 @@
         width: 50%;
     }
     .contact-form{
+        background: $senaryCol;
         width: 100%;
         padding: 50px 30px;
         margin: 30px 0;

@@ -181,13 +181,7 @@
         display: none;
     }
     .slider-column-second{
-        width: 100%;
-        display: flex;
-        & img{
-            margin: 5vh auto;
-            height: 450px;
-            justify-content: center;
-        }
+        display: none;
     }
     .index-about{
         display: block;
@@ -272,6 +266,6 @@
         display: none;
     }
     .logo-contain{
-        margin-top: 15px;
+        margin: 15px 0 0 0;
     }
 } 

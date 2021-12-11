@@ -7,6 +7,7 @@
 // === FRONT PAGE ===
 @mixin sliderBG{
     background: url("../img/slider-bg.jpg");
+    background-size: cover;
 }
 @mixin advertBG{
     background: url("../img/city.jpg") center no-repeat;
