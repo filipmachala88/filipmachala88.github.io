@@ -1,0 +1,903 @@
+// == BACKGROUND ICONS ==
+.reveal{
+	position: relative;
+	transform: translateY(20px);
+	opacity: 0;
+	transition: all 0.4s ease;
+}
+.reveal.active{
+	transform: translateY(0px);
+	opacity: 1;
+}
+.bg-icon-div-one{
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+.move-tape-one{
+	height: 300px;
+	width: 500px;
+	transform: rotate(110deg) scaleX(-1);
+	opacity: 0.04;
+	position: absolute;
+	z-index: 0;
+	margin: -55px 0 0 -240px;
+}
+.move-tape-one-dark{
+	height: 300px;
+	width: 500px;
+	transform: rotate(110deg) scaleX(-1);
+	opacity: 0.15;
+	position: absolute;
+	z-index: 0;
+	margin: -55px 0 0 -240px;
+}
+.bg-icon-div-two{
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+.move-tape-two{
+	height: 300px;
+	width: 500px;
+	transform: rotate(70deg);
+	opacity: 0.04;
+	position: absolute;
+	z-index: 0;
+	margin: -195px 0 0 -250px;
+}
+.move-tape-two-dark{
+	height: 300px;
+	width: 500px;
+	transform: rotate(70deg);
+	opacity: 0.15;
+	position: absolute;
+	z-index: 0;
+	margin: -195px 0 0 -250px;
+}
+.bg-icon-div-three{
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+.move-tape-three{
+	height: 300px;
+	width: 500px;
+	transform: rotate(120deg) scaleX(-1);
+	opacity: 0.04;
+	position: absolute;
+	z-index: 0;
+	margin: -85px 0 0 -220px;
+}
+.move-tape-three-dark{
+	height: 300px;
+	width: 500px;
+	transform: rotate(120deg) scaleX(-1);
+	opacity: 0.15;
+	position: absolute;
+	z-index: 0;
+	margin: -85px 0 0 -220px;
+}
+/*
+	----------------------------------
+				SLIDER
+	----------------------------------
+*/
+.home{
+	height: 100vh;
+	overflow:hidden;
+	position: relative;
+}
+.home .slide{
+	position: absolute;
+	left:0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	z-index:1; 
+	display:none;
+	animation: slide 0.5s ease;
+}
+.home .slide.active{
+	display: flex;
+}
+@keyframes slide{
+	0%{
+		transform: scale(1.1);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+.slide-one{
+	@include slideOne;
+}
+.slide-two{
+	@include slideTwo;
+}
+.slide-three{
+	@include slideThree;
+}
+.slide-four{
+	@include slideFour;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;	
+}
+.home .container{
+	 flex-grow: 1;
+}
+.home .caption{
+	width:50%;
+}
+.home .slide.active .caption a{
+	opacity:0;
+	animation: captionText .5s ease forwards;
+	animation-delay:1.4s;
+}
+.home .controls .prev, .home .controls .next{
+	position: absolute;
+	z-index: 2;
+	top: 50%;
+	height: 40px;
+	width: 40px;
+	margin-top: -20px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 20px;
+	cursor: pointer;
+	transition: all .5s ease;
+ 	opacity: 0.4;
+}
+.home .controls .prev:hover, .home .controls .next:hover{
+	opacity: 1;
+}
+.home .controls .prev{
+ 	left:0;
+}
+.home .controls .next{
+ 	right:0;
+}
+.home .indicator{
+	position: absolute;
+	left:50%;
+	bottom:15px;
+	z-index: 2;
+	transform: translateX(-50%);
+	cursor: pointer;
+}
+.home .indicator div{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border: 1px solid $secondaryCol;
+	border-radius:50%;
+	text-align: center;
+	line-height: 25px;
+	margin: 0 7px;
+}
+.home .indicator div.active{
+ 	background-color: $secondaryCol;
+}
+.darken{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.75);
+	align-items: center;
+	display: flex;
+}
+.slide-content{
+	width: 85%;
+	max-width: 1200px;
+	margin: 0 auto 0 auto;
+}
+.p-special{
+	line-height: 2.7 !important;
+	text-transform: uppercase !important;
+	font-size: 14px !important;
+	color: $tertialyCol !important; 
+	font-family: Roboto Condensed Light !important;
+	letter-spacing: 1.5px !important;
+	animation: captionText .3s ease forwards;
+	opacity: 0;
+	animation-delay: 0.3s;
+}
+.slide-content h2{
+	text-align: left;
+	font-size: 50px;
+	line-height: 1;
+	font-weight: normal;
+	margin-left: -3px;
+	animation: captionText .3s ease forwards;
+	opacity: 0;
+	animation-delay: 0s;
+	@include lightLight;
+}
+.slide-text p{
+	padding-top: 5px;
+	text-align: left;
+	font-size: 18px;
+	@include lightLight;
+}
+.film-info{
+	display: flex;
+	margin-top: 3px;
+	animation: captionText .4s ease forwards;
+	opacity: 0;
+	animation-delay: 0.3s;
+}
+.film-info p{
+	font-size: 16px;
+	margin: 7px 0 30px 10px;
+	@include lightLight;
+}
+.stars-icon{
+	width: 80px;
+	height: 12px;
+	margin: 10px 0 0 -3px;
+}
+.slide-text{
+	height: 100%;
+	width: 40%;
+}
+.slide-text p{
+	line-height: 1.3;
+	font-size: 18px;
+	font-family: $secondaryFont;
+	animation: captionText .4s ease forwards;
+	opacity: 0;
+	animation-delay: 0.8s;
+}
+.slider-href{
+	width: 150px;
+	position: relative;
+	margin-top: 20px;
+	top: 20px;
+	display: flex;
+	animation: captionText .4s ease forwards;
+	opacity: 0;
+	animation-delay: 0.8s;
+	@include buttonRules;
+}
+.slider-href:hover{
+	@include buttonRulesHover;
+}
+.slider-button{
+	display: flex;
+}
+.slider-button p{
+	line-height: 1.7;
+	margin-left: 9px;
+	font-family: $primaryFont;
+	margin-top: 5px;
+}
+.play-icon{
+	height: 20px;
+	width: 20px;
+	margin: 9px 0 0 19px;
+}
+.slider-left-icon, .slider-right-icon{
+	width: 30px;
+	height: 30px;
+	margin: 5px auto 0 auto;
+}
+@keyframes captionText{
+	0%{
+		opacity:0;
+		transform: translateX(-100px);
+	}
+	100%{
+		opacity:1;
+		transform: translateX(0px);	
+	}
+}
+/*
+	----------------------------------
+				CATEGORIES
+	----------------------------------
+*/
+.categories{
+	height: 70px;
+	width: 100%;
+	background: $addBg;
+	font-family: $primaryFont;
+	z-index: 1;
+	position: relative;
+}
+.categories-responsive{
+	height: 390px;
+	width: 100%;
+	margin-top: 40px;
+	font-family: $primaryFont;
+}
+.categories .categories-div{
+	height: 100%;
+	display: flex;
+	margin: 0 auto 0 auto;
+	justify-content: center;
+}
+.categories-div a{
+	font-size: 18px;
+	color: $WhiteFont;
+	display: inline;
+	text-decoration: none;
+	text-transform: uppercase;
+	line-height: 1.7;
+	transition: 0.1s;
+}
+.categories-div a:hover{
+	color: $darkFont;
+	transition: 0.2s;
+}
+.category-active{
+	border-bottom: 1px solid $secondaryCol;
+	padding-bottom: 5px;
+}
+.categories li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 20px 15px;
+}
+.categories-responsive li{
+	list-style-type: none;
+	padding: 20px 15px;
+	text-align: center;
+}
+.categories p{
+	font-size: 17px;
+	color: $darkFont;
+	padding: 0 20px;
+	text-transform: uppercase;
+	line-height: 4.2;
+}
+/*
+	----------------------------------
+				FILMS
+	----------------------------------
+*/
+.top5-films{
+	width: 100%;
+	background: $lightBg;
+	@include contentPadding;
+}
+.margin-special{
+	padding-bottom: 0px !important;
+}
+.top5-films-dark{
+	width: 100%;
+	background: $darkBg;
+	@include contentPadding;
+}
+.top5-films h1{
+	font-size: 30px;
+	font-family: $secondaryFont;
+}
+.top5-films-dark h1{
+	font-size: 30px;
+	font-family: $secondaryFont;
+	font-weight: normal;
+}
+.top-lines{
+	width: 100%;
+	display: flex;
+	padding: 0 0 25px 0;
+}
+.topic-text{
+	width: 24%;
+	display: flex;
+}
+.topic-black{
+	color: $darkFont;
+	text-align: right;
+	margin: 0 0 0 auto;
+}
+.top5-films-dark .topic-black{
+	color: $lightFont;
+}
+.topic-orange{
+	color: $addFont;
+	text-align: left;
+	margin: 0 auto 0 10px;
+}
+.line-one{
+	width: 38%;
+	height: 1px;
+	background: $quaternaryCol;
+	margin-top: 18px;
+}
+.top5-films-dark .line-one{
+	background: $quinaryCol;
+	font-weight: normal;
+}
+.line-two{
+	width: 38%;
+	height: 1px;
+	background: $tertialyCol;
+	margin-top: 18px;
+}
+.lines-icon{
+	width: 40%;
+	height: 30px;
+}
+.film-part{
+	display: flex;
+	width: 100%;
+	margin: 0 auto 0 auto;
+}
+.film-align{
+	margin: 0 auto 0 auto;
+	width: 100%;
+	height: 100%;
+}
+.film-desc{
+	height: 100%;
+	width: 100%;
+}
+.film-desc-two{
+	display: flex;
+	height: 40px;
+}
+.film-review-icon{
+	width: 70px;
+	height: 40px;
+	margin-top: 3px;
+}
+.film-review{
+	font-size: 16px;
+	margin-left: 8px;
+	line-height: 3;
+	@include darkRegular;
+}
+.top5-films-dark .film-review{
+	@include lightLight;
+}
+.film-year{
+	font-size: 16px;
+	line-height: 2;
+	@include darkRegular;
+}
+.top5-films-dark .film-year{
+	@include lightLight;
+}
+.film-part a{
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+}
+.film-desc h3{
+	font-size: 30px;
+	@include darkLight;
+	padding: 15px 0 0 0;
+}
+.top5-films-dark .film-desc h3{
+	@include lightLight;
+	font-weight: normal;
+}
+.film-genre{
+	font-size: 15px;
+	text-transform: uppercase;
+	@include addRegular;
+}
+.film-one, .film-three{
+	width: 50%;
+	height: 100%;
+	margin: 0 3% 0 0;
+}
+.film-two, .film-four{
+	width: 50%;
+	height: 100%;
+	margin: 0 0 0 0;
+}
+.poster{
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+.poster img{
+	width: 100%;
+	height: auto;
+	max-height: 350px;
+	transition: 0.33s;
+	display: block;
+}
+.poster-hover:hover{
+	& .poster-play{
+		height: 50px;
+		width: 100%;
+		background: $tertialyCol;
+		display: flex;
+		transition: 0.35s;
+	}
+	& .poster img{
+		backface-visibility: hidden;
+		transform: scale(1.1);
+		transition: 0.33s;
+	}
+}
+.poster-play{
+	height: 50px;
+	width: 100%;
+	background: $primaryCol;
+	display: flex;
+	transition: 0.35s;
+	border-top: 3px solid $quinaryCol;
+}
+.play-border{
+	border-left: 3px solid $quinaryCol;
+	width: 60px;	
+}
+.top5-films-dark .play-border{
+	border-left: 3px solid $senaryCol;
+}
+.play-text{
+	width: 100%;
+}
+.poster-play p{
+	font-size: 17px;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+	margin: 14px 0 0 0;
+	text-align: center;
+	@include whiteRegular;
+}
+.movie-play-icon{
+	height: 20px;
+	width: 40px;
+	margin: 15px 0 0 4px;
+}
+.film-button{
+	width: 100%;
+	height: 40px;
+	margin-top: 12px;
+}
+.film-button a{
+	width: 120px;
+	display: flex;
+	float: right;
+	@include buttonRules;
+}
+.film-button a:hover{
+	@include buttonRulesHover;
+}
+.film-button p{
+	margin-left: 20px;
+}
+.next-icon{
+	height: 22px;
+	width: 22px;
+	padding: 8px 0 0 5px;
+}
+/*
+	----------------------------------
+				SERIALS
+	----------------------------------
+*/
+.top5-serials{
+	width: 100%;
+	background: $lightBg;
+	@include contentPadding;
+}
+.top5-serials-dark{
+	width: 100%;
+	background: $darkBg;
+	@include contentPadding;
+}
+.top5-serials h1{
+	font-size: 30px;
+	font-family: $secondaryFont;
+}
+.top5-serials-dark h1{
+	font-size: 30px;
+	font-family: $secondaryFont;
+	font-weight: normal;
+}
+.serial-button{
+	width: 100%;
+	height: 40px;
+	margin-top: 12px;
+}
+.top5-serials-dark .topic-black{
+	color: $lightFont;
+}
+.top5-serials-dark .line-one{
+	background: $quinaryCol;
+	font-weight: normal;
+}
+.serial-button a{
+	width: 120px;
+	display: flex;
+	float: right;
+	@include buttonRules;
+}
+.serial-button a:hover{
+	@include buttonRulesHover;
+}
+.serial-button p{
+	margin-left: 20px;
+}
+.top5-serials-dark h3{
+	color: $quinaryCol;
+	font-weight: normal;
+}
+.top5-serials-dark .film-review, .top5-serials-dark .film-year{
+	@include lightLight;
+}
+.top5-serials-dark .play-border{
+	border-left: 3px solid $senaryCol;
+}
+/*
+	----------------------------------
+				ADVERTISMENT
+	----------------------------------
+*/
+.register-div{
+	height: 100%;
+	width: 100%;
+	@include advert;
+}
+.register-darken{
+	height: 100%;
+	width: 100%;
+	background: rgba(0,0,0,0.7);
+	padding: 40px 0 50px 0;
+}
+.reg-contain{
+	display: flex;
+}
+.register-div h2{
+	font-size: 30px;
+	text-align: center;
+	@include lightLight;
+}
+.register-div h3{
+	font-size: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 5px;
+	@include addLight;
+}
+.reg-column-one, .reg-column-two, .reg-column-three{
+	width: 33.3%;
+	padding: 10px;
+	opacity: 0;
+}
+.reg-one-active, .reg-two-active, .reg-three-active{
+	animation: captionTextReg 0.4s ease forwards;
+}
+.reg-one-active{
+	animation-delay: 0.4s;
+}
+.reg-two-active{
+	animation-delay: 0.8s;
+}
+.reg-three-active{
+	animation-delay: 1.2s;
+}
+.comunity-icon, .money-icon, .adventages-icon{
+	height: 70px;
+	width: 70px;
+	margin: 0 auto 0 auto;
+	display: block;
+	padding: 40px 0 25px 0;
+}
+.reg-contain p{
+	text-align: center;
+	@include lightLight;
+	font-size: 18px;
+}
+.reg-contain strong{
+	text-transform: uppercase;
+	color: $tertialyCol;
+	font-weight: normal;
+}
+.reg-button{
+	width: 160px;
+	margin: 40px auto 0 auto;
+	display: flex;
+	@include buttonRules;
+}
+.reg-button p{
+	margin-left: 10px;
+}
+.reg-button:hover{
+	@include buttonRulesHover;
+}
+@keyframes captionTextReg{
+	0%{
+		opacity:0;
+		transform: translateX(-100px);
+	}
+	100%{
+		opacity:1;
+		transform: translateX(0px);	
+	}
+}
+/* 
+	-------------------------------------------
+						NEWS
+	-------------------------------------------
+*/
+.news{
+	height: 100%;
+	width: 100%;
+	@include contentPadding;
+	background: $lightBg;
+}
+.news-dark{
+	height: 100%;
+	width: 100%;
+	@include contentPadding;
+	background: $darkBg;
+}
+.news-flex{
+	display: flex;
+}
+// == TOPIC ==
+.news-topic-text{
+    width: 28%;
+    display: flex;
+    text-align: center;
+    display: block;
+}
+.news h1{
+	font-size: 30px;
+	text-align: center;
+	@include darkLight;
+}
+.news-dark h1{
+	font-size: 30px;
+	text-align: center;
+	font-weight: normal;
+	@include lightLight;
+}
+.news-dark .news-line-one{
+	background: $quinaryCol;
+	font-weight: normal;
+}
+.news strong{
+	color: $tertialyCol;
+}
+.news-dark strong{
+	color: $tertialyCol;
+	font-weight: normal;
+}
+.news-line-one{
+	width: 36%;
+    height: 1px;
+    background: $quaternaryCol;
+    margin-top: 18px;
+}
+.news-line-two{
+	width: 36%;
+    height: 1px;
+    background: $tertialyCol;
+    margin-top: 18px;
+}
+// == CONTENT ==
+.news-column-one{
+	width: 49.3%;
+	height: 440px;
+	margin-right: 0.7%;
+	overflow: hidden;
+	@include newsBgOne;
+}
+.news-column-one .news-genre{
+	padding: 270px 0 0 0;
+}
+.news-column-one a{
+	text-decoration: none;
+}
+.news-column-one h2{
+	font-size: 24px;
+	font-weight: normal;
+	margin: 0 25px 0 25px;
+	@include newsContentFont;
+}
+.news-column-two{
+	width: 49.3%;
+	height: 230px;
+	margin-left: 0.7%;
+}
+.news-top{
+	display: flex;
+	margin-bottom: 20px;
+}
+.news-top a{
+	text-decoration: none;
+}
+.news-top-one{
+	width: 48.5%;
+	margin-right: 1.5%;
+	@include newsBgTwo;
+	height: 230px;
+}
+.news-top-one .news-genre{
+	padding: 100px 0 0 0;
+}
+.news-top-two .news-genre{
+	padding: 100px 0 0 0;
+}
+.news-top-one .news-date, .news-top-two .news-date{
+	padding: 0 0 25px 0;
+}
+.news-top-two{
+	width: 48.5%;
+	height: 230px;
+	margin-left: 1.5%;
+	@include newsBgThree;
+}
+.news-top-one h2, .news-top-two h2{
+	font-size: 18px;
+	font-weight: normal;
+	margin: 0 25px 0 25px;
+	@include newsContentFont;
+}
+.news-bot{
+	height: 190px;
+	@include newsBgFour;
+}
+.news-bot a{
+	text-decoration: none;
+}
+.news-bot h2{
+	font-size: 18px;
+	font-weight: normal;
+	margin: 0 25px 0 25px;
+	@include newsContentFont;
+}
+.news-bot .news-genre{
+	padding-top: 60px;
+}
+.news-bot .news-date{
+	padding-bottom: 16.5px;
+}
+.news-genre{
+	font-size: 14px;
+	text-transform: uppercase;
+	margin: 0 25px 0 25px;
+	line-height: 2;
+	@include addRegular;
+}
+.news-date{
+	font-size: 14px;
+	text-transform: uppercase;
+	margin: 0 25px 0 25px;
+	line-height: 2.5;
+	@include lightLight;
+}
+.news-darken{
+	height: 100%;
+	width: 100%;
+	background: rgba(0,0,0,0.6);
+	transition: 0.33s;
+}
+.news-darken:hover{
+	background: rgba(0,0,0,0.4);
+	transition: 0.33s;
+}
+// == BUTTON ==
+.news-button{
+	width: 100%;
+	height: 40px;
+	margin-top: 30px;
+}
+.news-button a{
+	width: 110px;
+	display: flex;
+	float: right;
+	@include buttonRules;
+}
+.news-button a:hover{
+	@include buttonRulesHover;
+}
+.news-button p{
+	margin-left: 20px;
+}
+.next-icon{
+	height: 22px;
+	width: 22px;
+	padding: 8px 0 0 5px;
+}

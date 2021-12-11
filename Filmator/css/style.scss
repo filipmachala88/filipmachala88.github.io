@@ -1,0 +1,727 @@
+// imports
+@import "variables";
+@import "mixins";
+@import "banners";
+// == GLOBAL HTML RULES ==
+html{
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+a, p, h3, h2, h1{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+img{
+	margin: 0;
+	padding: 0;
+}
+// == GLOBAL CLASS RULES ==
+.extern-container{
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	background: $lightBg;
+}
+.top5f-extern-container{
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	background: $lightBg;
+}
+.top5s-extern-container{
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	background: $lightBg;
+}
+.news-extern-container{
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	background: $lightBg;
+}
+.extern-container-dark{
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	background: $darkBg;
+}
+.intern-container{
+	width: 85%;
+	height: 100%;
+	max-width: 1200px;
+	margin: auto;
+}
+.responsive-flex-one{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	margin: 0 1.45% 0 0;
+}
+.responsive-flex-two{
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+.footer-responsive-flex{
+	display: flex;
+	width: 100%;
+}
+/*
+	----------------------------------
+				HEADER
+	----------------------------------
+*/
+.main-menu{
+	height: 70px;
+	width: 100%;
+	position: fixed;
+	z-index: 5;
+}
+.non-active{
+	background: none;
+	transition: .3s ease-out;
+}
+.scroll-active{
+	background: $primaryCol;
+	transition: .3s ease-in;
+}
+.logo-part{
+	height: 100%;
+	width: 240px;
+}
+.logo-part a{
+	display: flex;
+	text-decoration: none;
+}
+.menu{
+	display: flex;
+	height: 100%;
+	width: 80%;
+	justify-content: flex-end;
+}
+// == SEARCHING ==
+.searching{
+	height: 40px;
+	margin: 12px 20px 0 0;
+	z-index: 5;
+}
+.searching-responsive{
+	height: 40px;
+	margin-top: 12px;
+	z-index: 5;
+}
+.searching-block{
+	height: 40px;
+	display: flex;
+}
+.search-part{
+	display: flex;
+}
+.searching input{
+	margin: 0;
+	padding: 0;
+}
+.searching-responsive input{
+	margin: 0;
+	padding: 0;
+}
+.searching input[type="text"]{	
+	width: 250px;
+	z-index: 5;
+	@include headerSearching;	
+}
+.searching-responsive input[type="text"]{
+	width: 100%;	
+	@include headerSearching;
+}
+.search-tips{
+	@include darkLight;
+	padding-top: 17px;
+	margin-top: -16px;
+	border-left: 1px solid $tertialyCol;
+	border-right: 1px solid $tertialyCol;
+	border-bottom: 1px solid $tertialyCol;
+	display: none;
+	//animation: slideDown 0.8s ease;
+	z-index: 4;
+}
+.searchBar-active{
+	display: block;
+}
+/*
+@keyframes slideDown{
+	0%{
+		transform: translateY(-100%);
+		display: none;
+	}
+	100%{
+		transform: translateY(0);
+		display: block;
+	}
+}
+*/
+.search-tips li{
+	list-style-type: none;
+}
+.search-tips a{
+	padding: 8px 0 8px 10px;
+	display: flex;
+	text-decoration: none;
+	background: rgba(0,0,0,0.9);
+	transition: 0.25s;
+}
+.search-tips a:hover{
+	background: rgba(55,55,55,0.97);
+	transition: 0.25s;
+}
+.search-tips img{
+	height: 70px;
+	width: 50px;
+}
+.search-tips h2{
+	font-size: 18px;
+	font-weight: normal;
+	margin: 10px 0 0 15px;
+	@include lightLight;
+}
+.sugg-tags p{
+	margin-left: 8px;
+	font-size: 14px;
+	@include addRegular;
+}
+.info-side{
+	margin-left: 15px !important;
+}
+.sugg-info{
+	display: block;
+}
+.sugg-tags{
+	display: flex;
+	margin-top: 8px;
+}
+.uknown-flex{
+	padding: 8px 0 10px 10px;
+	background: rgba(0,0,0,0.9);
+	display: flex;
+}
+.sugg-unknown-info{
+	margin-left: 10px;
+	@include lightLight;
+}
+.sugg-unknown{
+	margin-left: 3px;
+	@include addLight;
+}
+.dot{
+	height: 3px;
+	width: 3px;
+	border-radius: 50%;
+	background: $quaternaryCol;
+	margin: 7px 0 0 8px;
+}
+.searching button{
+	@include searchingButton;
+}
+.searching-responsive button{
+	margin: 0 auto 0 0;
+	@include searchingButton;
+}
+.searching button:hover, .searching-responsive button:hover{
+	background: $septenaryCol;
+	transition: 0.35s;
+}
+.find-icon{
+	height: 18px;
+	width: 18px;
+	margin: 3px 2px 0 0;
+}
+// == BUTTON ==
+.nav-button, .nav-button-responsive{
+	border-radius: 40px;
+	text-decoration: none;
+}
+.nav-button-responsive .menu-login{
+	margin: 0 auto 0 auto;
+}
+.menu-login{
+	width: 160px;
+	margin-top: 12px;
+	display: flex;
+	@include buttonRules;
+}
+.menu-login:hover{
+	@include buttonRulesHover;	
+}
+.profile-icon{
+	height: 20px;
+	width: 20px;
+	margin: 9px 0 0 20px;
+}
+.menu-login p{
+	font-size: 18px;
+	margin-left: 10px;
+}
+.main-menu-flex{
+	display: flex;
+}
+.main-menu .intern-container{
+	display: flex;
+}
+.logo-icon{
+	height: 50px;
+	width: 30px;
+	margin-top: 8px;
+}
+.text-icon{
+	font-size: 30px;
+	text-transform: uppercase;
+	line-height: 2.2;
+	margin-left: 15px;
+	@include whiteSpecial;
+}
+// == HAMBURGER ==
+.hamburger-div2{
+	width: 50px;
+	height: 50px;
+	margin: 8px 0 0 20px;
+	display: none;
+	cursor: pointer;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+}
+.menu-line2{
+	width: 50px;
+	height: 2px;
+	background: $secondaryCol;
+	border-radius: 5px;
+	transition: all .5s ease-in-out;
+}
+.menu-line2::before{
+	width: 50px;
+	height: 2px;
+	background: $secondaryCol;
+	border-radius: 5px;
+	content: '';
+	position: absolute;
+	transition: all .5s ease-in-out;
+	transform: translateY(-15px);
+}
+.menu-line2::after{
+	width: 50px;
+	height: 2px;
+	background: $secondaryCol;
+	border-radius: 5px;
+	content: '';
+	position: absolute;
+	transition: all .5s ease-in-out;
+	transform: translateY(15px);
+}
+// == CROSS ==
+.open2 .menu-line2{
+	background: transparent;
+	transform: translateX(-50px);
+}
+.open2 .menu-line2::before{
+	width: 50px;
+	height: 2px;
+	transform: rotate(45deg) translate(28px, -28px);
+}
+.open2 .menu-line2::after{
+	width: 50px;
+	height: 2px;
+	transform: rotate(-45deg) translate(28px, 28px);
+}
+.window-two{
+	width: 100%;
+	background: rgba(0,0,0,0.9);
+	height: 100%;
+	position: fixed;
+	transform: translateX(100%);
+	transition: .3s ease-out;
+	z-index: 4;
+	padding-top: 70px;
+	display: none;
+}
+.window-two-active{
+	transform: translateX(0);
+}
+/* 
+	-----------------------------------------------
+					LOGIN SECTION
+	-----------------------------------------------
+*/
+.login-section-dark{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: rgba(0,0,0,0.8);
+	z-index: 5;
+	display: none;
+}
+.login-transparent-log, .login-transparent-reg, .login-transparent-pass{
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+.login-section{
+	width: 550px;
+	border: 1px solid $tertialyCol;
+	border-radius: 35px;
+	padding: 25px 0 35px 0;
+	background: rgba(0,0,0,0.7);
+}
+.log{
+	margin: 15vh auto 0 auto;
+}
+.reg{
+	margin: 7vh auto 0 auto;
+}
+.pass{
+	margin: 20vh auto 0 auto;
+}
+.login-section h1{
+	font-size: 28px;
+	text-align: center;
+	font-weight: normal;
+	margin-left: 80px;
+	@include lightLight;
+}
+.login-section h2{
+	font-size: 18px;
+	font-weight: normal;
+	margin: 0 0 5px 14%;
+	@include addLight;
+}
+.pass-forget{
+	display: flex;
+	margin: 10px 0;
+}
+.pass-reg{
+	margin-left: 70px;
+	font-size: 16px;
+	@include lightLight;
+}
+.forgetPass{
+	font-size: 16px;
+	margin-left: 5px;
+	cursor: pointer;
+	transition: 0.35s;
+	@include addRegular;
+}
+.forgetPass:hover{
+	color: $tertialyColHover;
+	transition: 0.35s;
+}
+.name-part input, .password-part input{
+	width: 80%;
+	display: block;
+	margin: 0 auto 0 auto;
+	@include loginSection;
+}
+.mail-info{
+	margin: 10px 70px 0 70px;
+}
+.mail-info p{
+	font-size: 16px;
+	@include lightLight;
+}
+.log button{
+	width: 155px;
+	display: flex;
+	margin: 30px auto 0 auto;
+	@include buttonRules;
+}
+.log button p{
+	line-height: 2.1;
+}
+.reg button{
+	width: 185px;
+	display: flex;
+	margin: 30px auto 0 auto;
+	@include buttonRules;
+}
+.reg button p{
+	line-height: 2;
+}
+.pass button{
+	width: 140px;
+	display: flex;
+	margin: 30px auto 0 auto;
+	@include buttonRules;
+}
+.pass button p{
+	line-height: 2;
+}
+.login-section button:hover{
+	@include buttonRulesHover;
+}
+.check-part input[type="checkbox"]{
+	appearance: none;
+	-webkit-appearance: none;
+	width: 20px;
+	height: 20px;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+	background: none;
+	border: 1px solid $tertialyCol;
+	margin-left: 60px;
+	transition: 0.35s;
+}
+.check-part input[type="checkbox"]:checked{
+	background: $tertialyCol;
+	transition: 0.35s;
+}
+.check-part p{
+	font-size: 16px;
+	margin-left: 10px;	
+	@include lightLight;
+}
+.check-part-rowOne{
+	margin: 20px 0 10px 0;
+	display: flex;
+}
+.check-part-rowTwo{
+	display: flex;
+	margin: 10px 0 0 0;
+}
+.login-cross{
+	height: 30px;
+	width: 30px;
+	cursor: pointer;
+	align-items: center;
+	justify-content: center;
+	float: right;
+	margin-right: 40px;
+}
+.login-cross-line::before{
+	width: 25px;
+	height: 2px;
+	border-radius: 5px;
+	content: '';
+	position: absolute;
+	transition: all .33s ease-in-out;
+	margin-top: 14px;
+	transform: rotate(45deg) translate(2px, -2px);
+	background: $tertialyCol;
+}
+.login-cross-line::after{
+	width: 25px;
+	height: 2px;
+	border-radius: 5px;
+	content: '';
+	position: absolute;
+	transition: all .33s ease-in-out;
+	margin-top: 14px;
+	transform: rotate(-45deg) translate(2px, 2px);
+	background: $tertialyCol;
+}
+.name-part, .password-part{
+	margin-top: 15px;
+}
+.topic-part{
+	width: 100%;
+}
+.lock-icon{
+	height: 19px;
+	width: 19px;
+	margin: 8px 10px 0 10px;
+}
+.create-part{
+	margin-top: 25px;
+	display: flex;
+	justify-content: center;
+}
+.create-part p{
+	font-size: 16px;
+	@include lightLight;
+}
+.create-part .login-reg, .create-part .login-log, .create-part .login-pass{
+	font-size: 16px;
+	margin-left: 5px;
+	text-decoration: none;
+	transition: 0.35s;
+	cursor: pointer;
+	@include addRegular;
+}
+.create-part .login-reg:hover, .create-part .login-log:hover, .create-part .login-pass:hover{
+	color: $tertialyColHover;
+	transition: 0.35s;
+	cursor: pointer;
+}
+
+/* 
+	-----------------------------------------------
+						FOOTER
+	-----------------------------------------------
+*/
+.footer{
+	width: 100%;
+	@include footerBg;
+}
+.footer-darken{
+	height: 100%;
+	width: 100%;
+	background: rgba(0,0,0,0.9);
+	padding: 40px 0 80px 0;
+}
+.footer .intern-container{
+	display: flex;
+}
+// == OWNER INFO ==
+.footer-owner{
+	display: flex;
+}	
+.footer-owner p{
+	@include lightSpecial;
+	font-size: 20px;
+	text-transform: uppercase;
+	margin: 7px 0 0 12px;
+}
+.footer-logo{
+	height: 40px;
+	width: 20px;
+}
+.footer-text{
+	padding: 15px 0 22px 0;
+	border-bottom: 1px solid $tertialyCol;
+}
+.footer-text p{
+	font-size: 16px;
+	@include lightLight;
+}
+// == SITES ==
+.footer-sites{
+	display: flex;
+	margin-top: 30px;
+}
+.footer-sites-contain{
+	display: flex;
+}
+.fb-site, .ig-site, .tw-site, .tt-site{
+	@include siteDiv;
+}
+.fb-site:hover, .ig-site:hover, .tw-site:hover, .tt-site:hover{
+	@include siteDivHover;
+}
+.fb-icon, .ig-icon, .tw-icon, .tt-icon{
+	@include siteLogo;
+}
+.ig-href, .tw-href, .tt-href{
+	@include siteHref;
+}
+// == LINKS ==
+.footer-one-column, .footer-two-column, .footer-three-column, .footer-four-column{
+	width: 50%;
+}
+.footer-two-column{
+	margin-left: 20%;
+}
+.footer-three-column{
+	margin-left: 18%;
+}
+.footer li{
+	list-style-type: none;
+	margin: 15px 0 15px 0;
+}
+.footer h2{
+	@include addLight;
+	font-size: 22px;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+.footer a{
+	@include lightLight;
+	font-size: 18px;
+	text-decoration: none;
+	transition: 0.2s;
+}
+.footer a:hover{
+	color: $lightFontHover;
+	transition: 0.2s;
+}
+// == BACKGROUND CHANGE ==
+.bg-control p{
+	@include lightLight;
+	font-size: 16px;
+	line-height: 1.8;
+	text-align: center;
+}
+.bg-color{
+	display: flex;
+	border-bottom: 1px solid $tertialyCol;
+	padding: 15px 0 25px 0;
+}	
+.bg-white{
+	height: 20px;
+	width: 25px;
+	border-radius: 10px 0 0 10px;
+	background: $secondaryCol;
+	border: 1px solid $secondaryCol;
+	margin: 0 0 0 auto;
+	transition: 0.33s;
+	z-index: 1;
+}
+.bg-black{
+	height: 20px;
+	width: 26px;
+	border-radius: 0 10px 10px 0;
+	background: none;
+	border: 1px solid $secondaryCol;
+	margin: 0 auto 0 -1px;
+	z-index: 0;
+	transition: 0.33s;
+}
+.bg-white:hover, .bg-black:hover{
+	@include bgChangeHover;
+}
+// == SHOTOUT ==
+.shot-out{
+	padding-top: 20px;
+}
+.shot-out p{
+	@include lightLight;
+	text-align: center;
+	transition: 0.33s;
+}
+.shot-out p:hover{
+	color: $addFont;
+	transition: 0.33s;
+}
+.owner-logo-icon{
+	height: 40px;
+	width: 40px;
+	margin: 0 auto 0 auto;
+	display: block;
+}
+.shot-out strong{
+	color: $addFont;
+	font-weight: normal;
+}
+.script-div{
+	display: none;
+}
+
+@import "homepage";
+@import "search";
+@import "responsive";
+
+@font-face{
+	font-family: Roboto Condensed Regular;
+	src: url('../fonts/RobotoCondensed-Regular.ttf');
+}
+@font-face{
+	font-family: Roboto Condensed Light;
+	src: url('../fonts/RobotoCondensed-Light.ttf');
+}

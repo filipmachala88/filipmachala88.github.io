@@ -1,0 +1,47 @@
+@mixin bgSize{
+    background-size: cover;
+}
+// == ADVERTISMENT ==
+@mixin advert{
+    background: url('../img/banners/watching-tv.jpg') no-repeat center;
+    @include bgSize;
+}
+// == SLIDER ==
+@mixin slideOne{
+    background: url('../img/banners/black-widow.jpg') no-repeat center;
+    @include bgSize;
+}
+@mixin slideTwo{
+    @include bgSize;
+    background: url('../img/banners/justice-league.jpg') no-repeat center;
+}
+@mixin slideThree{
+    background: url('../img/banners/wraith-of-man.jpg') no-repeat center;
+    @include bgSize;
+}
+@mixin slideFour{
+    background: url('../img/banners/love-on-the-square.jpg') no-repeat center;
+    @include bgSize;
+}
+// == NEWS ==
+@mixin newsBgOne{
+    background: url('../img/banners/black-panther.jpg') no-repeat center;
+    @include bgSize;
+}
+@mixin newsBgTwo{
+    background: url('../img/banners/robert-downey.jpg') no-repeat center;
+    @include bgSize;
+}
+@mixin newsBgThree{
+    background: url('../img/banners/black-widow.jpg') no-repeat center;
+    @include bgSize;
+}
+@mixin newsBgFour{
+    background: url('../img/banners/wraith-of-man.jpg') no-repeat center;
+    @include bgSize;
+}
+// == FOOTER ==
+@mixin footerBg{
+    background: url('../img/banners/office.jpg') no-repeat center;
+    @include bgSize;
+}

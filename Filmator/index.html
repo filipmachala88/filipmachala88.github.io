@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+
+	<title>Filmátor - Domů</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<meta name="author" content="Filip Machala">
+
+</head>
+<body>
+
+<div class="extern-container">
+	<header>
+		<div class="main-menu non-active">
+			<div class="intern-container">
+				
+				<div class="logo-part"><a href="#">
+						<img src="img/icons/logo-circle.svg" class="logo-icon" alt="logo-icon">
+						<p class="text-icon">Filmátor</p>
+				</a></div>
+
+				<div class="menu">
+					<div class="searching">
+						<div class="search-part">
+							<input type="text" name="find" placeholder="hledat">
+							<button onclick="find()">
+								<img src="img/icons/find.svg" class="find-icon" alt="eyeglass-icon">
+							</button>
+						</div>
+						<div class="search-tips"></div>
+					</div>
+							
+					<div class="nav-button loginbutton">
+						<div class="menu-login">
+							<img src="img/icons/profile.svg" class="profile-icon" alt="profile-icon">
+							<p>členství</p>
+						</div>
+					</div>
+
+					<div class="hamburger-div2">
+						<div class="menu-line2"></div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="window-two">
+		<div class="intern-container">
+
+			<div class="searching-responsive">
+				<div class="searching-block">
+					<input type="text" name="find" placeholder="hledat">
+					<button>
+						<img src="img/icons/find.svg" class="find-icon" alt="eyeglass-icon">
+					</button>
+				</div>
+			</div>
+
+			<div class="categories-responsive">
+				<div class="categories-div">
+					<ul>
+						<li><a href="#" class="category-active-responsive">domů</a></li>
+						<li><a href="#">filmy</a></li>
+						<li><a href="#">seriály</a></li>
+						<li><a href="#">žánry</a></li>
+						<li><a href="#">herci</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="nav-button-responsive loginbutton">
+				<div class="menu-login">
+					<img src="img/icons/profile.svg" class="profile-icon" alt="profile-icon">
+					<p>členství</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+<div class="login-section-dark">
+
+	<div class="login-transparent-log">
+		<div class="login-section log">
+			<div class="login-cross">
+				<div class="login-cross-line"></div>
+			</div>
+			<div class="topic-part">
+				<h1>Členská sekce</h1>				
+			</div>
+			<div class="name-part">
+				<h2>Přihl. jméno</h2>
+				<input type="name">
+			</div>
+			<div class="password-part">
+				<h2>Heslo</h2>
+				<input type="password">
+				<div class="pass-forget">
+					<p class="pass-reg">Zapomněli jste heslo?</p><p class="forgetPass">Získat nové</p>
+				</div>
+			</div>
+			<div class="button-part">
+				<button>
+					<img src="img/icons/lock.svg" alt="lock-icon" class="lock-icon">
+					<p>přihlásit</p>
+				</button>
+				<div class="create-part">
+					<p>Ještě nemáte účet?</p><p class="login-reg">Vytvořit účet</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="login-transparent-reg">
+		<div class="login-section reg">
+			<div class="login-cross">
+				<div class="login-cross-line"></div>
+			</div>
+			<div class="topic-part">
+				<h1>Členská sekce</h1>				
+			</div>
+			<div class="name-part">
+				<h2>Přihl. jméno</h2>
+				<input type="name">
+			</div>
+			<div class="name-part">
+				<h2>Email</h2>
+				<input type="mail">
+			</div>
+			<div class="password-part">
+				<h2>Heslo</h2>
+				<input type="password">
+			</div>
+
+			<div class="check-part">
+				<div class="check-part-rowOne">
+					<input type="checkbox">
+					<p>Souhlasím se zpracováním údajů</p>
+				</div>
+				<div class="check-part-rowTwo">
+					<input type="checkbox">
+					<p>Chci dostávat upozoenění na novinky mailem</p>
+				</div>
+			</div>
+
+			<div class="button-part">
+				<button>
+					<img src="img/icons/lock.svg" alt="lock-icon" class="lock-icon">
+					<p>registrovat</p>
+				</button>
+				<div class="create-part">
+					<p>Máte už účet?</p><p class="login-log">Přihlásit se</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="login-transparent-pass">
+		<div class="login-section pass">
+			<div class="login-cross">
+				<div class="login-cross-line"></div>
+			</div>
+			<div class="topic-part">
+				<h1>Členská sekce</h1>				
+			</div>
+			<div class="name-part">
+				<h2>Email</h2>
+				<input type="mail">
+				<div class="mail-info">
+					<p>*Vyplňte email vašeho účtu, na který vám pošleme dočasné náhradní heslo</p>
+				</div>
+			</div>
+			<div class="button-part">
+				<button>
+					<img src="img/icons/lock.svg" alt="lock-icon" class="lock-icon">
+					<p>odeslat</p>
+				</button>
+				<div class="create-part">
+					<p>Došel email?</p><p class="login-pass">Přihlásit se</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="extern-container">		
+	<section class="home">
+    	<div class="slider">
+
+        	<div class="slide slide-one active">
+        	    <div class="darken">
+            		<div class="slide-content">
+            			<p class="p-special">akční, thriller, sci-fi</p>
+            			<h2>Black Widow</h2>
+            			<div class="film-info">
+            				<img src="img/icons/stars.svg" class="stars-icon" alt="stars-icon">
+            				<p>2021</p>
+            			</div>
+            			<div class="slide-text">
+               				<p>Scarlett Johansson alias Black Widow se po dekádě v Marvel Cinematic Universe konečně dočkala svého prvního 	sólového dobrodružství, které však bude úplně jiné, než jaké doposud poznala.</p>
+               			</div>
+               			<a href="#" class="slider-href">
+	               			<div class="slider-button">
+	               				<img src="img/icons/play-orange.svg" class="play-icon" alt="play-icon">
+	               				<p>přehrát</p>
+	               			</div>
+	               		</a>
+            		</div>
+           		</div>
+        	</div>
+			
+        <div class="slide slide-two">
+            <div class="darken">
+            		<div class="slide-content">
+              			<p class="p-special">akční, dobrodružný, fantasy</p>
+               			<h2>Liga spravedlnosti Zaca Syndera</h2>
+               			<div class="film-info">
+               				<img src="img/icons/stars.svg" class="stars-icon" alt="stars-icon">
+               				<p>2021</p>
+               			</div>
+               			<div class="slide-text">
+                  			<p>Bruce Wayne (Ben Affleck) je odhodlaný postarat se o to, aby Supermanova (Henry Cavill) oběť nepřišla nazmar. V Lize spravedlnosti Zacka Snydera spojí síly s Dianou Prince (Gal Gadotová) a společně sestaví tým superhrdinů.</p>
+        
+                  		</div>
+                  		<a href="#" class="slider-href">
+	                  		<div class="slider-button">
+	                  			<img src="img/icons/play-orange.svg" class="play-icon" alt="play-icon">
+	                  			<p>přehrát</p>
+	                  		</div>
+	                  	</a>
+               		</div>
+               	</div>
+        </div>
+        <div class="slide slide-three">
+            <div class="darken">
+               		<div class="slide-content">
+              			<p class="p-special">akční, drama, krimi, thriller</p>
+               			<h2>Rozhněvaný muž</h2>
+               			<div class="film-info">
+               				<img src="img/icons/stars.svg" class="stars-icon" alt="stars-icon">
+               				<p>2021</p>
+               			</div>
+               			<div class="slide-text">
+                  			<p>Děj sleduje H (Jason Statham), chladnou a záhadnou postavu, která pracuje ve společnosti zabývající se kamiony, které každý týden převáží stovky milionů dolarů po Los Angeles.</p>
+        
+                  		</div>
+                  		<a href="#" class="slider-href">
+	                  		<div class="slider-button">
+	                  			<img src="img/icons/play-orange.svg" class="play-icon" alt="play-icon">
+	                  			<p>přehrát</p>
+	                  		</div>
+	                  	</a>
+               		</div>
+               	</div>	
+        </div>
+        <div class="slide slide-four">
+           <div class="darken">
+               		<div class="slide-content">
+              			<p class="p-special">komedie, romantický</p>
+               			<h2>Láska na kvadrát</h2>
+               			<div class="film-info">
+               				<img src="img/icons/stars.svg" class="stars-icon" alt="stars-icon">
+               				<p>2021</p>
+               			</div>
+               			<div class="slide-text">
+                  			<p>Slavný novinář a vyhlášený sukničkář musí proto přehodnotit celý svůj život. Zamiluje se totiž do záhadné modelky, která vede dvojí život.</p>
+        
+                  		</div>
+                  		<a href="#" class="slider-href">
+	                  		<div class="slider-button">
+	                  			<img src="img/icons/play-orange.svg" class="play-icon" alt="play-icon">
+	                  			<p>přehrát</p>
+	                  		</div>
+	                  	</a>
+               		</div>
+               	</div>
+        </div>
+     </div>
+   
+    <!-- controls  -->
+    <div class="controls">
+        <div class="prev">
+        	<img src="img/icons/slider-left.svg" class="slider-left-icon" alt="prev-icon">
+        </div>
+        <div class="next-div">
+            <div class="next">
+            	<img src="img/icons/slider-right.svg" class="slider-right-icon" alt="next-icon">
+            </div>
+        </div>
+    </div>
+
+    <!-- indicators -->
+    <div class="indicator">
+    </div>
+
+  </section>
+</div>
+			
+	
+ 
+
+	
+
+		<div class="categories">
+			<div class="categories-div">
+				<ul>
+					<li><a href="#" class="category-active">domů</a></li>
+					<li><a href="#">filmy</a></li>
+					<li><a href="#">seriály</a></li>
+					<li><a href="#">žánry</a></li>
+					<li><a href="#">herci</a></li>
+				</ul>
+			</div>
+		</div>
+
+
+
+	<div class="top5f-extern-container">
+				
+		<div class="intern-container">
+
+			<div class="top5-films margin-special">
+				<div class="bg-icon-div-one">
+					<img src="img/icons/movie-tape.svg" class="move-tape-one" alt="movie-tape-icon">	
+				</div>
+				
+				<div class="top-lines">
+					<div class="line-one"></div>
+					<div class="topic-text">
+						<div class="topic-black">
+							<h1>Top 4</h1>
+						</div>
+						<div class="topic-orange">
+							<h1>filmy</h1>
+						</div>
+					</div>
+					<div class="line-two"></div>
+				</div>
+				<div class="film-align">
+					<div class="film-part reveal">
+
+							<div class="responsive-flex-one">
+								<div class="film-one">
+									<a href="#" class="poster-hover">
+										<div class="poster poster-one">
+											<img src="img/banners/fight-club.jpg" alt="film-one-poster">
+										</div>
+										<div class="poster-play">
+											<div class="play-text">
+												<p>přehrát</p>
+											</div>
+											<div class="play-border">
+												<img src="img/icons/play-orange.svg" class="movie-play-icon" alt="play-icon">
+											</div>
+
+										</div>
+									</a>		
+									<div class="film-desc">
+										<h3>Klub rváčů</h3>
+										<div class="film-desc-two">
+											<img src="img/icons/stars.svg" class="film-review-icon" alt="stars-icon">
+											<p class="film-review">88% ČSFD</p>
+										</div>
+
+										<p class="film-genre">drama, thriller</p>
+										<p class="film-year">1999</p>
+									</div>
+								</div>
+
+						
+								<div class="film-two">
+									<a href="#" class="poster-hover">
+										<div class="poster poster-two">
+											<img src="img/banners/sherlock-holmes-a-game-of-shadows.jpg" alt="film-two-poster">
+										</div>
+										<div class="poster-play">
+											<div class="play-text">
+												<p>přehrát</p>
+											</div>
+											<div class="play-border">
+												<img src="img/icons/play-orange.svg" class="movie-play-icon" alt="play-icon">
+											</div>
+
+										</div>
+									</a>		
+									<div class="film-desc">
+										<h3>Sharlock Holmes: Hra stínů</h3>
+										<div class="film-desc-two">
+											<img src="img/icons/stars.svg" class="film-review-icon" alt="stars-icon">
+											<p class="film-review">75% ČSFD</p>
+										</div>
+
+										<p class="film-genre">akční, dobrodružný, krimi, thriller</p>
+										<p class="film-year">2011</p>
+									</div>
+								</div>
+							</div>
+
+						<div class="responsive-flex-two">
+							<div class="film-three">
+								<a href="#" class="poster-hover">
+									<div class="poster poster-three">
+										<img src="img/banners/aveng-end-game.jpg" alt="film-three-poster">
+									</div>
+									<div class="poster-play">
+										<div class="play-text">
+											<p>přehrát</p>
+										</div>
+										<div class="play-border">
+											<img src="img/icons/play-orange.svg" class="movie-play-icon" alt="play-icon">
+										</div>
+									</div>
+								</a>
+								<div class="film-desc">
+									<h3>Avengers: End Game</h3>
+									<div class="film-desc-two">
+										<img src="img/icons/stars.svg" class="film-review-icon" alt="stars-icon">
+										<p class="film-review">83% ČSFD</p>
+									</div>
+										<p class="film-genre">akční, sci-fi</p>
+											<p class="film-year">2019</p>
+								</div>
+							</div>
+
+						
+							<div class="film-four">
+								<a href="#" class="poster-hover">
+									<div class="poster poster-four">
+										<img src="img/banners/love-911.jpg" alt="film-four-poster">
+									</div>
+									<div class="poster-play">
+										<div class="play-text">
+											<p>přehrát</p>
+										</div>
+										<div class="play-border">
+											<img src="img/icons/play-orange.svg" class="movie-play-icon" alt="play-icon">
+										</div>
+
+									</div>
+								</a>		
+								<div class="film-desc">
+									<h3>Láska 911</h3>
+									<div class="film-desc-two">
+										<img src="img/icons/stars.svg" class="film-review-icon" alt="stars-icon">
+										<p class="film-review">78% ČSFD</p>
+									</div>
+
+									<p class="film-genre">drama, komedie, romantický</p>
+									<p class="film-year">2012</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+							
+
+					<div class="film-button">
+						<a href="#">
+							<p>další</p>
+							<img src="img/icons/next.svg" class="next-icon" alt="arrow-icon">
+						</a>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	
+
+	<div class="top5s-extern-container">
+		<div class="intern-container">
+			<div class="top5-serials">
+				<div class="top-lines">
+					<div class="line-one"></div>
+					<div class="topic-text">
+						<div class="topic-black">
+							<h1>Top 4</h1>
+						</div>
+						<div class="topic-orange">
+							<h1>seriály</h1>
+						</div>
+					</div>
+					<div class="line-two"></div>
+				</div>
+				<div class="film-part reveal">
+					
+					<div class="responsive-flex-one">
+						<div class="film-one">
+							<a href="#" class="poster-hover">
+								<div class="poster poster-six">
+									<img src="img/banners/riverdale.jpg" alt="serial-one-poster">
+								</div>
+								<div class="poster-play">
+									<div class="play-text">
+										<p>přehrát</p>
+									</div>
+									<div class="play-border">
+										<img src="img/icons/play-orange.svg" class="movie-play-icon" alt="play-icon">
+									</div>
+
+								</div>
+							</a>		
+							<div class="film-desc">
+								<h3>Riverdale</h3>
+								<div class="film-desc-two">
+									<img src="img/icons/stars.svg" class="film-review-icon" alt="stars-icon">
+									<p class="film-review">71% ČSFD</p>
+								</div>
+
+								<p class="film-genre">krimi, drama, mysteriózní</p>
+								<p class="film-year">2017</p>
+							</div>
+						</div>
+
+					
+						<div class="film-two">
+							<a href="#" class="poster-hover">
+								<div class="poster poster-seven">
+									<img src="img/banners/Ballers.jpg" alt="serial-two-poster">
+								</div>
+								<div class="poster-play">
+									<div class="play-text">
+										<p>přehrát</p>
+									</div>
+									<div class="play-border">
+										<img src="img/icons/play-orange.svg" class="movie-play-icon" alt="play-icon">
+									</div>
+
+								</div>
+							</a>		
+							<div class="film-desc">
+								<h3>Ballers</h3>
+								<div class="film-desc-two">
+									<img src="img/icons/stars.svg" class="film-review-icon" alt="stars-icon">
+									<p class="film-review">76% ČSFD</p>
+								</div>
+
+								<p class="film-genre">drama, komedie, sportovní</p>
+								<p class="film-year">2015 - 2019</p>
+							</div>
+						</div>
+					</div>
+
+				<div class="responsive-flex-two">	
+					<div class="film-three">
+						<a href="#" class="poster-hover">
+								<div class="poster poster-eight">
+									<img src="img/banners/my-name-is-earl.jpg" alt="serial-three-poster">
+								</div>
+								<div class="poster-play">
+									<div class="play-text">
+										<p>přehrát</p>
+									</div>
+									<div class="play-border">
+										<img src="img/icons/play-orange.svg" class="movie-play-icon" alt="play-icon">
+									</div>
+
+								</div>
+							</a>		
+							<div class="film-desc">
+								<h3>My Name Is Earl</h3>
+								<div class="film-desc-two">
+									<img src="img/icons/stars.svg" class="film-review-icon" alt="stars-icon">
+									<p class="film-review">81% ČSFD</p>
+								</div>
+
+								<p class="film-genre">komedie</p>
+								<p class="film-year">2005 - 2009</p>
+							</div>
+					</div>
+
+						<div class="film-four">
+							<a href="#" class="poster-hover">
+								<div class="poster poster-nine">
+									<img src="img/banners/spongebob-squarepants.jpg" alt="serial-four-poster">
+								</div>
+								<div class="poster-play">
+									<div class="play-text">
+										<p>přehrát</p>
+									</div>
+									<div class="play-border">
+										<img src="img/icons/play-orange.svg" class="movie-play-icon" alt="play-icon">
+									</div>
+
+								</div>
+							</a>		
+							<div class="film-desc">
+								<h3>Spongebob Squarepants</h3>
+								<div class="film-desc-two">
+									<img src="img/icons/stars.svg" class="film-review-icon" alt="stars-icon">
+									<p class="film-review">77% ČSFD</p>
+								</div>
+
+								<p class="film-genre">animovaný, komedie</p>
+								<p class="film-year">1999</p>
+							</div>
+						</div>
+					</div>
+				</div>
+					
+						
+				<div class="serial-button">
+					<a href="#">
+						<p>další</p>
+						<img src="img/icons/next.svg" class="next-icon" alt="swoosh-icon">
+					</a>
+				</div>
+
+				<div class="bg-icon-div-two">
+					<img src="img/icons/movie-tape.svg" class="move-tape-two" alt="movie-tape-icon">	
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+	
+
+	<div class="register-div">
+		<div class="register-darken">
+			<div class="intern-container">
+				
+					<h2>Získej mnoho výhod</h2>
+					<h3>připoj se k nám</h3>
+					<div class="reg-contain">
+						<div class="reg-column-one">
+							<img src="img/icons/profile-two.svg" class="comunity-icon" alt="profile-icon">
+							<p>Naše <strong>komunita</strong> společně sdílí zájem o sledování filmů a seriálů</p>
+						</div>
+						<div class="reg-column-two">
+							<img src="img/icons/advantage.svg" class="adventages-icon" alt="swoosh-icon">
+							<p>Naše členství přináší <strong>výhody</strong>, které máte možnost využít</p>
+						</div>
+						<div class="reg-column-three">
+							<img src="img/icons/money.svg" class="money-icon" alt="money-icon">
+							<p>Nyní máte možnost se k naší komunitě připojit <strong>zdarma</strong> pouhým kliknutím</p>
+						</div>
+					</div>
+					<a href="#" class="reg-button">
+						<img src="img/icons/profile.svg" class="profile-icon" alt="profile-icon">
+						<p>členství</p>
+					</a>
+					
+			</div>
+		</div>
+	</div>
+
+	<div class="news-extern-container">
+		<div class="intern-container">
+			<div class="news">
+				<div class="bg-icon-div-three">
+					<img src="img/icons/movie-tape.svg" class="move-tape-three" alt="movie-tape-icon">	
+				</div>
+
+				<div class="top-lines">
+					<div class="news-line-one"></div>
+					<div class="news-topic-text">
+						<h1>Filmové <strong>novinky</strong></h1>
+					</div>
+					<div class="news-line-two"></div>
+				</div>
+
+				<div class="news-flex reveal">
+					<div class="news-column-one">
+							<a href="#">
+								<div class="news-darken">
+									<p class="news-genre">oznámení</p>
+									<h2>Chadwick Boseman známý jako "Black Panther" umřel na rakovinu tlustého střeva</h2>
+									<p class="news-date">28. června 2020</p>
+								</div>
+							</a>
+					</div>
+					<div class="news-column-two">
+						<div class="news-top">
+							<div class="news-top-one">
+								<a href="">
+									<div class="news-darken">
+										<p class="news-genre">oznámení</p>
+										<h2>Robert Downey Jr. ohlašuje další díl Sherlocka Holmese</h2>
+										<p class="news-date">20. června 2020</p>							
+									</div>
+								</a>
+							</div>
+							<div class="news-top-two">
+								<a href="">
+									<div class="news-darken">
+										<p class="news-genre">novinka</p>
+										<h2>Black Window konečně v kinách</h2>
+										<p class="news-date">15. června 2020</p>
+									</div>
+								</a>
+							</div>
+						</div>
+							
+						<div class="news-bot">
+							<a href="">
+								<div class="news-darken">
+									<p class="news-genre">novinka</p>
+									<h2>Rozhněvaný muž (v hlavní roli Jason Statham) je konečně vydána a fanoušci šílí</h2>
+									<p class="news-date">28. června 2020</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="news-button">
+					<a href="#">
+						<p>více</p>
+						<img src="img/icons/next.svg" class="next-icon" alt="swoosh-icon">
+					</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="footer-darken">
+			<div class="intern-container">
+
+				<div class="footer-one-column">
+					<div class="footer-owner">
+						<img src="img/icons/logo-circle.svg" class="footer-logo" alt="logo-icon">
+						<p>Filmátor</p>
+					</div>
+					<div class="footer-text">
+						<p>Filmy a seriály je to, co nás spojuje</p>
+					</div>
+					<div class="footer-sites">
+						<div class="footer-sites-contain">
+							<a href="" class="fb-href">
+								<div class="fb-site">
+									<img src="img/icons/fb_icon_b.svg" class="fb-icon" alt="facebook-icon">
+								</div>
+							</a>
+							<a href="" class="ig-href">
+								<div class="ig-site">
+									<img src="img/icons/ig_icon_b.svg" class="ig-icon" alt="instagram-icon">
+								</div>
+							</a>
+							<a href="" class="tw-href">
+								<div class="tw-site">
+									<img src="img/icons/twitter_b.svg" class="tw-icon" alt="twitter-icon">
+								</div>
+							</a>
+							<a href="" class="tt-href">
+								<div class="tt-site">
+									<img src="img/icons/tiktok_b.svg" class="tt-icon" alt="tiktok-icon">
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer-responsive-flex">
+					
+						<div class="footer-two-column">
+							<h2>Soukromí</h2>
+							<ul>
+								<li><a href="">Podmínky používání</a></li>
+								<li><a href="">DMCA</a></li>
+								<li><a href="">Cookies</a></li>
+							</ul>
+						</div>
+						<div class="footer-three-column">
+							<h2>O nás</h2>
+							<ul>
+								<li><a href="">Kontakt</a></li>
+								<li><a href="">Návody</a></li>
+								<li><a href="">Členství</a></li>
+							</ul>
+						</div>
+				</div>
+				<div class="footer-four-column">
+					<div class="bg-control">
+						<p class="bg-control-text">Světlý režim</p>
+						<div class="bg-color">
+							<div class="bg-white"></div>
+							<div class="bg-black"></div>
+						</div>
+					</div>
+					<div class="shot-out">
+						<img src="img/icons/owner-logo.svg" class="owner-logo-icon" alt="logo-icon">
+						<a href="#">
+							<p>Vytvořil Filip Machala</p>
+						</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="script-div">
+		<script src="js/script.js"></script>
+		<script src="js/suggestions.js"></script>
+	</div>
+
+
+</body>
+</html>
