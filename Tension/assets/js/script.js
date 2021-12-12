@@ -79,4 +79,20 @@ function openSearch(){
     })
 }
 openSearch();
+
+function shopImage(){
+    let imageOne = document.querySelector(".img-one");
+    let imageTwo = document.querySelector(".img-two");
+    let imgBox = document.querySelector(".single-column-img")
+
+    imgBox.addEventListener('mouseover', () => {
+        imageOne.style = 'display: none';
+        imageTwo.style = 'display: flex';
+    })
+    imgBox.addEventListener('mouseout', () => {
+        imageOne.style = 'display: flex';
+        imageTwo.style = 'display: none';
+    })
+}
+shopImage();
   

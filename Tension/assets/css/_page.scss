@@ -8,7 +8,6 @@
         font-size: 70px;
         margin: 0;
         padding: 0;
-        transition: 0.33s;
         line-height: 1.2;
         @include addLight;
         &:hover{
@@ -51,14 +50,13 @@
     .img-row{
         display: flex;
         width: 100%;
-        padding: 0 1.5%;
         justify-content: space-between;
     }
     .img-row:not(:first-child){
-        margin-top: 3.66%;
+        margin-top: 2.3%;
     }
     .img-hover{
-        width: 31%;
+        width: 32%;
         height: auto;
         position: relative;
         display: block;
@@ -168,6 +166,12 @@
             width: 100%;
             height: auto;
         }
+        .img-one{
+            display: flex;
+        }
+        .img-two{
+            display: none;
+        }
     }
     .single-content{
         margin-top: 30px;    
@@ -179,9 +183,91 @@
             @include darkRegular;
             font-size: 30px;
         }
+        .under-text{
+            font-size: 22px;
+        }
     }
     .single-map{
         margin-top: 30px;
+    }
+    .single-customer{
+        margin: 40px 0 0 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    .size-box{
+        display: flex;
+    }
+    .single-sizes{
+        margin: 20px 0 0 0;
+        padding: 10px;
+        background: $senaryCol;
+        width: 240px;
+        li{
+            display: inline-flex;
+            span{
+                width: 40px;
+                height: 40px;
+                list-style: none;
+                color: $primaryCol;
+                background: $secondaryCol;
+                border-radius: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:hover{
+                    background: $tercialyCol;
+                    cursor: pointer;
+                }   
+            }
+        }
+    }
+    .single-sizing{
+        button{
+            height: 40px;
+            border: none;
+            background: $senaryCol;
+            margin: 30px 0 0 20px;
+            border-radius: 10px;
+            &:hover{
+                background: $tercialyCol;
+                transition: 0.33s;
+            }
+            span{
+                margin: 0 10px;
+            }
+        }
+    }
+    .single-avai{
+        margin: 10px 0;
+        @include darkLight;
+        font-size: 30px;
+        span:not(:first-child){
+            margin-left: 20px;
+            color: $true;
+        }
+    }
+    .single-price{
+        font-size: 40px;
+        @include darkRegular;
+    }
+    .single-cart{
+        button{
+            height: 100%;
+            width: auto;
+            border: none;
+            background: $senaryCol;
+            border-radius: 10px;
+            span{
+                font-size: 30px;
+                margin: 0 20px;
+                @include darkRegular;
+            }
+            &:hover{
+                background: $tercialyCol;
+                transition: 0.33s;
+            }
+        }
     }
 }
 .contact{

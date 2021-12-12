@@ -31,7 +31,6 @@
     margin: 8px 0 0 15px;
     @include logoBG;
     background-size: 70px 50px;
-    transition: 0.33s;
     &:hover{
         @include logoBGhover;
         background-size: 70px 50px;
@@ -71,7 +70,6 @@ header li a{
     @include lightLight;
     text-decoration: none;
     padding: 5px;
-    transition: 0.25s;
 }
 header li a:hover{
     color: $tercialyCol;
@@ -84,7 +82,6 @@ header li a:hover{
     color: $secondaryCol;
     margin: 0 0 0 20px;
     cursor: pointer;
-    transition: 0.25s;
 }
 .eshop-part i:hover{
     color: $tercialyCol;
