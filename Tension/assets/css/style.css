@@ -10,7 +10,7 @@ body {
   background: #ebebeb;
 }
 
-h1, p, ul, li, a, div, img, h1, h2 {
+h1, p, ul, li, a, div, img, h1, h2, h3 {
   margin: 0;
   padding: 0;
   -webkit-margin-before: 0;
@@ -1250,7 +1250,7 @@ header li a:hover {
 }
 
 .page-topic .dark {
-  padding: 150px 0 60px 0;
+  padding: 160px 0 70px 0;
 }
 
 .page-topic a {
@@ -1258,9 +1258,18 @@ header li a:hover {
   font-size: 70px;
   margin: 0;
   padding: 0;
+  -webkit-transition: 0.33s;
+  transition: 0.33s;
+  line-height: 1.2;
   color: #ff88af;
   font-family: 'Alumni Sans', sans-serif;
   font-weight: 300;
+}
+
+.page-topic a:hover {
+  color: #ebebeb;
+  -webkit-transition: 0.33s;
+  transition: 0.33s;
 }
 
 .page-topic p {
@@ -1282,8 +1291,6 @@ header li a:hover {
   color: #ff88af;
   font-family: 'Alumni Sans', sans-serif;
   font-weight: 300;
-  margin-top: 12px;
-  line-height: 1;
 }
 
 .page-topic .topic-topic {
@@ -1297,7 +1304,7 @@ header li a:hover {
   font-family: 'Alumni Sans', sans-serif;
   font-weight: 300;
   font-size: 40px;
-  margin: 25px 15px 0 15px;
+  margin: 15px 15px 0 16px;
 }
 
 .img-part {
@@ -1459,16 +1466,17 @@ header li a:hover {
 }
 
 .single-page .single-tags i {
-  color: #ebebeb;
-  font-size: 15px;
-  margin: 5px 10px 0 0;
+  color: #ff88af;
+  font-size: 20px;
+  margin: 10px 0 0 10px;
 }
 
 .single-page .single-tags p {
   color: #ebebeb;
   font-family: 'Alumni Sans', sans-serif;
   font-weight: 300;
-  font-size: 15px;
+  font-size: 25px;
+  margin-left: 15px;
 }
 
 .single-page .single-column-one {
@@ -1494,6 +1502,13 @@ header li a:hover {
   color: #191919;
   font-family: 'Alumni Sans', sans-serif;
   font-weight: 300;
+  font-size: 30px;
+}
+
+.single-page .single-content h3 {
+  color: #191919;
+  font-family: 'Alumni Sans', sans-serif;
+  font-weight: 500;
   font-size: 30px;
 }
 
