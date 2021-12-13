@@ -26,10 +26,10 @@ class MyHeader extends HTMLElement{
             <div class="nav-logo-part">
                 <a href="index.html" class="logo-box">
                     <div class="logo-contain logo-base">
-                        <img src="../assets/img/logo-trans.png">
+                        <img src="assets/img/logo-trans.png">
                     </div>
                     <div class="logo-contain logo-hover">
-                        <img src="../assets/img/logo-trans-hover.png">
+                        <img src="assets/img/logo-trans-hover.png">
                     </div>
                 </a>
                 <p>insert into controller</p>
@@ -98,12 +98,12 @@ class MyFooter extends HTMLElement{
                 <div class="footer">
                     <div class="footer-responsive">
                         <div class="footer-column column-one">
-                            <a href="../index.html" class="logo-box-footer">
+                            <a href="index.html" class="logo-box-footer">
                                 <div class="logo-contain logo-base-footer">
-                                    <img src="../assets/img/logo-trans.png">
+                                    <img src="assets/img/logo-trans.png">
                                 </div>
                                 <div class="logo-contain logo-hover-footer">
-                                    <img src="../assets/img/logo-trans-hover.png">
+                                    <img src="assets/img/logo-trans-hover.png">
                                 </div>
                             </a>
                             <div class="owner-motto">
