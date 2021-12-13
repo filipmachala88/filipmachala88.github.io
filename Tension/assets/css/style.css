@@ -61,26 +61,33 @@ h1, p, ul, li, a, div, img, h1, h2, h3 {
   margin: 10px 0 0 15px;
 }
 
-.nav-logo-part p {
-  font-size: 18px;
+.nav-logo-part {
   color: #ebebeb;
   font-family: 'Alumni Sans', sans-serif;
   font-weight: 300;
 }
 
-.logo-contain {
-  height: 50px;
-  width: 70px;
-  margin: 8px 0 0 15px;
-  background: url("../img/logo-trans.png") no-repeat;
-  background-size: 70px 50px;
+.nav-logo-part p {
+  font-size: 18px;
 }
 
-.logo-contain:hover {
-  background: url("../img/logo-trans-hover.png") no-repeat;
-  background-size: 70px 50px;
-  -webkit-transition: 0.33s;
-  transition: 0.33s;
+.nav-logo-part .logo-box .logo-contain {
+  margin: 8px 0 0 15px;
+}
+
+.nav-logo-part .logo-box .logo-contain img {
+  height: 50px;
+  width: 70px;
+}
+
+.nav-logo-part .logo-box .logo-base {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-logo-part .logo-box .logo-hover {
+  display: none;
 }
 
 header {
@@ -347,37 +354,38 @@ header li a:hover {
   width: 40%;
 }
 
-.footer .column-one .footer-icon {
-  height: 80px;
-  width: 120px;
-  background: url("../img/logo-trans.png") no-repeat;
-  background-size: 120px 80px;
-  margin: 5px 0 20px 5px;
-  -webkit-transition: 0.33s;
-  transition: 0.33s;
+.footer .column-one .logo-box-footer .logo-contain {
+  margin-left: 20px;
 }
 
-.footer .column-one .footer-icon:hover {
-  background: url("../img/logo-trans-hover.png") no-repeat;
-  background-size: 120px 80px;
-  -webkit-transition: 0.33s;
-  transition: 0.33s;
+.footer .column-one .logo-box-footer .logo-contain img {
+  height: auto;
+  width: 120px;
+}
+
+.footer .column-one .logo-box-footer .logo-base-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .column-one .logo-box-footer .logo-hover-footer {
+  display: none;
 }
 
 .footer .column-one .owner-motto {
-  border-top: 1px solid #ff88af;
-  padding-top: 20px;
+  margin: 5px 0 0 15px;
 }
 
 .footer .column-one .owner-motto p {
-  font-size: 22px;
+  font-size: 25px;
   color: #ebebeb;
   font-family: 'Alumni Sans', sans-serif;
   font-weight: 300;
 }
 
 .footer .column-two {
-  margin-left: 20%;
+  margin-left: 15%;
 }
 
 .footer .column-two h2 {

@@ -18,30 +18,31 @@
         width: 40%;
     }
     & .column-one{
-        & .footer-icon{
-            height: 80px;
-            width: 120px;
-            @include logoBG;
-            background-size: 120px 80px;
-            margin: 5px 0 20px 5px;
-            transition: 0.33s;
-            &:hover{
-                @include logoBGhover;
-                background-size: 120px 80px;            
-                transition: 0.33s;
+        .logo-box-footer{
+            .logo-contain{
+                margin-left: 20px;
+                img{
+                    height: auto;
+                    width: 120px;
+                }
+            }    
+            .logo-base-footer{
+                display: flex;
+            }
+            .logo-hover-footer{
+                display: none;
             }
         }
         & .owner-motto{
-            border-top: 1px solid $tercialyCol;
-            padding-top: 20px;
+            margin: 5px 0 0 15px;
             & p{
-                font-size: 22px;    
+                font-size: 25px;    
                 @include lightLight;
             }
         }
     }
     & .column-two{
-        margin-left: 20%;
+        margin-left: 15%;
         & h2{
             margin: 0;
             font-size: 30px;

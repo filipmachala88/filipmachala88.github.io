@@ -21,67 +21,9 @@
 </head>
 <body>
 
+    <div id="page-value" style="display: none;">contact</div>
     <!-- // HEADER - NAVIGATION //-->
-    <header>
-        <div class="intern-container">
-            <div class="nav-logo-part">
-                <a href="/">
-                    <div class="logo-contain">
-    
-                    </div>
-                </a>
-                <p>insert into controller</p>
-            </div>
-            <div class="navigation">
-                <ul>
-                    <li><a href="../index.html">Domů</a></li>
-                    <li><a href="events.html">Akce</a></li>
-                    <li><a href="merch.html">Merch</a></li>
-                    <li><a href="galery.html">Galerie</a></li>
-                    <li><a href="contact.html" class="page-active">Kontakt</a></li>
-                </ul>
-            </div>
-            <div class="eshop-part">
-               <i class="fas fa-search"></i>
-               <i class="fas fa-shopping-cart"></i>
-               <i class="fas fa-user"></i>
-            </div>
-    
-            <div class="nav-responsive">
-                <div class="eshop-part-resp">
-                    <i class="fas fa-search"></i>
-                    <i class="fas fa-shopping-cart"></i>
-                    <i class="fas fa-user"></i>
-                 </div>
-                 
-                <div class="hamburger-div2">
-                    <div class="menu-line2"></div>
-                </div>
-            </div>
-        </div>
-        <div class="nav-sidebar">
-            <div class="sidebar-content">
-                <div class="nav-sidebar-search">
-                    <?php get_search_form(); ?>
-                </div>
-                <div class="hamburger-div3">
-                    <div class="menu-line3"></div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <div class="header-menu-responsive">
-        <div class="navigation-responsive">
-            <ul>
-                <li><a href="../index.html" class="page-active">Domů</a></li>
-                <li><a href="events.html">Akce</a></li>
-                <li><a href="merch.html">Merch</a></li>
-                <li><a href="galery.html">Galerie</a></li>
-                <li><a href="contact.html">Kontakt</a></li>
-            </ul>
-        </div>
-    </div>
+    <my-header></my-header>
     <!-- // TOPIC //-->
     <div class="extern-container page-topic">
         <div class="dark">      
@@ -161,59 +103,8 @@
             <img src="../assets/img/notes-bg.png" alt="notes-icon">
         </div>
     </div>
-    <!-- // FOOTER - NAVIGATION //-->
-<div class="extern-container footer-container">
-    <div class="footer-dark">
-        <div class="intern-container">
-            <div class="footer">
-                <div class="footer-responsive">
-                    <div class="footer-column column-one">
-                        <a href="">
-                            <div class="footer-icon"></div>
-                        </a>
-                        <div class="owner-motto">
-                            <p>insert into controller</p>
-                        </div>
-                    </div>
-                    <div class="footer-column column-two">
-                        <h2>Informace</h2>
-                        <ul>
-                            <li><a href="">obchodní podmínky</a></li>
-                            <li><a href="">cookies</a></li>
-                            <li><a href="">kontakt</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="footer-responsive">
-                    <div class="footer-column column-three">
-                        <h2>Sociální sítě</h2>
-                        <div class="social-sites">
-                            <p>Sledujte nás</p>
-                            <div class="social-icon-flex">
-                                <a href="https://www.facebook.com/tensionevents">
-                                    <div class="icon-hover">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </div>
-                                </a>
-                                <a href="https://www.instagram.com/tensionevents/" class="div-insta">
-                                    <div class="icon-hover">
-                                        <i class="fab fa-instagram"></i>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="footer-column column-four">
-                        <div class="shot-out">
-                            <p class="shot-out-text">Powered by</p><a href="">Filip Machala</a>
-                        </div>
-                        <p class="shot-out-special">© Tension - všechna práva vyhrazena</p>    
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+    <!-- // FOOTER - NAVIGATION //-->    
+    <my-footer></my-footer>
 
 <div class="scripts">
     <script type="module" src="../assets/js/script.js"></script>

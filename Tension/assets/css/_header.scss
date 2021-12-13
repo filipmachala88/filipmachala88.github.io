@@ -21,23 +21,27 @@
         }   
     }
 }
-.nav-logo-part p{
-    font-size: 18px;
+.nav-logo-part{
+    p{
+        font-size: 18px;
+    }
     @include lightLight;
-}
-.logo-contain{
-    height: 50px;
-    width: 70px;
-    margin: 8px 0 0 15px;
-    @include logoBG;
-    background-size: 70px 50px;
-    &:hover{
-        @include logoBGhover;
-        background-size: 70px 50px;
-        transition: 0.33s;
+    .logo-box{
+        .logo-contain{
+            margin: 8px 0 0 15px;
+            img{
+                height: 50px;
+                width: 70px;
+            }
+        }    
+        .logo-base{
+            display: flex;
+        }
+        .logo-hover{
+            display: none;
+        }
     }
 }
-
 header{
     width: 100%;
     height: 90px;
