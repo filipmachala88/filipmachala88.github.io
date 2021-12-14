@@ -1522,6 +1522,11 @@ header li a:hover {
 }
 
 .single-page .single-content .under-text {
+  border-left: 2px solid #ff88af;
+  padding: 0 0 0 15px;
+}
+
+.single-page .single-content .under-text p {
   font-size: 22px;
 }
 
@@ -1545,7 +1550,7 @@ header li a:hover {
   display: flex;
 }
 
-.single-page .single-sizes {
+.single-page .single-sizes div {
   margin: 20px 0 0 0;
   padding: 10px;
   background: white;
@@ -1699,8 +1704,6 @@ header li a:hover {
   font-size: 20px;
   outline: none;
   border: 1px solid #191919;
-  -webkit-transition: 0.33s;
-  transition: 0.33s;
   color: #191919;
   font-family: 'Alumni Sans', sans-serif;
   font-weight: 500;
@@ -1820,6 +1823,83 @@ header li a:hover {
   font-weight: 500;
 }
 
+.merch-sizes-darken {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 20;
+}
+
+.merch-sizes-darken .sizes-box {
+  padding: 15px 30px 10px 30px;
+  background: #ebebeb;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.merch-sizes-darken .sizes-box table {
+  color: #191919;
+  font-family: 'Alumni Sans', sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+  text-align: center;
+}
+
+.merch-sizes-darken .sizes-box table tr {
+  padding: 0 5px;
+}
+
+.merch-sizes-darken .sizes-box table tr td:first-child {
+  width: 120px;
+  padding: 0 0 0 10px;
+}
+
+.merch-sizes-darken .sizes-box table tr td:not(:first-child) {
+  width: 150px;
+}
+
+.merch-sizes-darken .sizes-box table tr:nth-child(odd) {
+  background: #6084f0 !important;
+  color: #ebebeb;
+}
+
+.merch-sizes-darken .sizes-box .sizes-close-button {
+  margin: 4px 0 0 10px;
+  height: 30px;
+  width: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.merch-sizes-darken .sizes-box .sizes-close-button:hover i {
+  color: #ff88af;
+  -webkit-transition: 0.33s;
+  transition: 0.33s;
+}
+
+.merch-sizes-darken .sizes-box .sizes-close-button i {
+  color: #191919;
+  font-size: 30px;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 1000px) {
   .navigation {
     display: none;
@@ -1906,6 +1986,28 @@ header li a:hover {
   .window-active {
     -webkit-transform: translateX(0);
             transform: translateX(0);
+  }
+  .single-page .size-box {
+    display: block;
+  }
+  .single-page .size-box .single-sizes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .single-page .size-box .single-sizing {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .single-page .size-box .single-sizing button {
+    margin: 20px 0 0 0;
   }
   .index-about .about-absolute {
     display: none;
@@ -2056,6 +2158,28 @@ header li a:hover {
   }
   .footer .column-three, .footer .column-four {
     margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .single-page {
+    display: block;
+  }
+  .single-page .single-column-one, .single-page .single-column-two {
+    width: 100%;
+  }
+  .single-page .single-column-two {
+    margin: 50px 0 0 0;
+  }
+  .contact {
+    display: block;
+  }
+  .contact .contact-column-one {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .contact .contact-column-two {
+    width: 100%;
   }
 }
 

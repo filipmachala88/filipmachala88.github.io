@@ -275,3 +275,19 @@ function logoImageFooter(){
     }
 }
 logoImageFooter();
+
+function sizeWindow(){
+    let openButton = document.querySelector(".sizes-open-button");
+    let closeButton = document.querySelector(".sizes-close-button");
+    let sizesWindow = document.querySelector(".merch-sizes-darken");
+    
+    if(openButton){
+        openButton.addEventListener('click', () => {
+            sizesWindow.style = 'display: flex';
+        })
+        closeButton.addEventListener('click', () => {
+            sizesWindow.style = 'display: none';
+        })
+    }
+}
+sizeWindow();

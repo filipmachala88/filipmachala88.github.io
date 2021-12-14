@@ -73,6 +73,22 @@
       .window-active {
         transform: translateX(0);
       }
+      .single-page {
+          .size-box{
+            display: block;
+            .single-sizes{
+                display: flex;
+                justify-content: center;
+            }
+            .single-sizing{
+                display: flex;
+                justify-content: center;
+                button{
+                    margin: 20px 0 0 0;
+                }
+            }
+          }
+      }
 
     // 
     .index-about .about-absolute{
@@ -215,6 +231,27 @@
         }
         .column-three, .column-four{
             margin-top: 50px;
+        }
+    }
+}
+@media only screen and (max-width: 600px){
+    .single-page{
+        display: block;
+        .single-column-one, .single-column-two{
+            width: 100%;
+        }
+        .single-column-two{
+            margin: 50px 0 0 0;
+        }
+    }
+    .contact{
+        display: block;
+        .contact-column-one{
+            width: 100%;
+            margin-bottom: 50px;
+        }
+        .contact-column-two{
+            width: 100%;
         }
     }
 }
