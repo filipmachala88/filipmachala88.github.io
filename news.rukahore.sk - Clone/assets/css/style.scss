@@ -1,0 +1,24 @@
+// global rules
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+ul, li, i, h2{
+    margin: 0;
+    padding: 0;
+}
+.extern-container{
+    width: 100%;
+}
+.intern-container{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.scripts{
+    display: none;
+}
+// imports
+@import "variables";
+@import "header";
