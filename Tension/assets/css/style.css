@@ -10,7 +10,7 @@ body {
   background: #ebebeb;
 }
 
-h1, p, ul, li, a, div, img, h1, h2, h3 {
+p, ul, li, a, div, img, h1, h2, h3, span {
   margin: 0;
   padding: 0;
   -webkit-margin-before: 0;
@@ -30,44 +30,13 @@ h1, p, ul, li, a, div, img, h1, h2, h3 {
   margin: 0 auto 0 auto;
 }
 
-.tension-banner {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: 11;
-}
-
-.tension-banner .tension-banner-dark {
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.9);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.tension-banner .tension-banner-dark .logo-center p {
-  font-size: 25px;
-  color: #ebebeb;
-  font-family: 'Alumni Sans', sans-serif;
-  font-weight: 300;
-  text-align: center;
-  margin: 10px 0 0 15px;
-}
-
 .nav-logo-part {
   color: #ebebeb;
   font-family: 'Alumni Sans', sans-serif;
   font-weight: 300;
 }
 
-.nav-logo-part p {
+.nav-logo-part span {
   font-size: 18px;
 }
 
@@ -99,16 +68,6 @@ header {
   transition: 0.33s;
 }
 
-.nav-active {
-  background: #191919;
-  -webkit-transition: 0.33s;
-  transition: 0.33s;
-}
-
-.sidebar-active {
-  height: 130px;
-}
-
 header .intern-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -118,7 +77,7 @@ header .intern-container {
           justify-content: space-between;
 }
 
-header ul {
+header .navigation ul {
   margin-top: 19px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -128,13 +87,13 @@ header ul {
           justify-content: center;
 }
 
-header li {
+header .navigation ul li {
   list-style: none;
   margin: 0 15px;
   font-size: 25px;
 }
 
-header li a {
+header .navigation ul li a {
   color: #ebebeb;
   font-family: 'Alumni Sans', sans-serif;
   font-weight: 300;
@@ -142,26 +101,66 @@ header li a {
   padding: 5px;
 }
 
-header li a:hover {
+header .navigation ul li a:hover {
   color: #ff88af;
   -webkit-transition: 0.25s;
   transition: 0.25s;
 }
 
-.eshop-part {
-  margin-top: 32px;
+header .eshop-part, header .eshop-part-resp {
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
 }
 
-.eshop-part i {
-  color: #ebebeb;
-  margin: 0 0 0 20px;
+header .eshop-part ul, header .eshop-part-resp ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .eshop-part ul li, header .eshop-part-resp ul li {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 10px;
   cursor: pointer;
 }
 
-.eshop-part i:hover {
+header .eshop-part ul li:hover i, header .eshop-part-resp ul li:hover i {
   color: #ff88af;
   -webkit-transition: 0.25s;
   transition: 0.25s;
+}
+
+header .eshop-part ul li i, header .eshop-part-resp ul li i {
+  color: #ebebeb;
+  font-size: 18px;
+}
+
+.nav-active {
+  background: #191919;
+  -webkit-transition: 0.33s;
+  transition: 0.33s;
+}
+
+.sidebar-active {
+  height: 130px;
 }
 
 .nav-responsive {
@@ -377,7 +376,7 @@ header li a:hover {
   margin: 5px 0 0 15px;
 }
 
-.footer .column-one .owner-motto p {
+.footer .column-one .owner-motto span {
   font-size: 25px;
   color: #ebebeb;
   font-family: 'Alumni Sans', sans-serif;
@@ -546,6 +545,38 @@ header li a:hover {
   font-weight: 300;
 }
 
+.tension-banner {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+}
+
+.tension-banner .tension-banner-dark {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tension-banner .tension-banner-dark .logo-center span {
+  font-size: 25px;
+  color: #ebebeb;
+  font-family: 'Alumni Sans', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  margin: 10px 0 0 15px;
+  display: block;
+}
+
 .carousel-div {
   width: 100%;
   height: 100vh;
@@ -626,7 +657,12 @@ header li a:hover {
 
 .slider-column-first {
   width: 50%;
-  padding-top: 18vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .slider-column-first .event-topic {
@@ -634,7 +670,7 @@ header li a:hover {
 }
 
 .slider-column-first .event-topic h2 {
-  font-size: 50px;
+  font-size: 70px;
   text-align: left;
   color: #ff88af;
   font-family: 'Alumni Sans', sans-serif;
@@ -642,7 +678,7 @@ header li a:hover {
 }
 
 .slider-column-first .event-topic p {
-  margin-top: 4vh;
+  margin-top: 20px;
   font-size: 25px;
   color: #ebebeb;
   font-family: 'Alumni Sans', sans-serif;
@@ -653,13 +689,13 @@ header li a:hover {
 }
 
 .slider-column-first .event-info {
-  margin-top: 10vh;
+  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.slider-column-first .event-info p {
+.slider-column-first .event-info .event-topic p {
   font-size: 25px;
   border: none;
   color: #ebebeb;
@@ -667,19 +703,23 @@ header li a:hover {
   font-weight: 300;
 }
 
-.slider-column-first .event-info i {
+.slider-column-first .event-info .event-icon i {
   color: #a4a4a4;
-  font-size: 45px;
+  font-size: 35px;
   margin-top: 12px;
 }
 
 .slider-column-first .event-info .event-descr {
   width: 100%;
   margin-left: 30px;
+  font-size: 20px;
+  color: #ebebeb;
+  font-family: 'Alumni Sans', sans-serif;
+  font-weight: 300;
 }
 
 .slider-column-first .slider-button {
-  margin-top: 15vh;
+  margin-top: 100px;
   width: 150px;
   height: 40px;
   display: -webkit-box !important;
@@ -719,8 +759,8 @@ header li a:hover {
   left: -10%;
 }
 
-.slider-column-first .slider-button p {
-  font-size: 25px;
+.slider-column-first .slider-button span {
+  font-size: 22px;
   z-index: 5;
 }
 
@@ -736,12 +776,13 @@ header li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 .slider-column-second img {
   position: absolute;
   bottom: 0;
-  height: 70vh;
+  height: 550px;
   width: auto;
   opacity: 0.75;
 }
@@ -970,8 +1011,8 @@ header li a:hover {
   left: -10%;
 }
 
-.container-advert .advert .advert-button p {
-  font-size: 25px;
+.container-advert .advert .advert-button span {
+  font-size: 22px;
   z-index: 5;
 }
 
@@ -1187,8 +1228,8 @@ header li a:hover {
   left: -10%;
 }
 
-.galery .galery-button p {
-  font-size: 25px;
+.galery .galery-button span {
+  font-size: 22px;
   z-index: 5;
 }
 
@@ -1273,7 +1314,7 @@ header li a:hover {
 }
 
 .page-topic p {
-  font-size: 30px;
+  font-size: 25px;
   color: #ebebeb;
   font-family: 'Alumni Sans', sans-serif;
   font-weight: 300;
@@ -1404,7 +1445,7 @@ header li a:hover {
   margin: 6px 2px 0 0;
 }
 
-.img-part .tags-side p {
+.img-part .tags-side span {
   font-size: 20px;
   color: #ebebeb;
   font-family: 'Alumni Sans', sans-serif;
@@ -1470,7 +1511,7 @@ header li a:hover {
   margin: 10px 0 0 10px;
 }
 
-.single-page .single-tags p {
+.single-page .single-tags span {
   color: #ebebeb;
   font-family: 'Alumni Sans', sans-serif;
   font-weight: 300;
@@ -1486,6 +1527,7 @@ header li a:hover {
 .single-page .single-column-two {
   width: 49%;
   margin-left: 1%;
+  position: relative;
 }
 
 .single-page .single-column-two img {
@@ -1501,6 +1543,29 @@ header li a:hover {
 
 .single-page .single-column-two .img-two {
   display: none;
+}
+
+.single-page .single-column-two .img-counter {
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  background: #ebebeb;
+  font-size: 20px;
+  width: 45px;
+  color: #191919;
+  font-family: 'Alumni Sans', sans-serif;
+  font-weight: 500;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.single-page .single-column-two .img-counter span {
+  font-size: 20px;
 }
 
 .single-page .single-content {
@@ -1555,6 +1620,12 @@ header li a:hover {
   padding: 10px;
   background: white;
   width: 240px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .single-page .single-sizes li {
@@ -1592,6 +1663,10 @@ header li a:hover {
   background: white;
   margin: 30px 0 0 20px;
   border-radius: 10px;
+  color: #191919;
+  font-family: 'Alumni Sans', sans-serif;
+  font-weight: 300;
+  font-size: 22px;
 }
 
 .single-page .single-sizing button:hover {
@@ -1654,40 +1729,61 @@ header li a:hover {
   margin: 50px 0 0 0;
 }
 
-.contact h2 {
-  font-size: 40px;
-  color: #ff88af;
-  font-family: 'Alumni Sans', sans-serif;
-  font-weight: 300;
-}
-
-.contact p {
-  font-size: 25px;
+.contact h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
   color: #191919;
   font-family: 'Alumni Sans', sans-serif;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .contact .contact-column-one {
   width: 50%;
 }
 
+.contact .contact-column-one .text {
+  border-left: 3px solid #ff88af;
+  padding-left: 40px;
+}
+
+.contact .contact-column-one span {
+  font-size: 25px;
+  color: #191919;
+  font-family: 'Alumni Sans', sans-serif;
+  font-weight: 500;
+}
+
 .contact .contact-column-two {
   width: 50%;
+}
+
+.contact .contact-column-two .text {
+  border-left: 3px solid #ff88af;
+  padding-left: 40px;
+}
+
+.contact .contact-column-two span {
+  font-size: 25px;
+  color: #191919;
+  font-family: 'Alumni Sans', sans-serif;
+  font-weight: 300;
+}
+
+.contact .contact-column-two p {
+  font-size: 25px;
+  color: #191919;
+  font-family: 'Alumni Sans', sans-serif;
+  font-weight: 500;
 }
 
 .contact .contact-form {
   background: white;
   width: 100%;
   padding: 50px 30px;
-  margin: 30px 0;
+  margin: 40px 0;
   border-radius: 30px;
   -webkit-box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
           box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
-}
-
-.contact .contact-form p {
-  font-size: 25px;
 }
 
 .contact .contact-form strong {
@@ -1768,8 +1864,8 @@ header li a:hover {
   left: -10%;
 }
 
-.contact .contact-form .contact-form-button p {
-  font-size: 25px;
+.contact .contact-form .contact-form-button span {
+  font-size: 22px;
   z-index: 5;
 }
 
@@ -1823,22 +1919,32 @@ header li a:hover {
   font-weight: 500;
 }
 
-.merch-sizes-darken {
+.merch-sizes {
   position: fixed;
+  display: none;
   width: 100%;
   height: 100%;
-  display: none;
+  z-index: 20;
+}
+
+.merch-sizes .merch-sizes-darken {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: rgba(0, 0, 0, 0.7);
-  z-index: 20;
 }
 
-.merch-sizes-darken .sizes-box {
+.merch-sizes .merch-sizes-darken .sizes-box {
+  width: 600px;
   padding: 15px 30px 10px 30px;
   background: #ebebeb;
   border-radius: 10px;
@@ -1847,7 +1953,7 @@ header li a:hover {
   display: flex;
 }
 
-.merch-sizes-darken .sizes-box table {
+.merch-sizes .merch-sizes-darken .sizes-box table {
   color: #191919;
   font-family: 'Alumni Sans', sans-serif;
   font-weight: 300;
@@ -1855,25 +1961,25 @@ header li a:hover {
   text-align: center;
 }
 
-.merch-sizes-darken .sizes-box table tr {
+.merch-sizes .merch-sizes-darken .sizes-box table tr {
   padding: 0 5px;
 }
 
-.merch-sizes-darken .sizes-box table tr td:first-child {
+.merch-sizes .merch-sizes-darken .sizes-box table tr td:first-child {
   width: 120px;
   padding: 0 0 0 10px;
 }
 
-.merch-sizes-darken .sizes-box table tr td:not(:first-child) {
+.merch-sizes .merch-sizes-darken .sizes-box table tr td:not(:first-child) {
   width: 150px;
 }
 
-.merch-sizes-darken .sizes-box table tr:nth-child(odd) {
+.merch-sizes .merch-sizes-darken .sizes-box table tr:nth-child(odd) {
   background: #6084f0 !important;
   color: #ebebeb;
 }
 
-.merch-sizes-darken .sizes-box .sizes-close-button {
+.merch-sizes .merch-sizes-darken .sizes-box .sizes-close-button {
   margin: 4px 0 0 10px;
   height: 30px;
   width: 30px;
@@ -1886,51 +1992,49 @@ header li a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
-.merch-sizes-darken .sizes-box .sizes-close-button:hover i {
+.merch-sizes .merch-sizes-darken .sizes-box .sizes-close-button:hover i {
   color: #ff88af;
   -webkit-transition: 0.33s;
   transition: 0.33s;
 }
 
-.merch-sizes-darken .sizes-box .sizes-close-button i {
+.merch-sizes .merch-sizes-darken .sizes-box .sizes-close-button i {
   color: #191919;
   font-size: 30px;
-  cursor: pointer;
 }
 
 @media only screen and (max-width: 1000px) {
-  .navigation {
+  header .navigation {
     display: none;
   }
-  .nav-responsive {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  header .eshop-part {
+    display: none;
   }
-  .eshop-part-resp {
+  header .eshop-part-resp {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-top: 32px;
   }
-  .eshop-part {
-    display: none;
+  header .eshop-part-resp ul li {
+    margin: 0 3px;
   }
-  .eshop-part-resp i {
-    color: #ebebeb;
-    margin: 0 0 0 30px;
-    font-size: 20px;
+  header .nav-responsive {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
-  .hamburger-div2 {
+  header .nav-responsive .hamburger-div2 {
     width: 50px;
     height: 50px;
-    margin: 18px 0px 0 50px;
+    margin: 20px 0px 0 30px;
     cursor: pointer;
     position: relative;
   }
-  .menu-line2 {
+  header .nav-responsive .menu-line2 {
     margin-top: 25px;
     width: 50px;
     height: 3px;
@@ -1939,7 +2043,7 @@ header li a:hover {
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
   }
-  .menu-line2::before {
+  header .nav-responsive .menu-line2::before {
     width: 50px;
     height: 3px;
     background: white;
@@ -1951,7 +2055,7 @@ header li a:hover {
     -webkit-transform: translateY(-15px);
             transform: translateY(-15px);
   }
-  .menu-line2::after {
+  header .nav-responsive .menu-line2::after {
     width: 50px;
     height: 3px;
     background: white;
@@ -1963,18 +2067,18 @@ header li a:hover {
     -webkit-transform: translateY(15px);
             transform: translateY(15px);
   }
-  .open2 .menu-line2 {
+  header .nav-responsive .open2 .menu-line2 {
     background: transparent;
     -webkit-transform: translateX(-50px);
             transform: translateX(-50px);
   }
-  .open2 .menu-line2::before {
+  header .nav-responsive .open2 .menu-line2::before {
     width: 50px;
     height: 2px;
     -webkit-transform: rotate(45deg) translate(28px, -28px);
             transform: rotate(45deg) translate(28px, -28px);
   }
-  .open2 .menu-line2::after {
+  header .nav-responsive .open2 .menu-line2::after {
     width: 50px;
     height: 2px;
     -webkit-transform: rotate(-45deg) translate(28px, 28px);
@@ -2106,6 +2210,12 @@ header li a:hover {
   .index-about .tension-members {
     margin-top: 70px;
   }
+  .sidebar-content {
+    margin-top: 15px;
+  }
+  .sidebar-active {
+    height: 145px;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -2155,9 +2265,18 @@ header li a:hover {
   }
   .footer .footer-responsive {
     width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer .column-one, .footer .column-two, .footer .column-three, .footer .column-four {
+    width: 40%;
   }
   .footer .column-three, .footer .column-four {
     margin-top: 50px;
+  }
+  .footer .column-three {
+    margin: 0;
   }
 }
 
@@ -2180,6 +2299,9 @@ header li a:hover {
   }
   .contact .contact-column-two {
     width: 100%;
+  }
+  .nav-sidebar #s {
+    width: 50%;
   }
 }
 

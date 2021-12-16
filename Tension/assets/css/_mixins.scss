@@ -60,7 +60,6 @@
     position: relative;
     overflow: hidden;
     padding: 5px 0 5px 0;
-    
     @include darkRegular;
     &:before{
         content: "";
@@ -76,8 +75,8 @@
     &:hover:before{
         left: -10%;
     }
-    & p{
-        font-size: 25px;
+    span{
+        font-size: 22px;
         z-index: 5;
     }
 }
@@ -92,7 +91,6 @@
     overflow: hidden;
     padding: 5px 0 5px 0;
     z-index: 5;
-    
     @include lightLight;
     &:before{
         content: "";
@@ -108,8 +106,8 @@
     &:hover:before{
         left: -10%;
     }
-    & p{
-        font-size: 25px;
+    span{
+        font-size: 22px;
         z-index: 5;
     }
 }

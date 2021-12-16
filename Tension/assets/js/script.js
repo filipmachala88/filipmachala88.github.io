@@ -32,7 +32,7 @@ class MyHeader extends HTMLElement{
                         <img src="assets/img/logo-trans-hover.png">
                     </div>
                 </a>
-                <p>insert into controller</p>
+                <span>insert into controller</span>
             </div>
             <div class="navigation">
                 <ul>
@@ -44,16 +44,20 @@ class MyHeader extends HTMLElement{
                 </ul>
             </div>
             <div class="eshop-part">
-               <i class="fas fa-search"></i>
-               <i class="fas fa-shopping-cart"></i>
-               <i class="fas fa-user"></i>
+               <ul>
+                    <li class="searchBox"><i class="fas fa-search"></i></li>
+                    <li><i class="fas fa-shopping-cart"></i></li>
+                    <li><i class="fas fa-user"></i></li>      
+               </ul>
             </div>
     
             <div class="nav-responsive">
                 <div class="eshop-part-resp">
-                    <i class="fas fa-search"></i>
-                    <i class="fas fa-shopping-cart"></i>
-                    <i class="fas fa-user"></i>
+                    <ul>
+                        <li class="searchBox-resp"><i class="fas fa-search"></i></li>
+                        <li><i class="fas fa-shopping-cart"></i></li>
+                        <li><i class="fas fa-user"></i></li>      
+                    </ul>
                  </div>
                  
                 <div class="hamburger-div2">
@@ -73,6 +77,7 @@ class MyHeader extends HTMLElement{
             </div>
         </div>
     </header>
+
     <div class="header-menu-responsive">
         <div class="navigation-responsive">
             <ul>
@@ -107,7 +112,7 @@ class MyFooter extends HTMLElement{
                                 </div>
                             </a>
                             <div class="owner-motto">
-                                <p>insert into controller</p>
+                                <span>insert into controller</span>
                             </div>
                         </div>
                         <div class="footer-column column-two">
@@ -153,7 +158,8 @@ class MyFooter extends HTMLElement{
     }
 }
 customElements.define('my-footer', MyFooter);
-// connect page
+
+// intro
 function moveToPage(){
     setTimeout(() => {
         $(".tension-banner").fadeOut(500);
@@ -166,6 +172,7 @@ function windowOut(){
         $(".contact-fixed").fadeOut(500);
     }, 4000);
 }
+
 windowOut();
 // scroll navgation
 function navScroll() {
@@ -203,11 +210,18 @@ function openMenu(){
 openMenu();
 // header show search input
 function openSearch(){
-    let openButton = document.querySelector(".fa-search");
+    let openButton = document.querySelector(".searchBox");
+    let openButtonResp = document.querySelector(".searchBox-resp")
+
     let closeButton = document.querySelector(".hamburger-div3");
     let navHeader = document.querySelector("header");
 
     openButton.addEventListener('click', () => {
+        $(".nav-sidebar").slideDown(100);
+        navHeader.classList.add("sidebar-active");
+
+    })
+    openButtonResp.addEventListener('click', () => {
         $(".nav-sidebar").slideDown(100);
         navHeader.classList.add("sidebar-active");
 
@@ -225,14 +239,19 @@ function shopImage(){
     if(imgBox){
         let imageOne = document.querySelector(".img-one");
         let imageTwo = document.querySelector(".img-two");
+    
+        let imgCounter = document.querySelector(".img-counter");
+        let imgNumber = imgCounter.querySelector("span");
 
         imgBox.addEventListener('mouseover', () => {
             imageOne.style = 'display: none';
             imageTwo.style = 'display: flex';
+            imgNumber.textContent = '2/2';
         })
         imgBox.addEventListener('mouseout', () => {
             imageOne.style = 'display: flex';
             imageTwo.style = 'display: none';
+            imgNumber.textContent = '1/2';
         })
     }
 }
@@ -277,17 +296,11 @@ function logoImageFooter(){
 logoImageFooter();
 
 function sizeWindow(){
-    let openButton = document.querySelector(".sizes-open-button");
-    let closeButton = document.querySelector(".sizes-close-button");
-    let sizesWindow = document.querySelector(".merch-sizes-darken");
-    
-    if(openButton){
-        openButton.addEventListener('click', () => {
-            sizesWindow.style = 'display: flex';
-        })
-        closeButton.addEventListener('click', () => {
-            sizesWindow.style = 'display: none';
-        })
-    }
+    $(".sizes-open-button").click(function(){
+        $(".merch-sizes").fadeIn(200);
+    })
+    $(".sizes-close-button").click(function(){
+        $(".merch-sizes").fadeOut(200);
+    })
 }
 sizeWindow();

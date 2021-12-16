@@ -1,6 +1,6 @@
 .page-topic{
     @include sliderBG;
-    & .dark{
+    .dark{
         padding: 160px 0 70px 0;
     }
     a{
@@ -16,7 +16,7 @@
         }
     }
     p{
-        font-size: 30px;
+        font-size: 25px;
         @include lightLight;
         margin: 0;
         padding: 0;
@@ -105,7 +105,7 @@
             color: $tercialyCol;
             margin: 6px 2px 0 0;
         }
-        p{
+        span{
             font-size: 20px;
             @include lightLight;
             margin-left: 10px;
@@ -148,20 +148,21 @@
             font-size: 20px;
             margin: 10px 0 0 10px;
         }
-        p{
+        span{
             @include lightLight;
             font-size: 25px;
             margin-left: 15px;
         }
     }
-    & .single-column-one{
+    .single-column-one{
         width: 49%;
         margin-right: 1%;
 
     }
-    & .single-column-two{
+    .single-column-two{
         width: 49%;
         margin-left: 1%;
+        position: relative;
         img{
             width: 100%;
             height: auto;
@@ -171,6 +172,21 @@
         }
         .img-two{
             display: none;
+        }
+        .img-counter{
+            position: absolute;
+            right: 2%;
+            top: 2%;
+            background: $secondaryCol;
+            font-size: 20px;
+            width: 45px;
+            @include darkRegular;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            span{
+                font-size: 20px;
+            }
         }
     }
     .single-content{
@@ -208,6 +224,8 @@
             padding: 10px;
             background: $senaryCol;
             width: 240px;
+            display: flex;
+            justify-content: center;
         }
         li{
             display: inline-flex;
@@ -235,6 +253,8 @@
             background: $senaryCol;
             margin: 30px 0 0 20px;
             border-radius: 10px;
+            @include darkLight;
+            font-size: 22px;
             &:hover{
                 background: $tercialyCol;
                 transition: 0.33s;
@@ -280,30 +300,44 @@
     width: 100%;
     display: flex;
     margin: 50px 0 0 0;
-    h2{
-        font-size: 40px;
-        @include addLight;
+    h1{
+        font-size: 50px;
+        margin-bottom: 20px;
+        @include darkRegular;
     }
-    p{
-        font-size: 25px;
-        @include darkLight;
-    }
-    & .contact-column-one{
+    .contact-column-one{
         width: 50%;
+        .text{
+            border-left: 3px solid $tercialyCol;
+            padding-left: 40px;
+        }
+        span{
+            font-size: 25px;
+            @include darkRegular;
+        }
     }
-    & .contact-column-two{
+    .contact-column-two{
         width: 50%;
+        .text{
+            border-left: 3px solid $tercialyCol;
+            padding-left: 40px;
+        }
+        span{
+            font-size: 25px;
+            @include darkLight;
+        }
+        p{
+            font-size: 25px;
+            @include darkRegular;
+        }
     }
     .contact-form{
         background: $senaryCol;
         width: 100%;
         padding: 50px 30px;
-        margin: 30px 0;
+        margin: 40px 0;
         border-radius: 30px;
         box-shadow: 0 25px 40px rgba(0,0,0,.5);
-        p{
-            font-size: 25px;
-        }
         strong{
             @include addLight;
             margin: 0 0 0 3px;
@@ -373,56 +407,63 @@
         @include addRegular;
     }
 }
-.merch-sizes-darken{
+.merch-sizes{
     position: fixed;
+    display: none;
     width: 100%;
     height: 100%;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    background: rgba(0,0,0,.7);
     z-index: 20;
-    .sizes-box{
-        padding: 15px 30px 10px 30px;
-        background: $secondaryCol;
-        border-radius: 10px;
+    .merch-sizes-darken{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,.8);
         display: flex;
-        table{
-            @include darkLight;
-            font-size: 25px;
-            text-align: center;
-            tr{
-                padding: 0 5px;
-                td:first-child{
-                    width: 120px;
-                    padding: 0 0 0 10px;
-                }
-                td:not(:first-child){
-                    width: 150px;
-                }
-                &:nth-child(odd){
-                    background: $special !important;
-                    color: $secondaryCol;
-                }
-            }
-        }
-        .sizes-close-button{
-            margin: 4px 0 0 10px;
-            height: 30px;
-            width: 30px;
+        justify-content: center;
+        align-items: center;
+        .sizes-box{
+            width: 600px;
+            padding: 15px 30px 10px 30px;
+            background: $secondaryCol;
+            border-radius: 10px;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            &:hover{
-                i{
-                    color: $tercialyCol;
-                    transition: 0.33s;
+            table{
+                @include darkLight;
+                font-size: 25px;
+                text-align: center;
+                tr{
+                    padding: 0 5px;
+                    td:first-child{
+                        width: 120px;
+                        padding: 0 0 0 10px;
+                    }
+                    td:not(:first-child){
+                        width: 150px;
+                    }
+                    &:nth-child(odd){
+                        background: $special !important;
+                        color: $secondaryCol;
+                    }
                 }
             }
-            i{
-                color: $primaryCol;
-                font-size: 30px;
+            .sizes-close-button{
+                margin: 4px 0 0 10px;
+                height: 30px;
+                width: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 cursor: pointer;
+                &:hover{
+                    i{
+                        color: $tercialyCol;
+                        transition: 0.33s;
+                    }
+                }
+                i{
+                    color: $primaryCol;
+                    font-size: 30px;
+                }
             }
         }
     }

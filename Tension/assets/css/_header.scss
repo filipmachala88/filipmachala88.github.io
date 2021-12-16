@@ -1,28 +1,6 @@
 // ==== HEADER ====
-.tension-banner{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: 11;
-    & .tension-banner-dark{
-        width: 100%;
-        height: 100%;
-        background: rgba(0,0,0,0.90);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        & .logo-center{
-            & p{
-                font-size: 25px;
-                @include lightLight;
-                text-align: center;
-                margin: 10px 0 0 15px;
-            }
-        }   
-    }
-}
 .nav-logo-part{
-    p{
+    span{
         font-size: 18px;
     }
     @include lightLight;
@@ -48,6 +26,60 @@ header{
     position: fixed;
     z-index: 10;
     transition: 0.33s;
+    .intern-container{
+        display: flex;
+        justify-content: space-between;
+    }
+    .navigation{
+        ul{
+            margin-top: 19px;
+            display: flex;
+            justify-content: center;
+            li{
+                list-style: none;
+                margin: 0 15px;
+                font-size: 25px;
+                a{
+                    @include lightLight;
+                    text-decoration: none;
+                    padding: 5px;
+                    &:hover{       
+                        color: $tercialyCol;
+                        transition: 0.25s;
+                    }
+                }
+            }
+        }
+    }
+    .eshop-part, .eshop-part-resp{
+        height: 30px;
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        ul{
+            display: flex;
+            justify-content: center;
+            li{
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px 10px;
+                cursor: pointer;
+                &:hover{
+                    i{       
+                        color: $tercialyCol;
+                        transition: 0.25s;
+                    }
+                }
+                i{
+                    color: $secondaryCol;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    
 }
 .nav-active{
     background: $primaryCol;
@@ -56,44 +88,9 @@ header{
 .sidebar-active{
     height: 130px;
 }
-header .intern-container{
-    display: flex;
-    justify-content: space-between;
-}
-header ul{
-    margin-top: 19px;
-    display: flex;
-    justify-content: center;
-}
-header li{
-    list-style: none;
-    margin: 0 15px;
-    font-size: 25px;
-}
-header li a{
-    @include lightLight;
-    text-decoration: none;
-    padding: 5px;
-}
-header li a:hover{
-    color: $tercialyCol;
-    transition: 0.25s;
-}
-.eshop-part{
-    margin-top: 32px;
-}
-.eshop-part i{
-    color: $secondaryCol;
-    margin: 0 0 0 20px;
-    cursor: pointer;
-}
-.eshop-part i:hover{
-    color: $tercialyCol;
-    transition: 0.25s;
-}
 .nav-responsive{
     display: none;
-    & i{
+    i{
         cursor: pointer;
         transition: 0.25s;
         &:hover{      
@@ -112,14 +109,14 @@ header li a:hover{
     z-index: 9;
     transform: translateX(100%);
     transition: .3s ease-out;
-    & .navigation-responsive{
-        & ul{
+    .navigation-responsive{
+        ul{
             margin-top: 100px;
-            & li{
+            li{
                 padding: 20px 0;
                 list-style: none;
                 text-align: center;
-                & a{
+                a{
                     text-decoration: none;
                     font-size: 30px;
                     transition: 0.25s;
@@ -185,14 +182,14 @@ header li a:hover{
         margin: 2px 0 0 0;
         transition: 0.33s;
         &:hover{
-            & .menu-line3{
+            .menu-line3{
                 &::before, &::after{
                     transition: 0.33s;
                     background: $tercialyCol;
                 }
             }
         }
-        & .menu-line3{
+        .menu-line3{
             &::before{
                 background: $secondaryCol;
                 border-radius: 5px;

@@ -10,14 +10,14 @@
 .footer{
     padding: 40px 0 60px 0;
     display: flex;
-    & .footer-responsive{
+    .footer-responsive{
         width: 50%;
         display: flex;
     }
-    & .footer-column{
+    .footer-column{
         width: 40%;
     }
-    & .column-one{
+    .column-one{
         .logo-box-footer{
             .logo-contain{
                 margin-left: 20px;
@@ -33,26 +33,26 @@
                 display: none;
             }
         }
-        & .owner-motto{
+        .owner-motto{
             margin: 5px 0 0 15px;
-            & p{
+            span{
                 font-size: 25px;    
                 @include lightLight;
             }
         }
     }
-    & .column-two{
+    .column-two{
         margin-left: 15%;
-        & h2{
+        h2{
             margin: 0;
             font-size: 30px;
             @include addRegular;
         }
-        & li{
+        li{
             list-style: none;
             margin: 13px 0;
         }
-        & a{
+        a{
             font-size: 22px;
             @include lightLight;
             text-decoration: none;
@@ -63,26 +63,26 @@
             }
         }
     }
-    & .column-three{
+    .column-three{
         margin-right: 20%;
-        & h2{
+        h2{
             margin: 0;
             font-size: 30px;
             padding-bottom: 12px;
             @include addRegular;
         }
     }
-    & .social-sites{
+    .social-sites{
         border-top: 1px solid $secondaryCol;
         padding-top: 18px;
-        & a{
+        a{
             height: 45px;
             width: 45px;
             border-radius: 50%;
             color: $primaryCol;
             text-decoration: none;
         }
-        & .icon-hover{
+        .icon-hover{
             height: 45px;
             width: 45px;
             background: $tercialyCol;
@@ -107,29 +107,29 @@
                 left: -10%;
             }
         }
-        & .div-insta{
+        .div-insta{
             margin-left: 20px;
         }
-        & i{
+        i{
             font-size: 20px;
             z-index: 5;
         }
-        & .social-icon-flex{
+        .social-icon-flex{
             display: flex;
         }
-        & p{
+        p{
             font-size: 22px;
             @include lightLight;
             padding-bottom: 13px;
         }
     }
-    & .column-four{
-        & .shot-out{
+    .column-four{
+        .shot-out{
             display: flex;
             padding-bottom: 20px;
             border-bottom: 1px solid $tercialyCol;
         }
-        & a{
+        a{
             font-size: 22px;
             margin-left: 5px;
             text-decoration: none;
@@ -140,12 +140,12 @@
                 transition: 0.33s;
             }
         }
-        & .shot-out-text{
+        .shot-out-text{
             font-size: 22px;
             padding: 0 !important;
             @include lightLight;
         }
-        & .shot-out-special{
+        .shot-out-special{
             padding-top: 20px;
             color: $quinaryCol !important;
             font-size: 22px;
