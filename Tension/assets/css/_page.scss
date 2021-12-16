@@ -31,10 +31,13 @@
     }    
     .topic-topic{
         display: flex;
-        .special-tag{
-            @include lightLight;
-            font-size: 40px;
-            margin: 15px 15px 0 16px;
+        .category-flex{
+            display: flex;
+            .special-tag{
+                @include lightLight;
+                font-size: 40px;
+                margin: 15px 15px 0 16px;
+            }
         }
     }
 }

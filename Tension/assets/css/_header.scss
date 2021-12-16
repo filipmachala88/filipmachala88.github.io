@@ -143,6 +143,10 @@ header{
     }
     .nav-sidebar-search{
         width: 500px;
+        display: flex;
+        .search-fixed{
+            display: flex;
+        }
     }
     .searchform{
         width: 490px;
@@ -166,7 +170,7 @@ header{
         border: 1px solid $secondaryCol;
         background: none;
         font-size: 20px;
-        margin-left: 5px;
+        margin-left: 10px;
         transition: 0.33s;
         @include lightLight;
         &:hover{
@@ -179,7 +183,7 @@ header{
         height: 30px;
         cursor: pointer;
         position: relative;
-        margin: 2px 0 0 0;
+        margin: 2px 0 0 5px;
         transition: 0.33s;
         &:hover{
             .menu-line3{

@@ -22,61 +22,69 @@ class MyHeader extends HTMLElement{
         let pageValue = document.querySelector('#page-value').textContent;
         this.innerHTML = `
         <header>
-        <div class="intern-container">
-            <div class="nav-logo-part">
-                <a href="index.html" class="logo-box">
-                    <div class="logo-contain logo-base">
-                        <img src="assets/img/logo-trans.png">
-                    </div>
-                    <div class="logo-contain logo-hover">
-                        <img src="assets/img/logo-trans-hover.png">
-                    </div>
-                </a>
-                <span>insert into controller</span>
-            </div>
-            <div class="navigation">
-                <ul>
-                    <li><a href="index.html"${ pageValue == 'index' ? 'class="page-active"' : ''}>Domů</a></li>
-                    <li><a href="events.html"${ pageValue == 'events' ? 'class="page-active"' : ''}>Akce</a></li>
-                    <li><a href="merch.html"${ pageValue == 'merch' ? 'class="page-active"' : ''}>Merch</a></li>
-                    <li><a href="galery.html"${ pageValue == 'galery' ? 'class="page-active"' : ''}>Galerie</a></li>
-                    <li><a href="contact.html"${ pageValue == 'contact' ? 'class="page-active"' : ''}>Kontakt</a></li>
-                </ul>
-            </div>
-            <div class="eshop-part">
-               <ul>
-                    <li class="searchBox"><i class="fas fa-search"></i></li>
-                    <li><i class="fas fa-shopping-cart"></i></li>
-                    <li><i class="fas fa-user"></i></li>      
-               </ul>
-            </div>
-    
-            <div class="nav-responsive">
-                <div class="eshop-part-resp">
+            <div class="intern-container">
+                <div class="nav-logo-part">
+                    <a href="index.html" class="logo-box">
+                        <div class="logo-contain logo-base">
+                            <img src="assets/img/logo-trans.png">
+                        </div>
+                        <div class="logo-contain logo-hover">
+                            <img src="assets/img/logo-trans-hover.png">
+                        </div>
+                    </a>
+                    <span>insert into controller</span>
+                </div>
+                <div class="navigation">
                     <ul>
-                        <li class="searchBox-resp"><i class="fas fa-search"></i></li>
+                        <li><a href="index.html"${ pageValue == 'index' ? 'class="page-active"' : ''}>Domů</a></li>
+                        <li><a href="events.html"${ pageValue == 'events' ? 'class="page-active"' : ''}>Akce</a></li>
+                        <li><a href="merch.html"${ pageValue == 'merch' ? 'class="page-active"' : ''}>Merch</a></li>
+                        <li><a href="galery.html"${ pageValue == 'galery' ? 'class="page-active"' : ''}>Galerie</a></li>
+                        <li><a href="contact.html"${ pageValue == 'contact' ? 'class="page-active"' : ''}>Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="eshop-part">
+                <ul>
+                        <li class="searchBox"><i class="fas fa-search"></i></li>
                         <li><i class="fas fa-shopping-cart"></i></li>
                         <li><i class="fas fa-user"></i></li>      
-                    </ul>
-                 </div>
-                 
-                <div class="hamburger-div2">
-                    <div class="menu-line2"></div>
+                </ul>
+                </div>
+        
+                <div class="nav-responsive">
+                    <div class="eshop-part-resp">
+                        <ul>
+                            <li class="searchBox-resp"><i class="fas fa-search"></i></li>
+                            <li><i class="fas fa-shopping-cart"></i></li>
+                            <li><i class="fas fa-user"></i></li>      
+                        </ul>
+                    </div>
+                    
+                    <div class="hamburger-div2">
+                        <div class="menu-line2"></div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="nav-sidebar">
-            <div class="sidebar-content">
-                <div class="nav-sidebar-search">
-                    <input type="text" name="find" placeholder="hledat" id="s">
-                    <button type="submit" id="searchsubmit">Hledat</button>
-                </div>
-                <div class="hamburger-div3">
-                    <div class="menu-line3"></div>
+
+            
+            <div class="intern-container">
+                <div class="nav-sidebar">
+                    <div class="sidebar-content">
+                        <div class="nav-sidebar-search">
+                            <input type="text" name="find" placeholder="hledat" id="s">
+                            <div class="search-fixed">
+                                <div class="submit-button">
+                                    <button type="submit" id="searchsubmit">Hledat</button>
+                                </div>
+                                <div class="hamburger-div3">
+                                    <div class="menu-line3"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </header>
 
     <div class="header-menu-responsive">
         <div class="navigation-responsive">
