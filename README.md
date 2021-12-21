@@ -15,6 +15,7 @@ Used for [Vanilla](https://stackoverflow.com/questions/20836115/what-does-vanill
 
 - replace URL with name of this repository
 - after repo name add to URL slash "/" and exact folder name you want to see
+- now use slash "/" and "source" to get into folder with index.html
 - press Enter and it should display you current website
 
 ## License
