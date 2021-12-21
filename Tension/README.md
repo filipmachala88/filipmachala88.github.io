@@ -1,4 +1,4 @@
-# Tension website
+# [Tension](https://filipmachala88.github.io/Tension/source/) website
 
 Website for local DJ/music group called [Tension](https://www.facebook.com/tensionevents)
 
@@ -11,6 +11,9 @@ This project was made 3/10/2021 (EU date) as my e-learning project
 I chosed for this project local DJ/music group as a customer, because they:
 1. Did not have any website
 2. DJ is my friend
+
+Result of this project should be: 
+- Fully responsive website based on design without advanced functions
 
 ## Process
 

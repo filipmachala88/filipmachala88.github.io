@@ -15,6 +15,7 @@ Used for [Vanilla](https://stackoverflow.com/questions/20836115/what-does-vanill
 
 - replace URL with name of this repository
 - after repo name add to URL slash "/" and exact folder name you want to see
+- now use slash "/" and "source" to get into folder with index.html
 - press Enter and it should display you current website
 
 ## License
@@ -30,7 +31,7 @@ In this case used for:
 ## Signpost
 
 - [Šnyt](https://filipmachala88.github.io/Snyt/) - Website for local Restaurant
-- [Tension](https://filipmachala88.github.io/Tension/) - Website for local DJ/music group
+- [Tension](https://filipmachala88.github.io/Tension/source/) - Website for local DJ/music group
 - [Filmator](https://filipmachala88.github.io/Filmator/) - Website for movie/serial enjoyers
 - [Rukahore](https://filipmachala88.github.io/news.rukahore.sk/) - Website clone of famous music-news portal
 
