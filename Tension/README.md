@@ -12,6 +12,8 @@ I chosed for this project local DJ/music group as a customer, because they:
 1. Did not have any website
 2. DJ is my friend
 
+Result of this project should be: Fully responsive website based on design without advanced functions
+
 ## Process
 
 I composed process into a few steps:
