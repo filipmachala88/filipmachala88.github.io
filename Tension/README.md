@@ -23,13 +23,13 @@ I composed process into a few steps:
 - 2nd step: Graphic design - made first in [Photoshop](https://www.adobe.com/cz/products/photoshop.html) and second in [Adobe XD](https://www.adobe.com/cz/products/xd.html)
 - 3rd step: Custom icons - made in [Illustrator](https://www.adobe.com/cz/products/illustrator.html)
 - 4th step: Code creating - Website is made by [Vanilla](https://stackoverflow.com/questions/20836115/what-does-vanilla-mean) website technique
-- 5th step (in proces): Validation check & Bug fixing - due to webdesign standards, image compresing
+- 5th step: Validation check & Bug fix - due to standards ([HTML5](https://validator.w3.org/), [CSS3](https://jigsaw.w3.org/css-validator/)), image [compression](https://imagecompressor.com/)
 
 In this case I tried to focus on work with:
 - [Bootstrap](https://getbootstrap.com/) framework
 
 ## Result
 
-Website prepared to edit with PHP and use as a theme for WordPress
+Website prepared: 1) to edit with PHP language, 2) to use as a theme for [WordPress](https://cs.wordpress.org/)
 
 > If you have problems with showing properly some fonts or images, try to turn off or pause 3rd party programs like [AdBlock](https://getadblock.com/en/) etc.
