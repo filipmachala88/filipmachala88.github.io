@@ -28,7 +28,6 @@ I composed process into a few steps:
 In this case I tried to focus on work with:
 - [Bootstrap](https://getbootstrap.com/) framework
 
-<!-- 
 ## Result
 
 Website prepared to edit with PHP and use as a theme for WordPress
