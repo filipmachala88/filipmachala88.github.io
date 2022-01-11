@@ -13,6 +13,9 @@ body{
     padding: 0;
     background: $secondaryCol;
 }
+body.dark-theme{
+    background: $primaryCol;
+}
 p, ul, li, a, div, img, h1, h2, h3, span{
     margin: 0;
     padding: 0;

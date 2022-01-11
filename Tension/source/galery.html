@@ -1,98 +1,98 @@
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- Google Fonts import script -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@300;500;700&display=swap');
     </style>
-    <script src="https://kit.fontawesome.com/30c286fb9a.js" crossorigin="anonymous"></script>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
-
-	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
-    <!-- make sure your intern stylesheet is under the extern -->
-
+    <!-- jQuery import script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Bootstrap stylesheet import link (extern) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <!-- Custom stylesheet import link (intern) -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <!-- make sure your intern stylesheet is under the extern to overwrite (DOM) -->
     <title>Tension - Galerie</title>
 </head>
-<body>
 
+<body>
     <div id="page-value" style="display: none;">galery</div>
-    <!-- // HEADER - NAVIGATION //-->
+    <!-- header -->
     <my-header></my-header>
-    <!-- // TOPIC //-->
+    <!-- topic -->
     <div class="extern-container page-topic">
         <div class="dark">      
             <div class="intern-container">
-                
                 <div class="topic-topic">
                     <h2>Galerie</h2>
                 </div>
-
-                <p>Prohlédněte si, jak to u nás vypadá</p>
-
+                <div class="topic-text">
+                    <p>Prohlédněte si, jak to u nás vypadá</p>
+                </div>
             </div>
         </div>
     </div>
-<!-- // GALERY //-->
-<div class="intern-container">
-    <div class="img-part">
-        
-          <div class="img-row">           
-
-            <div class="img-hover">
-              <div class="img">
-                  <img src="../assets/img/galery-one.jpg">
-              </div>
-
-              <a href=""class="element-item"></a>
-
+    <!-- content -->
+    <div class="intern-container">
+        <div class="img-part">
+            <!-- row one -->
+            <div class="img-row">
+                <!-- post one -->           
+                <div class="img-hover">
+                    <div class="img">
+                        <img src="../assets/img/galery-one.jpg">
+                    </div>
+                    <a href=""class="element-item"></a>
+                </div>
+                <!-- post two -->
+                <div class="img-hover">
+                    <div class="img">
+                        <img src="../assets/img/galery-one.jpg">
+                    </div>
+                    <a href=""class="element-item"></a>
+                </div>
+                <!-- post three -->
+                <div class="img-hover">
+                    <div class="img">
+                        <img src="../assets/img/galery-one.jpg">
+                    </div>
+                    <a href=""class="element-item"></a>
+                </div>
+            <!-- end of row one -->
             </div>
-
-            <div class="img-hover">
-                <div class="img">
-                    <img src="../assets/img/galery-one.jpg">
+            <!-- row two -->
+            <div class="img-row">           
+                <!-- post one -->
+                <div class="img-hover">
+                    <div class="img">
+                        <img src="../assets/img/galery-one.jpg">
+                    </div>
+                    <a href=""class="element-item"></a>
                 </div>
-  
-                <a href=""class="element-item"></a>
-  
-              </div>
-
-              <div class="img-hover">
-                <div class="img">
-                    <img src="../assets/img/galery-one.jpg">
-                </div>
-  
-                <a href=""class="element-item"></a>
-  
-              </div>
-
-         </div>
-
-         <div class="img-row">           
-
-            <div class="img-hover">
-              <div class="img">
-                  <img src="../assets/img/galery-one.jpg">
-              </div>
-
-              <a href=""class="element-item"></a>
-
+                <!-- post two -->
+            <!-- end of row two -->
             </div>
         </div>
     </div>
-</div>
-<!-- // FOOTER - NAVIGATION //-->
-<my-footer></my-footer>
-
-<div class="scripts">
-    <script type="module" src="../assets/js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
-</div>
-    
+    <!-- footer -->
+    <my-footer></my-footer>
+    <!-- scripts -->
+    <div class="scripts">
+        <!-- Custom script import link (intern) -->
+        <script type="module" src="../assets/js/script.js"></script>
+        <!-- Bootstrap script import link (extern) -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+        crossorigin="anonymous"></script>
+        <!-- JS-Cookie import link (extern) -->
+        <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+    </div>
 </body>
+
 </html>

@@ -1,3 +1,4 @@
+// page-topic
 .page-topic{
     @include sliderBG;
     .dark{
@@ -15,11 +16,19 @@
             transition: 0.33s;
         }
     }
-    p{
-        font-size: 25px;
-        @include lightLight;
-        margin: 0;
-        padding: 0;
+    .topic-text{
+        display: flex;
+        p{
+            font-size: 25px;
+            @include lightLight;
+            margin: 0;
+            padding: 0;
+        }
+        span{
+            font-size: 25px;
+            margin-left: 10px;
+            @include lightRegular;
+        }
     }
     ul{
         list-style: none;
@@ -41,6 +50,7 @@
         }
     }
 }
+// page-category
 .img-part{
     margin: 50px 0;    
     a{
@@ -103,10 +113,11 @@
     }
     .tags-side{
         display: flex;
-        i{
-            font-size: 18px;
-            color: $tercialyCol;
-            margin: 6px 2px 0 0;
+        svg{
+            width: 23px;
+            height: 23px;
+            fill: $tercialyCol;
+            margin: 4px 2px 0 0;
         }
         span{
             font-size: 20px;
@@ -137,30 +148,134 @@
         }
     }
 }
+// page-single
 .single-page{
     margin: 50px 0;
     width: 100%;
     display: flex;
-    .single-tags{
-        background: $primaryCol;
-        width: 100%;
-        padding: 10px;
-        display: flex;
-        i{
-            color: $tercialyCol;
-            font-size: 20px;
-            margin: 10px 0 0 10px;
-        }
-        span{
-            @include lightLight;
-            font-size: 25px;
-            margin-left: 15px;
-        }
-    }
     .single-column-one{
         width: 49%;
         margin-right: 1%;
-
+        .single-tags{
+            background: $primaryCol;
+            width: 100%;
+            padding: 10px;
+            display: flex;
+            svg{
+                fill: $tercialyCol;
+                height: 25px;
+                width: 25px;
+                margin: 6px 0 0 10px;
+            }
+            span{
+                @include lightLight;
+                font-size: 25px;
+                margin-left: 15px;
+            }
+        }
+        .single-content{
+            margin-top: 30px;    
+            p{
+                @include darkLight;
+                font-size: 30px;
+            }
+            h3{
+                @include darkRegular;
+                font-size: 30px;
+            }
+            .under-text{
+                border-left: 2px solid $tercialyCol;
+                padding: 0 0 0 15px;
+                p{
+                    font-size: 22px;
+                }
+            }
+        }
+        .size-box{
+            display: flex;
+            .single-sizes{
+                div{
+                    margin: 20px 0 0 0;
+                    padding: 10px;
+                    background: $senaryCol;
+                    width: 240px;
+                    display: flex;
+                    justify-content: center;
+                }
+                li{
+                    display: inline-flex;
+                    span{
+                        width: 40px;
+                        height: 40px;
+                        list-style: none;
+                        color: $primaryCol;
+                        background: $secondaryCol;
+                        border-radius: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &:hover{
+                            background: $tercialyCol;
+                            cursor: pointer;
+                        }   
+                    }
+                }
+            }
+            .single-sizing{
+                button{
+                    height: 40px;
+                    border: none;
+                    background: $senaryCol;
+                    margin: 30px 0 0 20px;
+                    border-radius: 10px;
+                    @include darkLight;
+                    font-size: 22px;
+                    &:hover{
+                        background: $tercialyCol;
+                        transition: 0.33s;
+                    }
+                    span{
+                        margin: 0 10px;
+                    }
+                }
+            }
+        }
+        .single-avai{
+            margin: 10px 0;
+            @include darkLight;
+            font-size: 30px;
+            span:not(:first-child){
+                margin-left: 20px;
+                color: $true;
+            }
+        }
+        .single-customer{
+            margin: 40px 0 0 0;
+            display: flex;
+            justify-content: space-between;
+            .single-price{
+                font-size: 40px;
+                @include darkRegular;
+            }
+            .single-cart{    
+                button{
+                    height: 100%;
+                    width: auto;
+                    background: $true;
+                    border: none;
+                    border-radius: 10px;
+                    span{
+                        font-size: 30px;
+                        margin: 0 20px;
+                        @include lightRegular;
+                    }
+                    &:hover{
+                        background: $trueHover;
+                        transition: 0.33s;
+                    }
+                }
+            }
+        }
     }
     .single-column-two{
         width: 49%;
@@ -191,131 +306,55 @@
                 font-size: 20px;
             }
         }
-    }
-    .single-content{
-        margin-top: 30px;    
-        p{
-            @include darkLight;
-            font-size: 30px;
-        }
-        h3{
-            @include darkRegular;
-            font-size: 30px;
-        }
-        .under-text{
-            border-left: 2px solid $tercialyCol;
-            padding: 0 0 0 15px;
-            p{
-                font-size: 22px;
-            }
+        .single-map{
+            margin-top: 30px;
         }
     }
-    .single-map{
-        margin-top: 30px;
-    }
-    .single-customer{
-        margin: 40px 0 0 0;
-        display: flex;
-        justify-content: space-between;
-    }
-    .size-box{
-        display: flex;
-    }
-    .single-sizes{
-        div{
-            margin: 20px 0 0 0;
-            padding: 10px;
-            background: $senaryCol;
-            width: 240px;
-            display: flex;
-            justify-content: center;
-        }
-        li{
-            display: inline-flex;
+}
+.single-page.dark-theme{
+    .single-column-one{
+        .single-tags{
+            background: $secondaryCol;
             span{
-                width: 40px;
-                height: 40px;
-                list-style: none;
-                color: $primaryCol;
-                background: $secondaryCol;
-                border-radius: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                &:hover{
-                    background: $tercialyCol;
-                    cursor: pointer;
-                }   
-            }
-        }
-    }
-    .single-sizing{
-        button{
-            height: 40px;
-            border: none;
-            background: $senaryCol;
-            margin: 30px 0 0 20px;
-            border-radius: 10px;
-            @include darkLight;
-            font-size: 22px;
-            &:hover{
-                background: $tercialyCol;
-                transition: 0.33s;
-            }
-            span{
-                margin: 0 10px;
-            }
-        }
-    }
-    .single-avai{
-        margin: 10px 0;
-        @include darkLight;
-        font-size: 30px;
-        span:not(:first-child){
-            margin-left: 20px;
-            color: $true;
-        }
-    }
-    .single-price{
-        font-size: 40px;
-        @include darkRegular;
-    }
-    .single-cart{
-        button{
-            height: 100%;
-            width: auto;
-            border: none;
-            background: $senaryCol;
-            border-radius: 10px;
-            span{
-                font-size: 30px;
-                margin: 0 20px;
                 @include darkRegular;
             }
-            &:hover{
-                background: $tercialyCol;
-                transition: 0.33s;
+        }
+        .single-content{
+            p{
+                @include lightLight;
+            }
+            h3{
+                @include lightRegular;
+            }
+        }
+        .single-avai{
+            @include lightLight;
+        }
+        .single-customer{
+            .single-price{
+                @include lightRegular;
             }
         }
     }
 }
+// contact.html
 .contact{
     width: 100%;
     display: flex;
     margin: 50px 0 0 0;
-    h1{
-        font-size: 50px;
-        margin-bottom: 20px;
-        @include darkRegular;
-    }
     .contact-column-one{
         width: 50%;
         .text{
             border-left: 3px solid $tercialyCol;
-            padding-left: 40px;
+            padding-left: 30px;
+            span{
+                font-size: 25px;
+                @include darkLight;
+            }
         }
-        span{
-            font-size: 25px;
+        h1{
+            font-size: 50px;
+            margin-bottom: 20px;
             @include darkRegular;
         }
     }
@@ -323,16 +362,22 @@
         width: 50%;
         .text{
             border-left: 3px solid $tercialyCol;
-            padding-left: 40px;
+            padding-left: 30px;
+            p{
+                font-size: 25px;
+                @include darkLight;
+            }
+        }
+        h1{
+            font-size: 50px;
+            margin-bottom: 20px;
+            @include darkRegular;
         }
         span{
             font-size: 25px;
             @include darkLight;
         }
-        p{
-            font-size: 25px;
-            @include darkRegular;
-        }
+        
     }
     .contact-form{
         background: $senaryCol;
@@ -341,6 +386,10 @@
         margin: 40px 0;
         border-radius: 30px;
         box-shadow: 0 25px 40px rgba(0,0,0,.5);
+        span{
+            font-size: 25px;
+            @include darkLight;
+        }
         strong{
             @include addLight;
             margin: 0 0 0 3px;
@@ -352,6 +401,7 @@
             font-size: 20px;
             outline: none;
             border: 1px solid $primaryCol;
+            background: $trans;
             @include darkRegular;
             &:focus{
                 border: 1px solid $tercialyCol;
@@ -371,7 +421,6 @@
         .contact-form-button{
             margin: 10px auto 0 auto;
             @include buttonRulesDark;
-
             input[type="submit"]{
                 background: none;
                 width: 100%;
@@ -385,6 +434,49 @@
         }
     }
 }
+.contact.dark-theme{
+    .contact-column-one{
+        h1{
+            @include lightLight;
+        }
+        .text{
+            span{
+                @include lightLight;
+            }
+        }
+    }
+    .contact-column-two{
+        h1{
+            @include lightLight;
+        }
+        .text{
+            p{
+                @include lightLight;
+            }
+        }
+        .contact-form{
+            background: $quaternaryCol;
+            span{
+                font-size: 25px;
+                @include lightLight;
+            }
+            input, textarea{
+                border: 1px solid $secondaryCol;
+                @include lightLight;
+                &:focus{
+                    border: 1px solid $tercialyCol;
+                }
+            }
+            .contact-form-button{
+                @include buttonRulesLight;
+                input[type="submit"]{
+                    border: none;
+                }
+            }
+        }
+    }
+}
+// form-send alert - wont work without database
 .contact-fixed{
     justify-content: center;
     align-items: center;
@@ -410,6 +502,7 @@
         @include addRegular;
     }
 }
+// sizes window
 .merch-sizes{
     position: fixed;
     display: none;
@@ -458,15 +551,322 @@
                 align-items: center;
                 cursor: pointer;
                 &:hover{
-                    i{
-                        color: $tercialyCol;
+                    svg{
+                        fill: $tercialyCol;
+                        transition: 0.25s;
+                    }
+                }
+                svg{
+                    height: 20px;
+                    width: 20px;
+                    fill: $primaryCol;
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+// cart.html
+.cart{
+    padding: 50px 0;
+    .cart-content{
+        .item{
+            width: 100%;
+            display: flex;
+            background: $cart;
+            padding: 10px 20px;
+            border-radius: 10px;
+            &:hover{
+                background: $cartHover;
+            }
+            .item-info{
+                width: 100%;
+                font-size: 30px;
+                display: flex;
+                .item-image{
+                    img{
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+                .item-name, .item-count, .item-size, .item-price{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0 5px;
+                }
+                .item-basics{
+                    display: flex;
+                    width: 60%;
+                }
+                .item-details{
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .item-name{
+                    width: 100%;
+                    @include darkRegular;
+                }
+                // max 2 numbers (11 x)
+                .item-count{
+                    width: 80px;
+                    @include darkLight;
+                }
+                // max 3 words (AAA)
+                .item-size{
+                    width: 80px;
+                    @include darkLight;
+                }
+                // max 5 numbers (11 111 kč)
+                .item-price{
+                    width: 130px;
+                    @include darkLight;
+                }
+            }
+            &:not(:last-child){
+                margin-bottom: 20px;
+            }
+            .item-button{
+                display: flex;
+                align-items: center;
+                button{
+                    background: $tercialyCol;
+                    border: none;
+                    border-radius: 10px;
+                    span{
+                        font-size: 28px;
+                        margin: 0 20px;
+                        @include lightLight;
+                    }
+                    &:hover{
+                        background: $false;
                         transition: 0.33s;
                     }
                 }
-                i{
-                    color: $primaryCol;
-                    font-size: 30px;
+            }
+        }
+    }
+    .checkout{
+        display: flex;
+        justify-content: right;
+        margin-top: 50px;
+        .checkout-price{
+            display: flex;
+            align-items: center;
+            margin-right: 30px;
+            span{
+                @include darkRegular;
+                font-size: 30px;
+            }
+            span:first-child{
+                @include darkLight;
+                margin-right: 20px;
+            }
+        }
+        button{
+            height: 100%;
+            width: auto;
+            background: $true;
+            border: none;
+            border-radius: 10px;
+            span{
+                font-size: 30px;
+                margin: 0 20px;
+                @include lightLight;
+            }
+            &:hover{
+                background: $trueHover;
+                transition: 0.33s;
+            }
+        }
+    }
+}
+.cart.dark-theme{
+    .checkout{
+        .checkout-price{
+            span{
+                @include lightRegular;
+            }
+            span:first-child{
+                @include lightLight;
+            }
+        }
+    }
+}
+// === cookie.html, terms.html ===
+.cookies-content, .terms-content{
+    padding: 50px 0 60px 0;
+    .row{
+        ul{
+            list-style: decimal;
+        }
+        ol{
+            list-style: upper-alpha;
+        }
+        h2{
+            font-size: 40px;
+            @include darkRegular;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 25px;
+            @include darkLight;
+        }
+        a{
+            font-size: 25px;
+            @include addRegular;
+            text-decoration: none;
+            &:hover{
+                color: $false;
+                transition: 0.33s;
+            }
+        }
+        &:not(:last-child){
+            margin-bottom: 30px;
+        }
+    }
+}
+.terms-content{
+    ul{
+        padding-left: 28px;
+    }
+}
+.profile{
+    .intern-container{
+        display: flex;
+    }
+    .column-one{
+        padding: 50px 0;
+        width: 50%;
+        .login-alert{
+            display: flex;
+            span{
+                @include darkLight;
+                font-size: 25px;
+                margin-left: 10px;
+            }
+            p{
+                @include darkRegular;
+                font-size: 30px;
+            }
+        }
+        .login-form{
+            margin-top: 30px;
+            span{
+                display: block;
+                font-size: 25px;
+                @include darkLight;
+            }
+            input{
+                width: 70%;
+                padding: 5px 10px;
+                margin: 0 0 10px 0;
+                font-size: 20px;
+                outline: none;
+                border: 1px solid $primaryCol;
+                background: $trans;
+                @include darkRegular;
+                &:focus{
+                    border: 1px solid $tercialyCol;
+                    transition: 0.33s;
                 }
+            }
+        }
+        .login-button{
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            button{
+                padding: 5px 10px;
+                border-radius: 5px;
+                border: none;
+                @include lightRegular;
+                font-size: 20px;
+            }
+            .register{
+                button{
+                    background: $false;
+                    &:hover{
+                        background: $tercialyCol;
+                        transition: 0.33s;
+                    }
+                }
+            }
+            .login{
+                margin-left: 15px;
+                button{
+                    background: $trueHover;
+                    &:hover{
+                        background: $true;
+                        transition: 0.33s;
+                    }
+                }
+            }
+        }
+        .forgot{
+            margin-top: 20px;
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            p{
+                font-size: 23px;
+                @include darkLight;
+            }
+            span{
+                font-size: 23px;
+                @include darkRegular;
+                margin-left: 10px;
+                cursor: pointer;
+                color: $false;
+                &:hover{
+                    color: $tercialyCol;
+                    transition: 0.33s;
+                }
+            }
+        }
+    }   
+    .column-two{
+        background: $tercialyCol;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.profile.dark-theme{
+    .login-alert{
+        span{
+            @include lightLight;
+        }
+        p{
+            @include lightRegular;
+        }
+    }
+    .login-form{
+        span{
+            @include lightLight;
+        }
+        input{
+            border: 1px solid $secondaryCol;
+            background: $trans;
+            @include darkLight;
+            &:focus{
+                border: 1px solid $tercialyCol;
+                transition: 0.33s;
+            }
+        }
+    }
+    .forgot{
+        p{
+            @include lightLight;
+        }
+        span{
+            @include darkRegular;
+            color: $false;
+            &:hover{
+                color: $tercialyCol;
+                transition: 0.33s;
             }
         }
     }

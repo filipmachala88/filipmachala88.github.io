@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts import script -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@300;500;700&display=swap');
+    </style>
+    <!-- jQuery import script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Bootstrap stylesheet import link (extern) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <!-- Custom stylesheet import link (intern) -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <!-- make sure your intern stylesheet is under the extern to overwrite (DOM) -->
+    <title>Tension  - Cookie</title>
+</head>
+
+<body>
+    <div id="page-value" style="display: none;">cookie</div>
+    <!-- header -->
+    <my-header></my-header>
+    <!-- topic -->
+    <div class="extern-container page-topic">
+        <div class="dark">
+            <div class="intern-container">
+                <div class="topic-topic">
+                    <h2>Cookie</h2>
+                </div>
+                <div class="topic-text">
+                    <p>Informace o využívání cookie souborů</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cookies-content">
+        <div class="intern-container">
+            <div class="row">
+                <h2>Jak google vyuužívá soubory cookie</h2>
+                <p>Cookie je krátký textový soubor, který si navštívený web ukládá ve vašem prohlížeči. Umožňuje webu zaznamenat informace
+                o vaší návštěvě. Příští návštěva tak pro vás může být snazší a web bude užitečnější.</p>
+                <p>Soubory cookie např. používáme k zapamatování preferovaného jazyka, k výběru relevantních reklam, ke sledování počtu
+                návštěvníků na stránce, k usnadnění registrace do našich služeb, k ochraně vašich dat a k zapamatování nastavení reklam.</p>
+                <p>Tato stránka popisuje typy souborů cookie, které Google používá. Vysvětluje také, jak Google a naši partneři využívají
+                soubory cookie při zobrazování reklam. Další informace o ochraně vašeho soukromí v souvislosti se soubory cookie a
+                dalšími údaji naleznete v našich zásadách ochrany soukromí.</p>
+            </div>
+            <div class="row">
+                <h2>Typy souborů cookie, které google používá</h2>
+                <p>Některé nebo všechny uvedené soubory cookie mohou být uloženy ve vašem prohlížeči. Pokud chcete spravovat způsob
+                využívání souborů cookie, na adrese g.co/privacytools můžete prostřednictvím nastavení personalizace Google odmítnout
+                používání určitých souborů cookie. Soubory cookie můžete také spravovat v prohlížeči (ačkoli mobilní prohlížeče tuto
+                možnost obvykle nenabízejí). V Chromu např. můžete přejít na adresu chrome://settings/cookies.</p>
+            </div>
+            <div class="row">
+                <h2>Funkce</h2>
+                <p>Soubory cookie se využívají k interakci uživatele se službou nebo webem a pro přístup k základním funkcím služby nebo
+                webu. Mezi tyto funkce patří předvolby jazyka, optimalizace (ke správě a vylepšování služby) a správa informací o relaci
+                uživatele (např. obsah nákupního košíku).</p>
+                <p>Některé soubory cookie slouží ke správě předvoleb uživatele. Např. většina uživatelů služeb Google má v prohlížeči
+                soubor cookie s názvem NID. Ten obsahuje jedinečné ID, pomocí kterého si Google pamatuje vaše nastavení a další
+                informace, např. váš preferovaný jazyk, kolik výsledků vyhledávání chcete zobrazovat na jedné stránce (např. 10 nebo 20)
+                a zda chcete mít zapnutý filtr Bezpečné vyhledávání Google. Platnost souboru NID vyprší 6 měsíců od posledního použití
+                uživatelem.</p>
+            </div>
+            <div class="row">
+                <p>Zdroj a více informací najdete na <a href="https://policies.google.com/technologies/cookies?hl=cs">Jak Google využívá soubory Cookie</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <my-footer></my-footer>
+    <!-- scripts -->
+    <div class="scripts">
+        <!-- Custom script import link (intern) -->
+        <script type="module" src="../assets/js/script.js"></script>
+        <!-- Bootstrap script import link (extern) -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+        crossorigin="anonymous"></script>
+        <!-- JS-Cookie import link (extern) -->
+        <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+    </div>
+</body>
+
+</html>

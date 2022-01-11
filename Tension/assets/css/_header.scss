@@ -1,12 +1,16 @@
 // ==== HEADER ====
+// logo
 .nav-logo-part{
-    span{
-        font-size: 18px;
-    }
-    @include lightLight;
+    height: 100%;
+    display: flex;
+    align-items: center;
     .logo-box{
+        width: 70px;
+        height: 50px;
+        margin-left: 15px;
         .logo-contain{
-            margin: 8px 0 0 15px;
+            width: 70px;
+            height: 50px;
             img{
                 height: 50px;
                 width: 70px;
@@ -19,7 +23,12 @@
             display: none;
         }
     }
+    span{
+        @include lightLight;
+        font-size: 18px;
+    }
 }
+// navigation
 header{
     width: 100%;
     height: 90px;
@@ -29,10 +38,14 @@ header{
     .intern-container{
         display: flex;
         justify-content: space-between;
+        height: 90px;
     }
     .navigation{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -3px;
         ul{
-            margin-top: 19px;
             display: flex;
             justify-content: center;
             li{
@@ -52,29 +65,39 @@ header{
         }
     }
     .eshop-part, .eshop-part-resp{
-        height: 30px;
         display: flex;
         align-items: center;
-        margin-top: 30px;
         ul{
             display: flex;
             justify-content: center;
+            .page-active{
+                svg{
+                    fill: $tercialyCol;
+                }
+            }
+            .nav-special-icon{
+                padding: 0;
+                a{
+                    padding: 10px;
+                }
+            }
             li{
                 list-style: none;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                padding: 10px 10px;
+                padding: 10px;
                 cursor: pointer;
                 &:hover{
-                    i{       
-                        color: $tercialyCol;
+                    svg{       
+                        fill: $tercialyCol;
                         transition: 0.25s;
                     }
                 }
-                i{
-                    color: $secondaryCol;
-                    font-size: 18px;
+                svg{
+                    width: 20px;
+                    height: 20px;
+                    fill: $secondaryCol;
                 }
             }
         }
@@ -86,32 +109,25 @@ header{
     transition: 0.33s;
 }
 .sidebar-active{
-    height: 130px;
+    height: 140px;
 }
 .nav-responsive{
     display: none;
-    i{
-        cursor: pointer;
-        transition: 0.25s;
-        &:hover{      
-            color: $tercialyCol;
-            transition: 0.25s;
-        }
-    }
 }
+// icons
 .header-menu-responsive{
     display: none;
     position: fixed;
     width: 50%;
     height: 100%;
-    background: rgba(0,0,0,.88);
+    background: rgba(0,0,0,.93);
     margin-left: 50%;
     z-index: 9;
     transform: translateX(100%);
     transition: .3s ease-out;
     .navigation-responsive{
+        width: 100%;
         ul{
-            margin-top: 100px;
             li{
                 padding: 20px 0;
                 list-style: none;
@@ -131,7 +147,7 @@ header{
     }
 }
 .page-active{
-    border-bottom: 2px solid $tercialyCol;
+    color: $tercialyCol !important;
 }
 // search bar
 .nav-sidebar{
@@ -167,6 +183,7 @@ header{
     }
     #searchsubmit{
         width: 80px;
+        height: 100%;
         border: 1px solid $secondaryCol;
         background: none;
         font-size: 20px;
@@ -178,39 +195,22 @@ header{
             border: 1px solid $tercialyCol;
         }
     }
-    .hamburger-div3{
+    .search-cross{
         width: 30px;
         height: 30px;
         cursor: pointer;
         position: relative;
-        margin: 2px 0 0 5px;
+        margin: 2px 0 0 10px;
         transition: 0.33s;
-        &:hover{
-            .menu-line3{
-                &::before, &::after{
-                    transition: 0.33s;
-                    background: $tercialyCol;
-                }
-            }
+        svg{
+            width: 20px;
+            height: 20px;
+            fill: $secondaryCol;
         }
-        .menu-line3{
-            &::before{
-                background: $secondaryCol;
-                border-radius: 5px;
-                content: '';
-                position: absolute;
-                width: 30px;
-                height: 2px;
-                transform: rotate(45deg) translate(10px, 10px);
-            }
-            &::after{
-                background: $secondaryCol;
-                border-radius: 5px;
-                content: '';
-                position: absolute;
-                width: 30px;
-                height: 2px;
-                transform: rotate(-45deg) translate(-10px, 10px);
+        &:hover{
+            svg{
+                fill: $tercialyCol;
+                transition: 0.25s;
             }
         }
     }
