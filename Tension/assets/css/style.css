@@ -1117,10 +1117,6 @@ header .eshop-part ul li svg, header .eshop-part-resp ul li svg {
   font-weight: 300;
 }
 
-.index-about.dark-theme .about-img-side .about-logo-bg {
-  opacity: 1;
-}
-
 .background-effect-one {
   position: absolute;
   width: auto;
@@ -2068,6 +2064,66 @@ header .eshop-part ul li svg, header .eshop-part-resp ul li svg {
   color: #f0f0f0;
   font-family: 'Alumni Sans', sans-serif;
   font-weight: 500;
+}
+
+.galery-page .img-part {
+  margin: 50px 0;
+}
+
+.galery-page .img-part .img-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.galery-page .img-part .img-row:not(:first-child) {
+  margin-top: 2.3%;
+}
+
+.galery-page .img-part .img-hover {
+  width: 32%;
+  height: auto;
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.galery-page .img-part .img-hover:hover img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.galery-page .img-part .img-hover:hover .element-item {
+  background: transparent;
+  -webkit-transition: 0.33s;
+  transition: 0.33s;
+}
+
+.galery-page .img-part img {
+  width: 100%;
+  height: auto;
+  -webkit-transition: 0.33s;
+  transition: 0.33s;
+  display: block;
+}
+
+.galery-page .img-part h3 {
+  font-size: 15px;
+  color: white;
+}
+
+.galery-page .img-part .element-item {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 5%;
 }
 
 .contact {
@@ -3230,6 +3286,16 @@ header .eshop-part ul li svg, header .eshop-part-resp ul li svg {
     width: 100%;
     margin-bottom: 30px;
   }
+  .galery-page .img-part {
+    margin: 60px 0;
+  }
+  .galery-page .img-part .img-row {
+    display: block;
+  }
+  .galery-page .img-part .img-row .img-hover {
+    width: 100%;
+    margin-bottom: 30px;
+  }
   .cart .cart-content .item {
     display: block;
   }
@@ -3366,6 +3432,12 @@ header .eshop-part ul li svg, header .eshop-part-resp ul li svg {
   .img-part .img-row .img-hover {
     margin-bottom: 25px;
   }
+  .galery-page .img-part {
+    margin: 25px 0;
+  }
+  .galery-page .img-part .img-row .img-hover {
+    margin-bottom: 25px;
+  }
   .single-page {
     margin: 30px 0;
   }
@@ -3418,6 +3490,12 @@ header .eshop-part ul li svg, header .eshop-part-resp ul li svg {
     margin: 20px 0;
   }
   .img-part .img-row .img-hover {
+    margin-bottom: 20px;
+  }
+  .galery-page .img-part {
+    margin: 20px 0;
+  }
+  .galery-page .img-part .img-row .img-hover {
     margin-bottom: 20px;
   }
   .single-page {

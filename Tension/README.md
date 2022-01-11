@@ -23,7 +23,7 @@ I composed process into a few steps:
 - 2nd step: Graphic design - made first in [Photoshop](https://www.adobe.com/cz/products/photoshop.html) and second in [Adobe XD](https://www.adobe.com/cz/products/xd.html)
 - 3rd step: Custom icons - made in [Illustrator](https://www.adobe.com/cz/products/illustrator.html)
 - 4th step: Code creating - Website is made by [Vanilla](https://stackoverflow.com/questions/20836115/what-does-vanilla-mean) website technique
-- 5th step (in proces): Validation check & Bug fixing - due to webdesign standards
+- 5th step (in proces): Validation check & Bug fixing - due to webdesign standards, image compresing
 
 In this case I tried to focus on work with:
 - [Bootstrap](https://getbootstrap.com/) framework

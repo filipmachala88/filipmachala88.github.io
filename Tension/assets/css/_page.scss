@@ -337,6 +337,55 @@
         }
     }
 }
+// galery.html
+.galery-page{
+    .img-part{
+        margin: 50px 0; 
+        .img-row{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+        .img-row:not(:first-child){
+            margin-top: 2.3%;
+        }
+        .img-hover{
+            width: 32%;
+            height: auto;
+            position: relative;
+            display: block;
+            overflow: hidden;
+        }
+        .img-hover:hover{
+            img{
+                transform: scale(1);
+            }
+            .element-item{
+                background: $trans;
+                transition: 0.33s;
+            }
+        }
+        img{
+            width: 100%;
+            height: auto;
+            transition: 0.33s;
+            display: block;
+        }
+        h3{
+            font-size: 15px;
+            color: white;
+        }
+        .element-item{
+            background: rgba(0,0,0,.7);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 5%;
+        }
+    }
+}
 // contact.html
 .contact{
     width: 100%;

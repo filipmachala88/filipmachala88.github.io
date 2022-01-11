@@ -340,10 +340,8 @@ function windowClose(){
     var cookieWindow = document.querySelector( ".cookie-alert" );
     if ( cookieWindow ){
         var cookieWindowStatus = Cookies.get( "cookie-window" );
-        if ( cookieWindowStatus = "false" ){
+        if ( cookieWindowStatus === "false" ){
             cookieWindow.style = 'display: none';
-        } else {
-            cookieWindow.style = 'display: initial';
         }
     }
 }
@@ -525,6 +523,7 @@ function darkMode(){
     }
     if ( contactPage ){
         contactPage.classList.add( theme );
+        noteBoxOne.classList.add( theme );
     }
     if ( cartPage ){
         cartPage.classList.add( theme );
@@ -576,6 +575,7 @@ function lightMode(){
     }
     if ( contactPage ){
         contactPage.classList.remove( theme );
+        noteBoxOne.classList.remove( theme );
     }
     if ( cartPage ){
         cartPage.classList.remove( theme );
@@ -588,10 +588,10 @@ function lightMode(){
 function themeSwap(){
     var themeStatus = localStorage.getItem("theme");
 
-    if ( themeStatus = "dark" ){
+    if ( themeStatus === "dark" ){
         darkMode();
     }
-    if ( themeStatus = "light" ){
+    if ( themeStatus === "light" ){
         lightMode();
     }   
 }

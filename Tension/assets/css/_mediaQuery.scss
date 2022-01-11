@@ -293,6 +293,19 @@
             }
         }
     }
+    // == galery ==
+    .galery-page{
+        .img-part{
+            margin: 60px 0;
+            .img-row{
+                display: block;
+                .img-hover{
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
     // == cart ==
     .cart{
         .cart-content{
@@ -446,6 +459,17 @@
             }
         }
     }
+    // galery
+    .galery-page{
+        .img-part{
+            margin: 25px 0;
+            .img-row{
+                .img-hover{
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
     // page-single
     .single-page{
         margin: 30px 0;
@@ -533,6 +557,17 @@
         .img-row{
             .img-hover{
                 margin-bottom: 20px;
+            }
+        }
+    }
+    // galery
+    .galery-page{
+        .img-part{
+            margin: 20px 0;
+            .img-row{
+                .img-hover{
+                    margin-bottom: 20px;
+                }
             }
         }
     }
