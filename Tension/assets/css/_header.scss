@@ -164,11 +164,7 @@ header{
             display: flex;
         }
     }
-    .searchform{
-        width: 490px;
-        margin: 0 auto;
-    }
-    #s{
+    #search{
         width: 400px;
         border: 1px solid $secondaryCol;
         background: none;
@@ -181,18 +177,20 @@ header{
             border: 1px solid $tercialyCol;
         }
     }
-    #searchsubmit{
-        width: 80px;
-        height: 100%;
-        border: 1px solid $secondaryCol;
-        background: none;
-        font-size: 20px;
-        margin-left: 10px;
-        transition: 0.33s;
-        @include lightLight;
-        &:hover{
-            @include addLight;
-            border: 1px solid $tercialyCol;
+    .submit-button{
+        #searchsubmit{
+            width: 80px;
+            height: 100%;
+            border: 1px solid $secondaryCol;
+            background: none;
+            font-size: 20px;
+            margin-left: 10px;
+            transition: 0.33s;
+            @include lightLight;
+            &:hover{
+                @include addLight;
+                border: 1px solid $tercialyCol;
+            }
         }
     }
     .search-cross{
@@ -200,8 +198,11 @@ header{
         height: 30px;
         cursor: pointer;
         position: relative;
-        margin: 2px 0 0 10px;
+        margin: 2px 0 0 5px;
         transition: 0.33s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         svg{
             width: 20px;
             height: 20px;

@@ -10,7 +10,7 @@ class MyHeader extends HTMLElement{
                 <div class="nav-logo-part">
                     <div>
                         <div class="logo-box">
-                            <a href="index.html">
+                            <a href="index.html" title="Domů">
                                 <div class="logo-contain logo-base">
                                     <img src="../assets/img/logo-trans.png">
                                 </div>
@@ -35,8 +35,7 @@ class MyHeader extends HTMLElement{
 
                 <div class="eshop-part">
                     <ul>
-                        <li class="searchBox ${ pageValue == 'search' ? 'page-active' : '' }">
-                            <?xml version="1.0" encoding="utf-8"?>
+                        <li class="searchBox ${ pageValue == 'search' ? 'page-active' : '' }" title="Hledat">
                             <!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                 viewBox="0 0 20.07 19.78" style="enable-background:new 0 0 20.07 19.78;" xml:space="preserve">
@@ -46,9 +45,8 @@ class MyHeader extends HTMLElement{
                                     c-0.22,0.22-0.22,0.59,0,0.81l6.55,6.55C18.11,19.3,18.48,19.3,18.7,19.08z"/>
                             </svg>
                         </li>
-                        <li class="nav-special-icon ${ pageValue == 'cart' ? 'page-active' : '' }">
+                        <li class="nav-special-icon ${ pageValue == 'cart' ? 'page-active' : '' }" title="Košík">
                             <a href="cart.html">
-                                <?xml version="1.0" encoding="utf-8"?>
                                 <!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                     viewBox="0 0 24.64 19.36" style="enable-background:new 0 0 24.64 19.36;" xml:space="preserve">
@@ -64,9 +62,8 @@ class MyHeader extends HTMLElement{
                                 </svg>
                             </a>
                         </li>
-                        <li class="nav-special-icon ${ pageValue == 'profile' ? 'page-active' : '' }">
+                        <li class="nav-special-icon ${ pageValue == 'profile' ? 'page-active' : '' }" title="Profil">
                             <a href="profile.html">
-                                <?xml version="1.0" encoding="utf-8"?>
                                 <!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                     viewBox="0 0 13.87 13.05" style="enable-background:new 0 0 13.87 13.05;" xml:space="preserve">
@@ -84,8 +81,7 @@ class MyHeader extends HTMLElement{
                 <div class="nav-responsive">
                     <div class="eshop-part-resp">
                         <ul>
-                            <li class="searchBox-resp ${ pageValue == 'search' ? 'page-active' : '' }">
-                                <?xml version="1.0" encoding="utf-8"?>
+                            <li class="searchBox-resp ${ pageValue == 'search' ? 'page-active' : '' }" title="Hledat">
                                 <!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                     viewBox="0 0 20.07 19.78" style="enable-background:new 0 0 20.07 19.78;" xml:space="preserve">
@@ -95,9 +91,8 @@ class MyHeader extends HTMLElement{
                                     c-0.22,0.22-0.22,0.59,0,0.81l6.55,6.55C18.11,19.3,18.48,19.3,18.7,19.08z"/>
                                 </svg>
                             </li>
-                            <li class="nav-special-icon ${ pageValue == 'cart' ? 'page-active' : '' }">
+                            <li class="nav-special-icon ${ pageValue == 'cart' ? 'page-active' : '' }" title="Košík">
                                 <a href="cart.html">
-                                    <?xml version="1.0" encoding="utf-8"?>
                                     <!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                         viewBox="0 0 24.64 19.36" style="enable-background:new 0 0 24.64 19.36;" xml:space="preserve">
@@ -113,9 +108,8 @@ class MyHeader extends HTMLElement{
                                     </svg>
                                 </a>
                             </li>
-                            <li class="nav-special-icon ${ pageValue == 'profile' ? 'page-active' : '' }">
+                            <li class="nav-special-icon ${ pageValue == 'profile' ? 'page-active' : '' }" title="Profil">
                                 <a href="profile.html">
-                                    <?xml version="1.0" encoding="utf-8"?>
                                     <!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                         viewBox="0 0 13.87 13.05" style="enable-background:new 0 0 13.87 13.05;" xml:space="preserve">
@@ -130,7 +124,7 @@ class MyHeader extends HTMLElement{
                         </ul>
                     </div>
 
-                    <div class="hamburger-box">
+                    <div class="hamburger-box" title="Menu">
                         <div class="hamburger-div2">
                             <div class="menu-line2"></div>
                         </div>
@@ -142,15 +136,14 @@ class MyHeader extends HTMLElement{
                 <div class="nav-sidebar">
                     <div class="sidebar-content">
                         <div class="nav-sidebar-search">
-                            <input type="text" name="find" placeholder="hledat" id="s">
+                            <input type="text" name="find" placeholder="hledat" id="search">
                             <div class="search-fixed">
                                 <div class="submit-button">
                                     <a href="search.html">
-                                        <button id="searchsubmit">Hledat</button>
+                                        <button type="button" id="searchsubmit">Hledat</button>
                                     </a>
                                 </div>
-                                <div class="search-cross">
-                                    <?xml version="1.0" encoding="utf-8"?>
+                                <div class="search-cross" title="Zavřít">
                                     <!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                         viewBox="0 0 14.37 14.3" style="enable-background:new 0 0 14.37 14.3;" xml:space="preserve">
@@ -208,8 +201,7 @@ class MyFooter extends HTMLElement{
                             </div>
                             <div class="theme-change">
                                 <div class="theme-box">
-                                    <div class="light-theme">
-                                        <?xml version="1.0" encoding="utf-8"?>
+                                    <div class="light-theme" title="Světlý režim">
                                         <!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                             viewBox="0 0 22.59 22.5" style="enable-background:new 0 0 22.59 22.5;" xml:space="preserve">
@@ -237,8 +229,7 @@ class MyFooter extends HTMLElement{
                                             </g>
                                         </svg>
                                     </div>
-                                    <div class="dark-theme">
-                                        <?xml version="1.0" encoding="utf-8"?>
+                                    <div class="dark-theme" title="Tmavý režim">
                                         <!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                             viewBox="0 0 21.33 21.83" style="enable-background:new 0 0 21.33 21.83;" xml:space="preserve">
@@ -265,9 +256,8 @@ class MyFooter extends HTMLElement{
                             <div class="social-sites">
                                 <p>Sledujte nás</p>
                                 <div class="social-icon-flex">
-                                    <a href="https://www.facebook.com/tensionevents">
+                                    <a href="https://www.facebook.com/tensionevents" title="Facebook">
                                         <div class="icon-hover">
-                                            <?xml version="1.0" encoding="utf-8"?>
                                             <!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                                             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                                 viewBox="0 0 7.16 13.39" style="enable-background:new 0 0 7.16 13.39;" xml:space="preserve">
@@ -277,9 +267,8 @@ class MyFooter extends HTMLElement{
                                             </svg>
                                         </div>
                                     </a>
-                                    <a href="https://www.instagram.com/tensionevents/">
+                                    <a href="https://www.instagram.com/tensionevents/" title="Instagram">
                                         <div class="icon-hover">
-                                            <?xml version="1.0" encoding="utf-8"?>
                                             <!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                                             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                                 viewBox="0 0 16.76 16.75" style="enable-background:new 0 0 16.76 16.75;" xml:space="preserve">

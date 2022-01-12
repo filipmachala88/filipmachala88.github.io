@@ -282,12 +282,7 @@ header .eshop-part ul li svg, header .eshop-part-resp ul li svg {
   display: flex;
 }
 
-.nav-sidebar .searchform {
-  width: 490px;
-  margin: 0 auto;
-}
-
-.nav-sidebar #s {
+.nav-sidebar #search {
   width: 400px;
   border: 1px solid #f0f0f0;
   background: none;
@@ -301,11 +296,11 @@ header .eshop-part ul li svg, header .eshop-part-resp ul li svg {
   font-weight: 300;
 }
 
-.nav-sidebar #s:focus {
+.nav-sidebar #search:focus {
   border: 1px solid #ff88af;
 }
 
-.nav-sidebar #searchsubmit {
+.nav-sidebar .submit-button #searchsubmit {
   width: 80px;
   height: 100%;
   border: 1px solid #f0f0f0;
@@ -319,7 +314,7 @@ header .eshop-part ul li svg, header .eshop-part-resp ul li svg {
   font-weight: 300;
 }
 
-.nav-sidebar #searchsubmit:hover {
+.nav-sidebar .submit-button #searchsubmit:hover {
   color: #ff88af;
   font-family: 'Alumni Sans', sans-serif;
   font-weight: 300;
@@ -331,9 +326,18 @@ header .eshop-part ul li svg, header .eshop-part-resp ul li svg {
   height: 30px;
   cursor: pointer;
   position: relative;
-  margin: 2px 0 0 10px;
+  margin: 2px 0 0 5px;
   -webkit-transition: 0.33s;
   transition: 0.33s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .nav-sidebar .search-cross svg {
@@ -3377,7 +3381,7 @@ header .eshop-part ul li svg, header .eshop-part-resp ul li svg {
   .contact .contact-column-two {
     width: 100%;
   }
-  .nav-sidebar #s {
+  .nav-sidebar #search {
     width: 80%;
   }
   .index-about .about-img-side .about-logo-bg {

@@ -25,8 +25,10 @@ I composed process into a few steps:
 - 4th step: Code creating - Website is made by [Vanilla](https://stackoverflow.com/questions/20836115/what-does-vanilla-mean) website technique
 - 5th step: Validation check & Bug fix - due to standards ([HTML5](https://validator.w3.org/), [CSS3](https://jigsaw.w3.org/css-validator/)), image [compression](https://imagecompressor.com/)
 
-In this case I tried to focus on work with:
-- [Bootstrap](https://getbootstrap.com/) framework
+In this case I tried to focus on:
+- work with [Bootstrap](https://getbootstrap.com/) framework
+- create own icons
+- use Cookies & Local Storage
 
 ## Result
 
